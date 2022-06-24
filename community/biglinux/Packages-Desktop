@@ -396,7 +396,7 @@ poppler-data  # encoding data to display PDF documents containing CJK characters
 ## Applications
 dmidecode # for inxi -m output
 htop
-btop
+#btop
 inxi
 manjaro-application-utility
 manjaro-settings-manager-kcm
