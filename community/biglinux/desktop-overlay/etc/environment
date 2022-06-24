@@ -9,4 +9,4 @@
 QT_LOGGING_RULES='*=false'
 QSG_RENDER_LOOP=basic
 __GL_THREADED_OPTIMIZATION=1
-mesa_glthread=true
+#mesa_glthread=true
