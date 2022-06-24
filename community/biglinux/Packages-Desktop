@@ -118,9 +118,10 @@ ocl-icd
 lib32-ocl-icd
 irqbalance
 biglinux-noise-reduction-pipewire
-#bigocrpdf
+bigocrpdf
 tesseract-data-por
 tesseract-data-eng
+tesseract-data-esp
 tts-biglinux
 rhvoice-voice-leticia-f123
 rhvoice-brazilian-portuguese-complementary-dict-biglinux
