@@ -165,6 +165,7 @@ gnome-tweaks
 >extra gnome-shell-extension-desktop-icons-ng
 >extra gnome-shell-extension-gnome-ui-tune
 >extra gnome-shell-extension-gsconnect
+>extra gnome-shell-extension-legacy-theme-auto-switcher
 >extra gnome-shell-extension-material-shell
 >extra gnome-shell-extension-x11gestures
 
@@ -230,7 +231,7 @@ lollypop
 >extra power-profiles-daemon       # optional for gnome-control-center
 >extra gnome-appfolders-manager
 >extra gnuchess                    # optional for gnome-chess to play against computer
-chrome-gnome-shell
+gnome-browser-connector
 >extra deja-dup
 
 ## Optional dependencies for file-roller

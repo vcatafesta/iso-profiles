@@ -33,17 +33,39 @@ gsmartcontrol
 qt6-webengine
 pacutils
 kwin-scripts-virtual-desktops-only-on-primary
-x86_energy_perf_policy
+akonadi-contacts
 aspell-pt
-biglinux-metapackage
+biglinux-keyring
+biglinux-l18n
+brightness-controller-git
+cfs-zen-tweaks
+flatpak-xdg-utils
+guvcview
+hunspell-pt-br
+jamesdsp
+jdownloader2
+kalarm
+kmines
+kpat
+ksystemlog
+kwin-window-positioning-scripts
+plasma5-applet-tiledmenu-git
 plasma5-applets-resources-monitor
-
+pulseaudio-alsa
+python-cssselect
+python-qtpy
+simplescreenrecorder
+systemd-oomd-defaults
+tesseract-data-spa
+uresourced
+xapian-core
 
 ## BigLinux
-biglinux-l18n
+appimagelauncher
 auto-rules-io
 force-upgrade
 gamemode
+lib32-gamemode
 game-devices-udev
 qbittorrent
 big-preload
@@ -121,7 +143,6 @@ biglinux-noise-reduction-pipewire
 bigocrpdf
 tesseract-data-por
 tesseract-data-eng
-tesseract-data-spa
 tts-biglinux
 rhvoice-voice-leticia-f123
 rhvoice-brazilian-portuguese-complementary-dict-biglinux
@@ -130,8 +151,6 @@ kde-service-menu-reimage
 kde-servicemenus-officeconverter
 mystiq
 gnome-sound-recorder
-guvcview
-vokoscreen
 rustdesk-bin
 pamac-updates-menu
 gnome-keyring
@@ -145,9 +164,7 @@ chmlib
 auto-zram-and-swappiness
 sync-kde-and-gtk-places
 gtk3
-kalarm
-uresourced
-systemd-oomd-defaults
+
 
 bigbashview
 bigcontrolcenter
@@ -162,7 +179,6 @@ biglinux-session-and-themes
 biglinux-themes-gui
 ksmserver-software-render
 sddm-theme-biglinux
-slurp
 libreoffice-fresh
 libreoffice-fresh-pt-br
 firefox
@@ -180,7 +196,6 @@ mx-idevice-mounter
 mtools
 fatresize
 thermald
-kwin-window-positioning-scripts
 
 ## Network
 avahi
@@ -194,7 +209,7 @@ mobile-broadband-provider-info
 modemmanager
 openresolv
 openssh
-samba
+#samba
 manjaro-settings-samba
 usb_modeswitch
 #ananicy-config-biglinux
@@ -220,15 +235,10 @@ pipewire-jack
 pipewire-jack-dropin
 pipewire-biglinux-config-git
 wireplumber
-pulseaudio-alsa
 phonon-qt5-gstreamer
 #pulseaudio-bluetooth
 #pulseaudio-ctl
 #pulseaudio-zeroconf
-
-#Games
-kpat
-kmines
 
 ## Connect Packages
 android-tools
@@ -396,15 +406,12 @@ poppler-data  # encoding data to display PDF documents containing CJK characters
 ## Applications
 dmidecode # for inxi -m output
 htop
-#btop
 inxi
 manjaro-application-utility
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 powertop
-screenfetch
 systemd-kcm
-appimagelauncher
 
 
 ## Desktop Utils
@@ -446,4 +453,3 @@ xf86-input-libinput
 ## Misc
 manjaro-hotfixes
 >basic squashfs-tools
-

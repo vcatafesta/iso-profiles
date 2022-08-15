@@ -1,0 +1,8 @@
+[Unit]
+After=sddm.service
+
+[Service]
+ExecStart=/usr/bin/big-first-boot
+
+[Install]
+WantedBy=default.target

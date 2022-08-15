@@ -1,0 +1,314 @@
+#!/bin/bash
+
+workdir=$PWD
+isoprofilesdir=iso-profiles
+makeisoprofilesdir=base
+rootdir=..
+mesa=$@
+extrarepo=$@
+
+make-iso-profiles () {
+    # clone or Update git
+    if [ ! -d "$workdir/$isoprofilesdir" ]
+    then
+        git clone https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git $workdir/$isoprofilesdir
+    else
+        cd $workdir/$isoprofilesdi
+        git pull
+        cd $workdir
+    fi
+
+    #remove old profile
+    if [ -d "$workdir/$isoprofilesdir/community/biglinux" ]; then
+        rm -r $workdir/$isoprofilesdir/community/biglinux
+    fi
+
+    ## create profile biglinux ##
+    mkdir -p $workdir/$isoprofilesdir/community/biglinux
+
+    #files
+    cp $workdir/$makeisoprofilesdir/profile.conf  $workdir/$isoprofilesdir/community/biglinux/
+    cp $workdir/$makeisoprofilesdir/pacman-default.conf  $workdir/$isoprofilesdir/community/biglinux/
+    cp $workdir/$makeisoprofilesdir/user-repos.conf  $workdir/$isoprofilesdir/community/biglinux/
+    #dirs
+    cp -r $workdir/$makeisoprofilesdir/desktop-overlay/  $workdir/$isoprofilesdir/community/biglinux/
+    cp -r $workdir/$makeisoprofilesdir/live-overlay/  $workdir/$isoprofilesdir/community/biglinux/
+
+    # Remove Mhwd
+    if [ -e "$workdir/$makeisoprofilesdir/Mhwd-remove" ]; then
+        grep -v -f $workdir/$makeisoprofilesdir/Mhwd-remove  $workdir/$isoprofilesdir/shared/Packages-Mhwd  >  $workdir/$isoprofilesdir/community/biglinux/Packages-Mhwd
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+    # Remove Root
+    if [ -e "$workdir/$makeisoprofilesdir/Root-remove" ]; then
+        grep -v -f $workdir/$makeisoprofilesdir/Root-remove  $workdir/$isoprofilesdir/shared/Packages-Root  >  $workdir/$isoprofilesdir/community/biglinux/Packages-Root
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+    # Remove Live
+    if [ -e "$workdir/$makeisoprofilesdir/Live-remove" ]; then
+        grep -v -f $workdir/$makeisoprofilesdir/Live-remove  $workdir/$isoprofilesdir/shared/Packages-Live  >  $workdir/$isoprofilesdir/community/biglinux/Packages-Live
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+    # Remove Desktop
+    if [ -e "$workdir/$makeisoprofilesdir/Desktop-remove" ]; then
+        grep -v -f $workdir/$makeisoprofilesdir/Desktop-remove  $workdir/$isoprofilesdir/shared/Packages-Desktop  >  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+    # Add Mhwd
+    if [ -e "$workdir/$makeisoprofilesdir/Mhwd-add" ]; then
+        cat $workdir/$makeisoprofilesdir/Mhwd-add  >>  $workdir/$isoprofilesdir/community/biglinux/Packages-Mhwd
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+
+    # Add Root
+    if [ -e "$workdir/$makeisoprofilesdir/Root-add" ]; then
+        cat $workdir/$makeisoprofilesdir/Root-add  >>  $workdir/$isoprofilesdir/community/biglinux/Packages-Root
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+    # Add Live
+    if [ -e "$workdir/$makeisoprofilesdir/Live-add" ]; then
+    #     echo '' >> $isoprofilesdir/community/biglinux/Packages-Live
+        cat $workdir/$makeisoprofilesdir/Live-add  >>  $workdir/$isoprofilesdir/community/biglinux/Packages-Live
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+    # Add Desktop
+    if [ -e "$workdir/$makeisoprofilesdir/Desktop-add" ]; then
+        cat  $workdir/$makeisoprofilesdir/Desktop-add  >  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    else
+        echo "ERROR"
+        exit 1
+    fi
+
+    # Add some things from Packages-Desktop
+    sed -n '/## Printing/,/^$/p'  $workdir/$isoprofilesdir/manjaro/kde/Packages-Desktop  >>  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    sed -n '/## Xorg Server and Graphics/,/^$/p'  $workdir/$isoprofilesdir/manjaro/kde/Packages-Desktop  >>  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    sed -n '/## Xorg Input Drivers/,/^$/p'  $workdir/$isoprofilesdir/manjaro/kde/Packages-Desktop  >>  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    sed -n '/## Misc/,/^$/p'  $workdir/$isoprofilesdir/manjaro/kde/Packages-Desktop  >>  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    sed -i 's|xf86-input-void||g'  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    
+    # use mesa-amber or mesa-git?
+    if [ -n "$(echo $mesa | grep -s amber )" ]; then
+        echo '
+mesa-amber
+lib32-mesa-amber' >> $workdir/$isoprofilesdir/community/biglinux/Packages-Root
+        echo "using mesa-amber"
+    elif [ -n "$(echo $mesa | grep -s mesa-git)" ]; then
+        echo '
+mesa-git
+lib32-mesa-git' >> $workdir/$isoprofilesdir/community/biglinux/Packages-Root
+        echo "using mesa-git"
+        sed -i '/libva-mesa/d'  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+        sed -i '/libva-mesa/d'  $workdir/$isoprofilesdir/community/biglinux/Packages-Mhwd
+        sed -i '/vulkan-swrast/d'  $workdir/$isoprofilesdir/community/biglinux/Packages-Desktop
+    fi
+    
+    if [ -n "$(echo $extrarepo | grep -s testing)" ];then
+        echo '
+        [biglinux-testing]
+        SigLevel = PackageRequired
+        Server = https://repo.biglinux.com.br/testing/$arch' | sudo tee -a $workdir/$isoprofilesdir/community/biglinux/user-repos.conf
+    fi
+}
+    
+#move iso-files to root dir
+move() {
+    cp -a $isoprofilesdir/*  $rootdir
+    rm -rf $isoprofilesdir
+    for i in $(ls $rootdir/community/ | grep -v biglinux); do rm -r $rootdir/community/$i; done
+}
+
+#copy iso-files to root dir
+copy() {
+    cp -a $isoprofilesdir/*  $rootdir
+}
+
+config-buildiso () {
+    ## changes in /usr/lib/manjaro-tools/  START ##
+    if [ -z "$(grep BigLinux /usr/lib/manjaro-tools/util-iso-image.sh)" ];then
+        # Remove last } in /usr/lib/manjaro-tools/util-iso-image.sh
+        sudo sed -i ':a;$!{N;ba;};s/\(.*\)}/\1/' /usr/lib/manjaro-tools/util-iso-image.sh
+        # adicionar ao arquivo /usr/lib/manjaro-tools/util-iso-image.sh
+        echo '  #BigLinux clean
+            path=$1/usr/share/doc
+            if [[ -d $path ]]; then
+                rm -Rf $path/* &> /dev/null
+            fi
+
+            #BigLinux clean
+            path=$1/usr/share/man
+            if [[ -d $path ]]; then
+                rm -Rf $path/* &> /dev/null
+            fi
+
+            #Clean LibreOffice
+            path=$1/usr/lib/libreoffice/share/config
+            if [[ -d $path ]]; then
+            rm -f $path/images_karasa_jaga* &> /dev/null
+            rm -f $path/images_elementary* &> /dev/null
+            rm -f $path/images_sukapura* &> /dev/null
+            rm -f $path/images_colibre_svg.zip &> /dev/null
+            rm -f $path/images_sifr_dark_svg.zip &> /dev/null
+            rm -f $path/images_sifr_svg.zip &> /dev/null
+            rm -f $path/images_breeze_dark_svg.zip &> /dev/null
+            rm -f $path/images_breeze_svg.zip &> /dev/null
+            fi
+
+            #Clean LibreOffice
+            path=$1/usr/share/wallpapers
+            if [[ -d $path ]]; then
+                rm -Rf $path/Altai
+                rm -Rf $path/BytheWater
+                rm -Rf $path/Cascade
+                rm -Rf $path/ColdRipple
+                rm -Rf $path/DarkestHour
+                rm -Rf $path/EveningGlow
+                rm -Rf $path/Flow
+                rm -Rf $path/FlyingKonqui
+                rm -Rf $path/IceCold
+                rm -Rf $path/Kokkini
+                rm -Rf $path/Next
+                rm -Rf $path/Opal
+                rm -Rf $path/Patak
+                rm -Rf $path/SafeLanding
+                rm -Rf $path/summer_1am
+                rm -Rf $path/Autumn
+                rm -Rf $path/Canopee
+                rm -Rf $path/Cluster
+                rm -Rf $path/ColorfulCups
+                rm -Rf $path/Elarun
+                rm -Rf $path/FallenLeaf
+                rm -Rf $path/Fluent
+                rm -Rf $path/Grey
+                rm -Rf $path/Kite
+                rm -Rf $path/MilkyWay
+                rm -Rf $path/OneStandsOut
+                rm -Rf $path/PastelHills
+                rm -Rf $path/Path
+                rm -Rf $path/Shell
+                rm -Rf $path/Volna
+            fi
+
+            }' | sudo tee -a /usr/lib/manjaro-tools/util-iso-image.sh
+    fi
+    ## changes in /usr/lib/manjaro-tools/  END ##
+
+
+    ## changes in /usr/share/manjaro-tools/  START ##
+    #bootsplash
+    if [ -z "$(grep bootsplash-biglinux /usr/share/manjaro-tools/mkinitcpio.conf)" ]; then
+        sudo sed -i 's|keyboard keymap|keyboard keymap bootsplash-biglinux|g' /usr/share/manjaro-tools/mkinitcpio.conf
+    fi
+        
+    #add big repository
+    if [ -z "$(grep biglinux-update-stable /usr/share/manjaro-tools/pacman-default.conf)" ];then
+        sudo sed -i '/\[core\]/{h;s/.*/\[biglinux-update-stable\]/;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
+        sudo sed -i '/\[core\]/{h;s/.*/SigLevel = PackageRequired/;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
+        sudo sed -i '/\[core\]/{h;s/.*/Server = https:\/\/repo.biglinux.com.br\/update-stable\/$arch/;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
+        sudo sed -i '/\[core\]/{h;s/.*//;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
+    fi
+    if [ -z "$(grep biglinux-stable /usr/share/manjaro-tools/pacman-default.conf)" ];then
+        echo '
+    [biglinux-stable]
+    SigLevel = PackageRequired
+    Server = https://repo.biglinux.com.br/stable/$arch' | sudo tee -a /usr/share/manjaro-tools/pacman-default.conf
+    fi
+    if [ -z "$(grep biglinux-keyring /usr/share/manjaro-tools/pacman-default.conf)" ];then
+        sudo sed -i '/SyncFirst/s/$/ biglinux-keyring/' /usr/share/manjaro-tools/pacman-default.conf
+    fi
+    ## changes in /usr/share/manjaro-tools/  END ##
+
+
+    # ## remove in final version START ##
+    # # Disable remove pkgs cache
+    sudo sed -i 's|path=$1/var/lib/pacman/sync|path=$1/usr/share/man|'g /usr/lib/manjaro-tools/util-iso-image.sh
+    # # Faster compression
+    sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
+}
+
+#Make backup
+backup () {
+    sudo cp -a /usr/lib/manjaro-tools  /usr/lib/manjaro-tools-backup
+    sudo cp -a /usr/share/manjaro-tools /usr/share/manjaro-tools-backup
+}
+
+#Restore Backup
+restore-backup () {
+    sudo rm -r /usr/lib/manjaro-tools
+    sudo mv /usr/lib/manjaro-tools-backup  /usr/lib/manjaro-tools
+    sudo rm -r /usr/share/manjaro-tools
+    sudo mv /usr/share/manjaro-tools-backup  /usr/share/manjaro-tools
+}
+
+usage()
+{
+	cat <<-EOF
+	Usage: ${0##*/} command [argument]
+
+Commands:
+
+    makeprofiles                  Just generate the iso-profiles files
+    ci/cd                         Generate files and settings for CI/CD
+    buildlocal branch Kernel      Generate files and settings to run on the local machine
+                                  [branchs= stables, testing, unstable]
+                                  [kernel= 510, 515, 519]
+		
+	usage example: 
+	biglinux-make-iso-profiles makeprofiles
+	biglinux-make-iso-profiles ci/cd
+	biglinux-make-iso-profiles buildlocal stable 515
+	  
+	EOF
+	[ -z "$1" ] && exit 0
+	echo
+	error_exit "$*"
+}
+
+# usage
+if [ -z "$1" ]; then
+    usage
+elif [ -z "$(echo $@ | egrep "makeprofiles|ci/cd|buildlocal")" ];then
+    usage
+fi
+
+
+# runs
+if [ "$1" = makeprofiles ]; then
+	make-iso-profiles
+	move
+elif [ "$1" = "buildlocal" -a -n "$2" -a -n "$3" ];then
+    backup
+    make-iso-profiles
+    copy
+    config-buildiso
+    buildiso -f -p biglinux -b $2 -k linux${1}
+    restore-backup
+elif [ "$1" = "ci/cd" ];then
+    make-iso-profiles
+    copy
+    config-buildiso
+else
+	usage
+fi
+
+

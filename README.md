@@ -3,8 +3,6 @@
 
 ### profile.conf
 
-Fork adapted from: https://gitlab.manjaro.org/profiles-and-settings/iso-profiles
-
 ~~~
 ##########################################
 ###### use this file in the profile ######

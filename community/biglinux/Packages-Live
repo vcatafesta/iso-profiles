@@ -6,7 +6,6 @@ manjaro-live-systemd
 mkinitcpio-nfs-utils
 nbd
 virtualbox-guest-utils
-
 calamares-biglinux
 biglinux-livecd
 biglinux-grub-restore 
