@@ -220,7 +220,7 @@ config-buildiso () {
     
     #disable kernel version verification
     if [ -n "$(echo $kernel | grep -s xanmod )" ]; then
-        sed -i '/${iso_kernel}/s/^/#/' /usr/lib/manjaro-tools/util-iso.sh
+        sudo sed -i '/${iso_kernel}/s/^/#/' /usr/lib/manjaro-tools/util-iso.sh
     fi
     ## changes in /usr/lib/manjaro-tools/  END ##
 
@@ -230,7 +230,7 @@ config-buildiso () {
     ## changes in /usr/share/manjaro-tools/  START ##
     #bootsplash
     if [ -z "$(grep bootsplash-$profile /usr/share/manjaro-tools/mkinitcpio.conf)" ]; then
-        sudo sed -i 's|keyboard keymap|keyboard keymap bootsplash-$profile|g' /usr/share/manjaro-tools/mkinitcpio.conf
+        sudo sed -i "s|keyboard keymap|keyboard keymap bootsplash-$profile|g" /usr/share/manjaro-tools/mkinitcpio.conf
     fi
         
     #add big repository
