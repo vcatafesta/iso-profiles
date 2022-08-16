@@ -134,6 +134,7 @@ pacman-cleancache
 biglinux-meta-audio-config
 biglinux-changes-to-plasma-git
 #steam-manjaro
+vulkan-swrast
 ocl-icd
 lib32-ocl-icd
 irqbalance

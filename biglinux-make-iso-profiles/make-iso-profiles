@@ -119,7 +119,7 @@ make-iso-profiles () {
 mesa-amber
 lib32-mesa-amber' >> $makeisoprofilesdir/Packages-Root
         echo "using mesa-amber"
-    elif [ -n "$(echo $mesa | grep -s mesa-git)" ]; then
+    elif [ -n "$(echo $mesa | egrep -s "mesa-git|xiva")" ]; then
         echo '
 mesa-tkg-git
 lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
