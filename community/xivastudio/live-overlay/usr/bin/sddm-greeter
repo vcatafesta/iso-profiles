@@ -1,0 +1,5 @@
+#!/bin/sh
+
+chown biglinux:biglinux -R /home/biglinux
+chown xivastudio:xivastudio -R /home/xivastudio
+QT_QUICK_BACKEND=software exec /usr/bin/sddm-greeter.distrib ${1+"$@"}
