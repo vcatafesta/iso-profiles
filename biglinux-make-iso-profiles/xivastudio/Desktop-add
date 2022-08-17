@@ -130,7 +130,6 @@ network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 jre11-openjdk
 pacman-cleancache
-biglinux-meta-audio-config
 biglinux-changes-to-plasma-git
 vulkan-swrast
 ocl-icd
@@ -424,3 +423,4 @@ kernel-alive
 
 #xivastudio
 qpwgraph
+xivastudio-meta-audio-config
