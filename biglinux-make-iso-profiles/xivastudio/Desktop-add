@@ -109,7 +109,7 @@ biglinux-config
 feh
 auto-unlock-pacman-git
 big-mount-git
-biglinux-name
+xivastudio-name
 big-first-boot
 bash-completion
 materiav2-gtk-theme
