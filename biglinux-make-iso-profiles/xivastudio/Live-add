@@ -1,6 +1,6 @@
 calamares-biglinux
 biglinux-livecd
+biglinux-xivastudio
 biglinux-grub-restore 
-bootsplash-theme-biglinux
+bootsplash-theme-xivastudio
 memtest86+
-xiva-favicon

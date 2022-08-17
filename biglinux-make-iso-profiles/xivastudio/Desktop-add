@@ -28,8 +28,7 @@ util-linux
 xz
 make
 sane-airscan
-#helvum
-qpwgraph
+helvum
 gsmartcontrol
 qt6-webengine
 pacutils
@@ -43,6 +42,7 @@ cfs-zen-tweaks
 flatpak-xdg-utils
 guvcview
 hunspell-pt-br
+jamesdsp
 jdownloader2
 kalarm
 kmines
@@ -126,14 +126,12 @@ rpmtoarch
 biglinux-mime
 vkd3d
 lib32-vkd3d
-#lutris
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 jre11-openjdk
 pacman-cleancache
 biglinux-meta-audio-config
 biglinux-changes-to-plasma-git
-#steam-manjaro
 vulkan-swrast
 ocl-icd
 lib32-ocl-icd
@@ -175,6 +173,7 @@ plasmamenufork
 rootactions-servicemenu-biglinux
 sysctl-network
 biglinux-session-and-themes
+xivastudio-session-and-themes
 biglinux-themes-gui
 ksmserver-software-render
 sddm-theme-biglinux
@@ -233,7 +232,6 @@ libdvdcss
 manjaro-pipewire
 pipewire-jack
 pipewire-jack-dropin
-pipewire-biglinux-config-git
 wireplumber
 phonon-qt5-gstreamer
 #pulseaudio-bluetooth
@@ -424,5 +422,5 @@ kernel-alive
 >extra xdg-desktop-portal
 >extra xdg-desktop-portal-kde
 
-
-
+#xivastudio
+qpwgraph
