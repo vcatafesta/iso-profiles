@@ -219,9 +219,9 @@ config-buildiso () {
     fi
     
     #disable kernel version verification
-    if [ -n "$(echo $kernel | grep -s xanmod )" ]; then
+#     if [ -n "$(echo $kernel | grep -s xanmod )" ]; then
         sudo sed -i '/${iso_kernel}/s/^/#/' /usr/lib/manjaro-tools/util-iso.sh
-    fi
+#     fi
     ## changes in /usr/lib/manjaro-tools/  END ##
 
     
