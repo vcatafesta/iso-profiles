@@ -263,7 +263,7 @@ config-buildiso () {
     
     # ## remove in final version ##
     # # Faster compression
-    sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
+    sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 2|g' /usr/lib/manjaro-tools/util-iso.sh
 }
 
 #Make backup
