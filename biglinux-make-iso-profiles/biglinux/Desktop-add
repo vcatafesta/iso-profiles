@@ -164,13 +164,12 @@ chmlib
 auto-zram-and-swappiness
 sync-kde-and-gtk-places
 gtk3
-
+dbus-broker-enable
 
 bigbashview
 bigcontrolcenter
 bigsudo
 compsize
-dbus-broker-enable
 disable-fsync
 plasmamenufork
 rootactions-servicemenu-biglinux
