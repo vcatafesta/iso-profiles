@@ -259,11 +259,10 @@ config-buildiso () {
     mkdir -p ~/.config/manjaro-tools/
     echo "run_dir=$workdir/$isoprofilesdir" > ~/.config/manjaro-tools/iso-profiles.conf
     
-    
-    
-    # ## remove in final version ##
     # # Faster compression
-    # sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
+    if [ -n "$(echo $extrarepo | grep -s testing)" ];then
+        sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
+    fi
 }
 
 #Make backup
