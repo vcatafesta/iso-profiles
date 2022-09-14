@@ -129,6 +129,7 @@ biglinux-mime
 vkd3d
 lib32-vkd3d
 lutris
+open-in-lutris
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 jre11-openjdk
