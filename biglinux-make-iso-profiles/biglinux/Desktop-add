@@ -178,7 +178,6 @@ rootactions-servicemenu-biglinux
 sysctl-network
 biglinux-session-and-themes
 biglinux-themes-gui
-ksmserver-softwaer-render
 sddm-theme-biglinux
 sddm-xorg-failsafe
 libreoffice-fresh
