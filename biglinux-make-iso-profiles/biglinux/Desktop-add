@@ -219,6 +219,7 @@ usb_modeswitch
 alsa-firmware
 alsa-utils
 ffmpeg
+ffmpeg4.4
 gst-libav
 gst-plugins-bad
 gst-plugins-base
