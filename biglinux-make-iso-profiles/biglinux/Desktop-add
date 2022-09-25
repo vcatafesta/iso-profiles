@@ -373,6 +373,8 @@ plasma-workspace
 >extra plasma-workspace-wallpapers
 powerdevil
 systemsettings
+plasma-vault
+cryfs
 
 ## Themes QT/GTK/SDDM
 sddm-breath-theme
