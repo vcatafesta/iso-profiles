@@ -130,10 +130,15 @@ lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
     fi
     
     if [ -n "$(echo $extrarepo | grep -s testing)" ];then
-        echo '
-        [biglinux-testing]
-        SigLevel = PackageRequired
-        Server = https://repo.biglinux.com.br/testing/$arch' | sudo tee -a $makeisoprofilesdir/user-repos.conf
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*/\[biglinux-testing\]/;p;x;}' /etc/chrootbuild/pacman.conf.x86_64
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*/SigLevel = PackageRequired/;p;x;}' /etc/chrootbuild/pacman.conf.x86_64
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*/Server = https:\/\/repo.biglinux.com.br\/testing\/$arch/;p;x;}' /etc/chrootbuild/pacman.conf.x86_64
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*//;p;x;}' /etc/chrootbuild/pacman.conf.x86_64
+    
+#         echo '
+#         [biglinux-testing]
+#         SigLevel = PackageRequired
+#         Server = https://repo.biglinux.com.br/testing/$arch' | sudo tee -a $makeisoprofilesdir/user-repos.conf
     fi
 }
     
