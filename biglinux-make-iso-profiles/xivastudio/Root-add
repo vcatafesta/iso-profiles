@@ -2,5 +2,12 @@ grub-theme-biglinux
 grub-theme-xivastudio
 bootsplash-theme-xivastudio
 big-skel
-manjaro-firmware
 biglinux-key
+
+##manjaro-firmware
+#nouveau-fw
+#b43-firmware
+##b43-firmware-classic
+#wd719x-firmware
+#aic94xx-firmware
+#bcm20702a1-firmware
