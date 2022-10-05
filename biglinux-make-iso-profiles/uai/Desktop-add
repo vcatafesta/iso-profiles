@@ -59,6 +59,7 @@ systemd-oomd-defaults
 tesseract-data-spa
 uresourced
 # xapian-core
+kde-snap-assist
 
 ## BigLinux
 # system-config-printer-jobs
