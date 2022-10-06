@@ -2,7 +2,7 @@ grub-theme-biglinux
 grub-theme-xivastudio
 bootsplash-theme-xivastudio
 big-skel
-biglinux-key
+#biglinux-key
 
 ##manjaro-firmware
 #nouveau-fw
