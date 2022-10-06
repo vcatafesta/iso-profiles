@@ -32,7 +32,7 @@ terminal-border: "0"
 + image {
     top = 8%
     left = 50%-50
-    file = "biglinux-grub.png"
+    file = "xivastudio.png"
 }
 
 # Show the boot menu
