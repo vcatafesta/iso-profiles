@@ -121,8 +121,8 @@ lib32-mesa-amber' >> $makeisoprofilesdir/Packages-Root
         echo "using mesa-amber"
     elif [ -n "$(echo $mesa | egrep -s "mesa-git|xivastudio")" ]; then
         echo '
-mesa-tkg-git
-lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
+mesa-git
+lib32-mesa-git' >> $makeisoprofilesdir/Packages-Root
         echo "using mesa-git"
         sed -i '/libva-mesa/d'  $makeisoprofilesdir/Packages-Desktop
         sed -i '/libva-mesa/d'  $makeisoprofilesdir/Packages-Mhwd
