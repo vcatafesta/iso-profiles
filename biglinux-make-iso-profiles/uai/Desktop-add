@@ -23,7 +23,7 @@ psmisc
 sed
 shadow
 tar
-# tlp
+tlp
 util-linux
 xz
 make
@@ -39,14 +39,10 @@ biglinux-keyring
 biglinux-l18n
 brightness-controller-git
 cfs-zen-tweaks
-# flatpak-xdg-utils
-# guvcview
+flatpak-xdg-utils
+guvcview
 hunspell-pt-br
 jamesdsp
-jdownloader2
-kalarm
-kmines
-kpat
 ksystemlog
 kwin-window-positioning-scripts
 plasma5-applet-tiledmenu-git
@@ -54,22 +50,20 @@ plasma5-applets-resources-monitor
 pulseaudio-alsa
 python-cssselect
 python-qtpy
-simplescreenrecorder
 systemd-oomd-defaults
 tesseract-data-spa
 uresourced
-# xapian-core
+xapian-core
 kde-snap-assist
 
 ## BigLinux
-# system-config-printer-jobs
+system-config-printer-jobs
 appimagelauncher
 auto-rules-io
 force-upgrade
-# gamemode
-# lib32-gamemode
-# game-devices-udev
-# qbittorrent
+gamemode
+lib32-gamemode
+game-devices-udev
 big-preload
 big-store
 biglinux-apps-rename
@@ -82,15 +76,15 @@ kfind
 nm-connection-editor
 #hardinfo
 kdialog
-# system-config-printer
-# cups
-# ipp-usb
-# manjaro-printer
+system-config-printer
+cups
+ipp-usb
+manjaro-printer
 pavucontrol-qt
-# tlpui
+tlpui
 kscreen
-# lxqt-config
-# kcm-wacomtablet
+lxqt-config
+kcm-wacomtablet
 plasma-thunderbolt
 kio-gdrive
 auto-tweaks-browser
@@ -104,13 +98,12 @@ ttf-liberation
 ufw
 gufw
 #plasma-firewall
-# baobab
-# skanpage
-# web-installer-url-handler
+baobab
+web-installer-url-handler
 biglinux-config
 feh
 auto-unlock-pacman-git
-# big-mount-git
+big-mount-git
 biglinux-name
 big-first-boot
 bash-completion
@@ -119,25 +112,22 @@ materiav2-gtk-theme
 manjaro-tools-base
 hunspell-en_us
 qt5-translations
-# gimp
+gimp
 timeshift
 grub-btrfs-timeshift
 grub-btrfs
 spice-vdagent-autostart-kde
-# debtap-mod
-# rpmtoarch
+debtap-mod
+rpmtoarch
 biglinux-mime
 vkd3d
 lib32-vkd3d
-# lutris
-# open-in-lutris-git
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 jre11-openjdk
 pacman-cleancache
 biglinux-meta-audio-config
 biglinux-changes-to-plasma-git
-# steam
 vulkan-swrast
 ocl-icd
 lib32-ocl-icd
@@ -152,19 +142,16 @@ rhvoice-brazilian-portuguese-complementary-dict-biglinux
 rhvoice-voice-evgeniy-eng
 kde-service-menu-reimage
 kde-servicemenus-officeconverter
-mystiq
-gnome-sound-recorder
-rustdesk-bin
 pamac-updates-menu
 gnome-keyring
 kde-color-folder
-# bluez-plugins
-# bluez-cups
-# retroarch-tweaks
-# ds4-disable-led
+bluez-plugins
+bluez-cups
+retroarch-tweaks
+ds4-disable-led
 kdegraphics-mobipocket
 chmlib
-# auto-zram-and-swappiness
+auto-zram-and-swappiness
 sync-kde-and-gtk-places
 gtk3
 dbus-broker-enable
@@ -181,23 +168,17 @@ biglinux-session-and-themes
 biglinux-themes-gui
 sddm-theme-biglinux
 sddm-xorg-failsafe
-# libreoffice-fresh
-# libreoffice-fresh-pt-br
-firefox
 brave-browser
-firefox-i18n-pt-br
-# gimp-plugin-gmic
-# gimp
 appmenu-gtk-module
 xsettingsd
-# xf86-input-synaptics
+xf86-input-synaptics
 keditbookmarks
 plasma-appsmenu-biglinux
 big-executable
-# mx-idevice-mounter
-# mtools
-# fatresize
-# thermald
+mx-idevice-mounter
+mtools
+fatresize
+thermald
 
 ## Network
 avahi
@@ -208,12 +189,12 @@ networkmanager-vpnc
 nss-mdns # NSS support for mDNS (optdepend for avahi)
 ntp
 mobile-broadband-provider-info
-# modemmanager
+modemmanager
 openresolv
 openssh
 #samba
 manjaro-settings-samba
-# usb_modeswitch
+usb_modeswitch
 #ananicy-config-biglinux
 
 ## Libraries for Sound/Audio/Video
@@ -244,18 +225,18 @@ phonon-qt5-gstreamer
 #pulseaudio-zeroconf
 
 ## Connect Packages
-# android-tools
-# android-udev
-# gvfs
-# gvfs-afc
-# gvfs-gphoto2
-# gvfs-mtp
-# gvfs-nfs
-# gvfs-smb
-# kamera
-# mtpfs
-# udiskie
-# udisks2
+android-tools
+android-udev
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+kamera
+mtpfs
+udiskie
+udisks2
 
 ## Fonts
 ttf-dejavu
@@ -290,60 +271,60 @@ pamac-cli
 #pamac-qt
 manjaro-application-utility
 
-# #Better wine support
-# lib32-pipewire
-# lib32-pipewire-jack
-# lib32-lcms2
-# lib32-libtiff
-# lib32-libjpeg-turbo
-# lib32-libxrandr
-# lib32-fontconfig
-# lib32-libxi
-# lib32-faudio
-# faudio
-# lib32-sdl2
-# lib32-gettext
-# lib32-acl
-# lib32-libsm
-# lib32-libice
-# lib32-libxcursor
-# lib32-libxrender
-# lib32-libpcap
-# lib32-libnl
-# lib32-glu
-# lib32-flac
-# lib32-gmp
-# lib32-gnutls
-# lib32-libasyncns
-# lib32-libcups
-# lib32-libjpeg6-turbo
-# lib32-libltdl
-# lib32-libogg
-# lib32-libpng12
-# lib32-libpulse
-# lib32-libsndfile
-# lib32-libvorbis
-# lib32-libxcomposite
-# lib32-libxinerama
-# lib32-libxslt
-# lib32-libxtst
-# lib32-mpg123
-# lib32-nettle
-# lib32-nss-mdns
-# lib32-openal
-# lib32-opus
-# lib32-sdl12-compat
-# lib32-v4l-utils
-# sdl12-compat
-# lib32-giflib
+#Better wine support
+lib32-pipewire
+lib32-pipewire-jack
+lib32-lcms2
+lib32-libtiff
+lib32-libjpeg-turbo
+lib32-libxrandr
+lib32-fontconfig
+lib32-libxi
+lib32-faudio
+faudio
+lib32-sdl2
+lib32-gettext
+lib32-acl
+lib32-libsm
+lib32-libice
+lib32-libxcursor
+lib32-libxrender
+lib32-libpcap
+lib32-libnl
+lib32-glu
+lib32-flac
+lib32-gmp
+lib32-gnutls
+lib32-libasyncns
+lib32-libcups
+lib32-libjpeg6-turbo
+lib32-libltdl
+lib32-libogg
+lib32-libpng12
+lib32-libpulse
+lib32-libsndfile
+lib32-libvorbis
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxslt
+lib32-libxtst
+lib32-mpg123
+lib32-nettle
+lib32-nss-mdns
+lib32-openal
+lib32-opus
+lib32-sdl12-compat
+lib32-v4l-utils
+sdl12-compat
+lib32-giflib
 
 
 
 ## Optional dependencies for hplip
-# >extra python-pillow
-# >extra python-pip
-# >extra python-pyqt5
-# >extra python-reportlab
+>extra python-pillow
+>extra python-pip
+>extra python-pyqt5
+>extra python-reportlab
 
 ## Optional dependencies for print-manager
 python-pysmbc          # SMB browser support
@@ -353,7 +334,7 @@ sddm
 sddm-kcm
 
 ## Plasma5
-# bluedevil
+bluedevil
 kde-gtk-config
 kdeplasma-addons
 kgamma5
@@ -374,8 +355,8 @@ plasma-workspace
 >extra plasma-workspace-wallpapers
 powerdevil
 systemsettings
-# plasma-vault
-# cryfs
+plasma-vault
+cryfs
 
 ## Themes QT/GTK/SDDM
 sddm-breath-theme
@@ -384,26 +365,18 @@ illyria-wallpaper
 ## KDE Applications
 ark
 #>extra digikam
-clementine
 dolphin
 dolphin-plugins
 #>extra filelight
 kate
-gnome-calculator
 kfind
-# kdeconnect
-okular
+kdeconnect
 kdenetwork-filesharing
 khotkeys
 kio-extras
 konsole
 kwalletmanager
-gwenview
-# gparted
 #>extra print-manager
-spectacle
-smplayer
-smplayer-themes
 plasma5-applets-window-buttons
 plasma-simplemenu
 kvantum-qt5
@@ -429,19 +402,19 @@ qt5-imageformats  # support for tiff, webp, and more image formats
 kaccounts-providers
 
 ## Optional dependencies for kdeconnect
-# sshfs  # remote filesystem browser
+sshfs  # remote filesystem browser
 
 ## Optional dependencies for okular
 poppler-data  # encoding data to display PDF documents containing CJK characters
 
 ## Applications
-# dmidecode # for inxi -m output
+dmidecode # for inxi -m output
 htop
-# inxi
-# manjaro-application-utility
+inxi
+manjaro-application-utility
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
-# powertop
+powertop
 systemd-kcm
 
 
@@ -452,5 +425,5 @@ zensu
 kernel-alive
 
 ## Flatpak support
-# >extra xdg-desktop-portal
-# >extra xdg-desktop-portal-kde
+>extra xdg-desktop-portal
+>extra xdg-desktop-portal-kde

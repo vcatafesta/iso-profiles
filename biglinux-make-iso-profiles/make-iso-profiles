@@ -10,6 +10,8 @@ if [ -n "$(echo $@ | grep -s biglinux )" ];then
     profile=biglinux
 elif [ -n "$(echo $@ | grep -s xivastudio )" ];then
     profile=xivastudio
+elif [ -n "$(echo $@ | grep -s uai )" ];then
+    profile=uai
 fi
 makeisoprofilesdir=$workdir/$isoprofilesdir/community/$profile
 
