@@ -123,7 +123,6 @@ gimp
 timeshift
 grub-btrfs-timeshift
 grub-btrfs
-spice-vdagent-autostart-kde
 debtap-mod
 rpmtoarch
 biglinux-mime
@@ -168,6 +167,16 @@ auto-zram-and-swappiness
 sync-kde-and-gtk-places
 gtk3
 dbus-broker-enable
+
+#virtual-machines
+spice-vdagent-autostart-kde
+open-vm-tools
+qemu-guest-agent
+libdnet
+gdk-pixbuf-xlib
+uriparser
+libmspack
+xf86-input-vmmouse
 
 bigbashview
 bigcontrolcenter
