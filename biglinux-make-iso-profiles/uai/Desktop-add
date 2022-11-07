@@ -102,7 +102,7 @@ baobab
 web-installer-url-handler
 biglinux-config
 feh
-#auto-unlock-pacman-git
+auto-unlock-pacman-git
 big-mount-git
 biglinux-name
 big-first-boot
