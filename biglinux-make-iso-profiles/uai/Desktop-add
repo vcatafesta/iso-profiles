@@ -187,6 +187,7 @@ mx-idevice-mounter
 mtools
 fatresize
 thermald
+spectacle
 
 ## Network
 avahi
