@@ -63,7 +63,6 @@ qt5-translations
 timeshift
 grub-btrfs-timeshift
 grub-btrfs
-biglinux-mime
 vkd3d
 lib32-vkd3d
 network-manager-prefer-ipv4-dns
@@ -76,6 +75,7 @@ lib32-ocl-icd
 irqbalance
 biglinux-noise-reduction-pipewire
 bigocrpdf
+
 
 tesseract-data-por
 tesseract-data-eng
@@ -90,7 +90,6 @@ sync-kde-and-gtk-places
 dbus-broker-enable
 sane-airscan
 
-#virtual-machines
 spice-vdagent-autostart-kde
 open-vm-tools
 qemu-guest-agent
@@ -137,12 +136,8 @@ gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
 libcanberra
-#>multilib lib32-libcanberra
 libcanberra-pulse
-#>multilib lib32-libcanberra-pulse
 libdvdcss
-#manjaro-alsa
-#manjaro-pulse
 manjaro-pipewire
 pipewire-jack
 pipewire-jack-dropin
@@ -191,15 +186,7 @@ ttf-ubuntu-font-family
 pamac-gtk
 pamac-cli
 >extra pamac-flatpak-plugin
-#discover-snap
-#discover
-#packagekit-qt5
 >extra fwupd 
-#octopi
-#octopi-cachecleaner
-#octopi-repoeditor
-#octopi-notifier-frameworks
-#pamac-qt
 
 
 #Better wine support
