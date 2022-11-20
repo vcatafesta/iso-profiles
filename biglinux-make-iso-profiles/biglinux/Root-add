@@ -78,8 +78,11 @@ lib32-ocl-icd
 irqbalance
 biglinux-noise-reduction-pipewire
 bigocrpdf
+big-executable
+
 tesseract-data-por
 tesseract-data-eng
+tesseract-data-spa
 tts-biglinux
 rhvoice-voice-leticia-f123
 rhvoice-brazilian-portuguese-complementary-dict-biglinux
@@ -89,7 +92,7 @@ ds4-disable-led
 auto-zram-and-swappiness
 sync-kde-and-gtk-places
 dbus-broker-enable
-
+sane-airscan
 
 #virtual-machines
 spice-vdagent-autostart-kde
@@ -124,6 +127,8 @@ modemmanager
 openresolv
 openssh
 usb_modeswitch
+manjaro-settings-samba
+
 
 ## Libraries for Sound/Audio/Video
 alsa-firmware
@@ -286,3 +291,8 @@ kernel-alive
 
 ## Flatpak support
 >extra xdg-desktop-portal
+
+## Printer
+cups
+ipp-usb
+manjaro-printer

@@ -1,4 +1,4 @@
-sane-airscan
+
 helvum
 gsmartcontrol
 qt6-webengine
@@ -16,7 +16,6 @@ kwin-window-positioning-scripts
 plasma5-applet-tiledmenu-git
 plasma5-applets-resources-monitor
 simplescreenrecorder
-tesseract-data-spa
 kde-snap-assist
 
 ## BigLinux
@@ -34,9 +33,6 @@ nm-connection-editor
 #hardinfo
 kdialog
 system-config-printer
-cups
-ipp-usb
-manjaro-printer
 pavucontrol-qt
 tlpui
 kscreen
@@ -95,12 +91,10 @@ appmenu-gtk-module
 xsettingsd
 keditbookmarks
 plasma-appsmenu-biglinux
-big-executable
 mx-idevice-mounter
 
 ## Network
 #samba
-manjaro-settings-samba
 #ananicy-config-biglinux
 
 ## Libraries for Sound/Audio/Video
@@ -111,23 +105,6 @@ phonon-qt5-gstreamer
 
 ## Connect Packages
 kamera
-
-## Fonts
-ttf-dejavu
-cantarell-fonts        # Installed as gnome-themes-standard dependency
-noto-fonts               # default font
-#noto-fonts-cjk           # asian fonts - needed big package, ~76 mb compressed
-adobe-source-sans-pro-fonts
-adobe-source-han-sans-jp-fonts
-adobe-source-han-sans-kr-fonts
-adobe-source-han-sans-cn-fonts
->extra noto-fonts-emoji
-terminus-font
->extra ttf-inconsolata
->extra ttf-indic-otf
->extra ttf-liberation
->extra ttf-droid
-
 
 ## Package management
 pamac-tray-icon-plasma
