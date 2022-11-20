@@ -1,8 +1,6 @@
 grub-theme-biglinux
 bootsplash-theme-biglinux
 big-skel
-#manjaro-firmware
-
 
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
@@ -73,8 +71,6 @@ vulkan-swrast
 ocl-icd
 lib32-ocl-icd
 irqbalance
-biglinux-noise-reduction-pipewire
-bigocrpdf
 
 
 tesseract-data-por
