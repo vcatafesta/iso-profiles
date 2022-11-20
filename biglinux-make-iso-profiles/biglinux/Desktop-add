@@ -71,9 +71,12 @@ bluez-cups
 kdegraphics-mobipocket
 chmlib
 gtk3
+htop
 
 
+avahi
 bigcontrolcenter
+tts-biglinux
 plasmamenufork
 rootactions-servicemenu-biglinux
 biglinux-session-and-themes

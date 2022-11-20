@@ -83,7 +83,6 @@ big-executable
 tesseract-data-por
 tesseract-data-eng
 tesseract-data-spa
-tts-biglinux
 rhvoice-voice-leticia-f123
 rhvoice-brazilian-portuguese-complementary-dict-biglinux
 rhvoice-voice-evgeniy-eng
@@ -278,7 +277,6 @@ sshfs  # remote filesystem browser
 
 ## Applications
 dmidecode # for inxi -m output
-htop
 inxi
 powertop
 
