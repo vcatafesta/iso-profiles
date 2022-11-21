@@ -95,13 +95,7 @@ uriparser
 libmspack
 xf86-input-vmmouse
 
-compsize
-disable-fsync
-sysctl-network
-xf86-input-synaptics
-mtools
-fatresize
-thermald
+bigbashview
 
 ## Network
 avahi
