@@ -1,4 +1,115 @@
+grub-theme-biglinux
+bootsplash-theme-biglinux
+big-skel
+#manjaro-firmware
 
+
+>i686 archlinux32-keyring
+>multilib gcc-libs-multilib
+biglinux-updates-tweaks
+biglinux-improve-compatibility
+KERNEL-headers
+bash
+file
+filesystem
+findutils
+gawk
+gcc-libs
+gcc
+gettext
+glibc
+grep
+gzip
+iproute2
+iputils
+pacman
+pciutils
+procps-ng
+psmisc
+sed
+shadow
+tar
+tlp
+util-linux
+xz
+make
+pacutils
+aspell-pt
+biglinux-keyring
+biglinux-l18n
+cfs-zen-tweaks
+flatpak-xdg-utils
+hunspell-pt-br
+pulseaudio-alsa
+python-cssselect
+python-qtpy
+systemd-oomd-defaults
+uresourced
+xapian-core
+auto-rules-io
+force-upgrade
+game-devices-udev
+biglinux-apps-rename
+biglinux-wallpapers-and-icons
+auto-tweaks-browser
+auto-unlock-pacman-git
+big-mount-git
+biglinux-name
+big-first-boot
+bash-completion
+manjaro-tools-base
+hunspell-en_us
+qt5-translations
+timeshift
+grub-btrfs-timeshift
+grub-btrfs
+debtap-mod
+rpmtoarch
+biglinux-mime
+vkd3d
+lib32-vkd3d
+network-manager-prefer-ipv4-dns
+network-manager-disable-random-mac
+pacman-cleancache
+biglinux-meta-audio-config
+vulkan-swrast
+ocl-icd
+lib32-ocl-icd
+irqbalance
+biglinux-noise-reduction-pipewire
+bigocrpdf
+tesseract-data-por
+tesseract-data-eng
+tts-biglinux
+rhvoice-voice-leticia-f123
+rhvoice-brazilian-portuguese-complementary-dict-biglinux
+rhvoice-voice-evgeniy-eng
+retroarch-tweaks
+ds4-disable-led
+auto-zram-and-swappiness
+sync-kde-and-gtk-places
+dbus-broker-enable
+
+
+#virtual-machines
+spice-vdagent-autostart-kde
+open-vm-tools
+qemu-guest-agent
+libdnet
+gdk-pixbuf-xlib
+uriparser
+libmspack
+xf86-input-vmmouse
+
+bigbashview
+bigsudo
+compsize
+disable-fsync
+sysctl-network
+xf86-input-synaptics
+mtools
+fatresize
+thermald
 
 ## Network
 avahi
@@ -13,8 +124,6 @@ modemmanager
 openresolv
 openssh
 usb_modeswitch
-manjaro-settings-samba
-
 
 ## Libraries for Sound/Audio/Video
 alsa-firmware
@@ -27,8 +136,12 @@ gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
 libcanberra
+#>multilib lib32-libcanberra
 libcanberra-pulse
+#>multilib lib32-libcanberra-pulse
 libdvdcss
+#manjaro-alsa
+#manjaro-pulse
 manjaro-pipewire
 pipewire-jack
 pipewire-jack-dropin
@@ -77,7 +190,16 @@ ttf-ubuntu-font-family
 pamac-gtk
 pamac-cli
 >extra pamac-flatpak-plugin
+#discover-snap
+#discover
+#packagekit-qt5
 >extra fwupd 
+#octopi
+#octopi-cachecleaner
+#octopi-repoeditor
+#octopi-notifier-frameworks
+#pamac-qt
+manjaro-application-utility
 
 
 #Better wine support
@@ -151,6 +273,7 @@ sshfs  # remote filesystem browser
 
 ## Applications
 dmidecode # for inxi -m output
+htop
 inxi
 powertop
 
@@ -163,9 +286,3 @@ kernel-alive
 
 ## Flatpak support
 >extra xdg-desktop-portal
-
-## Printer
-cups
-ipp-usb
-manjaro-printer
-
