@@ -238,8 +238,8 @@ config-buildiso () {
     ## changes in /usr/lib/manjaro-tools/  END ##
 
     
-    # Add root-overlay
-    sudo sed -i '/copy_overlay "${profile_dir}\/root-overlay" "${path}"/a [[ -e ${profile_dir}\/root-overlay ]] && copy_overlay "${profile_dir}\/root-overlay" "${path}"' /usr/lib/manjaro-tools/util-iso.sh
+#     # Add root-overlay
+#     sudo sed -i '/copy_overlay "${profile_dir}\/root-overlay" "${path}"/a [[ -e ${profile_dir}\/root-overlay ]] && copy_overlay "${profile_dir}\/root-overlay" "${path}"' /usr/lib/manjaro-tools/util-iso.sh
     
 #     sudo sed -i 's|pacman -S|pacman --overwrite \\* -S|' /usr/lib/manjaro-tools/util-pkg-chroot.sh
 #     sudo sed -i 's|pacman -v -S|pacman --overwrite \\* -v -S|' /usr/lib/manjaro-tools/util-iso-image.sh
