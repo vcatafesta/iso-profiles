@@ -20,14 +20,13 @@ tesseract-data-spa
 kde-snap-assist
 
 ## BigLinux
+spice-vdagent-autostart-kde
 system-config-printer-jobs
 appimagelauncher
 gamemode
 lib32-gamemode
 qbittorrent
 big-preload
-big-store
-biglinux-webapps
 plasmashell-fix-git
 kfind
 nm-connection-editor
@@ -56,7 +55,7 @@ biglinux-config
 feh
 materiav2-gtk-theme
 #grub-disable-zstd-in-legacy
-gimp
+#gimp
 lutris
 open-in-lutris-git
 jre11-openjdk
@@ -75,6 +74,10 @@ bluez-cups
 kdegraphics-mobipocket
 chmlib
 gtk3
+big-skel
+bigsudo
+manjaro-application-utility
+
 
 
 bigcontrolcenter
@@ -86,9 +89,9 @@ sddm-theme-biglinux
 sddm-xorg-failsafe
 libreoffice-fresh
 libreoffice-fresh-pt-br
-firefox
+#firefox
 brave-browser
-firefox-i18n-pt-br
+#firefox-i18n-pt-br
 #gimp-plugin-gmic
 #gimp
 appmenu-gtk-module
@@ -111,22 +114,6 @@ phonon-qt5-gstreamer
 
 ## Connect Packages
 kamera
-
-## Fonts
-ttf-dejavu
-cantarell-fonts        # Installed as gnome-themes-standard dependency
-noto-fonts               # default font
-#noto-fonts-cjk           # asian fonts - needed big package, ~76 mb compressed
-adobe-source-sans-pro-fonts
-adobe-source-han-sans-jp-fonts
-adobe-source-han-sans-kr-fonts
-adobe-source-han-sans-cn-fonts
->extra noto-fonts-emoji
-terminus-font
->extra ttf-inconsolata
->extra ttf-indic-otf
->extra ttf-liberation
->extra ttf-droid
 
 
 ## Package management
@@ -155,8 +142,6 @@ plasma-desktop
 plasma-nm
 plasma-pa
 plasma-workspace
->extra plasma-workspace-wallpapers
-powerdevil
 systemsettings
 plasma-vault
 cryfs
@@ -222,4 +207,7 @@ systemd-kcm
 
 
 ## Flatpak support
->extra xdg-desktop-portal-kde
+xdg-desktop-portal-kde
+xdg-utils
+pamac-flatpak-plugin
+

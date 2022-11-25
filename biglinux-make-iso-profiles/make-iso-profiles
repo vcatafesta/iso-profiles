@@ -40,6 +40,7 @@ make-iso-profiles () {
     cp $workdir/$profile/user-repos.conf  $makeisoprofilesdir
     #dirs
     cp -r $workdir/$profile/desktop-overlay/  $makeisoprofilesdir
+    cp -r $workdir/$profile/root-overlay/  $makeisoprofilesdir
     cp -r $workdir/$profile/live-overlay/  $makeisoprofilesdir
 
     # Remove Mhwd
@@ -142,6 +143,10 @@ lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
 #         SigLevel = PackageRequired
 #         Server = https://repo.biglinux.com.br/testing/$arch' | sudo tee -a $makeisoprofilesdir/user-repos.conf
     fi
+
+#join desktop in root and clean desktop
+# cat $makeisoprofilesdir/Packages-Desktop >> $makeisoprofilesdir/Packages-Root
+# echo 'biglinux-apps-rename' > $makeisoprofilesdir/Packages-Desktop
 }
     
 #move iso-files to root dir
@@ -223,6 +228,7 @@ config-buildiso () {
             fi
 
             }' | sudo tee -a /usr/lib/manjaro-tools/util-iso-image.sh
+
     fi
     
     #disable kernel version verification
@@ -232,7 +238,12 @@ config-buildiso () {
     ## changes in /usr/lib/manjaro-tools/  END ##
 
     
+    # Add root-overlay
+    sudo sed -i '/copy_overlay "${profile_dir}\/root-overlay" "${path}"/a [[ -e ${profile_dir}\/root-overlay ]] && copy_overlay "${profile_dir}\/root-overlay" "${path}"' /usr/lib/manjaro-tools/util-iso.sh
     
+#     sudo sed -i 's|pacman -S|pacman --overwrite \\* -S|' /usr/lib/manjaro-tools/util-pkg-chroot.sh
+#     sudo sed -i 's|pacman -v -S|pacman --overwrite \\* -v -S|' /usr/lib/manjaro-tools/util-iso-image.sh
+
     
     ## changes in /usr/share/manjaro-tools/  START ##
     #bootsplash
@@ -270,6 +281,8 @@ config-buildiso () {
     if [ -n "$(echo $extrarepo | grep -s testing)" ];then
         sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
     fi
+        sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
+
 }
 
 #Make backup
@@ -314,7 +327,7 @@ Commands:
 # usage
 if [ -z "$1" ]; then
     usage
-elif [ -z "$(echo $@ | egrep "makeprofiles|ci/cd|buildlocal")" ];then
+elif [ -z "$(echo $@ | grep -E "makeprofiles|ci/cd|buildlocal")" ];then
     usage
 fi
 
@@ -328,7 +341,7 @@ elif [ -n "$(echo $@ | grep -s buildlocal )" -a -n "$2" -a -n "$3" -a -n "$4" ];
     make-iso-profiles
     copy
     config-buildiso
-    buildiso -f -p $2 -b $3 -k ${4}
+    buildiso -p $2 -b $3 -k ${4}
     restore-backup
 elif [ -n "$(echo $@ | grep -s ci/cd )" ];then
     make-iso-profiles

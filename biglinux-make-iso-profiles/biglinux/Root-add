@@ -1,6 +1,5 @@
 grub-theme-biglinux
 bootsplash-theme-biglinux
-big-skel
 #manjaro-firmware
 
 
@@ -38,7 +37,7 @@ aspell-pt
 biglinux-keyring
 biglinux-l18n
 cfs-zen-tweaks
-flatpak-xdg-utils
+#flatpak-xdg-utils
 hunspell-pt-br
 pulseaudio-alsa
 python-cssselect
@@ -76,23 +75,13 @@ vulkan-swrast
 ocl-icd
 lib32-ocl-icd
 irqbalance
-biglinux-noise-reduction-pipewire
-bigocrpdf
-tesseract-data-por
-tesseract-data-eng
-tts-biglinux
-rhvoice-voice-leticia-f123
-rhvoice-brazilian-portuguese-complementary-dict-biglinux
-rhvoice-voice-evgeniy-eng
 retroarch-tweaks
 ds4-disable-led
 auto-zram-and-swappiness
-sync-kde-and-gtk-places
 dbus-broker-enable
 
 
 #virtual-machines
-spice-vdagent-autostart-kde
 open-vm-tools
 qemu-guest-agent
 libdnet
@@ -101,8 +90,6 @@ uriparser
 libmspack
 xf86-input-vmmouse
 
-bigbashview
-bigsudo
 compsize
 disable-fsync
 sysctl-network
@@ -147,6 +134,7 @@ pipewire-jack
 pipewire-jack-dropin
 pipewire-biglinux-config-git
 wireplumber
+breeze-icons
 
 ## Connect Packages
 android-tools
@@ -189,7 +177,7 @@ ttf-ubuntu-font-family
 ## Package management
 pamac-gtk
 pamac-cli
->extra pamac-flatpak-plugin
+#pamac-flatpak-plugin
 #discover-snap
 #discover
 #packagekit-qt5
@@ -199,7 +187,6 @@ pamac-cli
 #octopi-repoeditor
 #octopi-notifier-frameworks
 #pamac-qt
-manjaro-application-utility
 
 
 #Better wine support
@@ -250,8 +237,6 @@ sdl12-compat
 lib32-giflib
 
 
-
-
 ## Optional dependencies for hplip
 >extra python-pillow
 >extra python-pip
@@ -280,9 +265,21 @@ powertop
 
 ## Desktop Utils
 perl-file-mimeinfo
-xdg-utils
 zensu
 kernel-alive
 
-## Flatpak support
->extra xdg-desktop-portal
+## Imported from live
+virtualbox-guest-utils
+
+big-store
+biglinux-webapps
+bigbashview
+biglinux-noise-reduction-pipewire
+bigocrpdf
+tesseract-data-por
+tesseract-data-eng
+tts-biglinux
+rhvoice-voice-leticia-f123
+rhvoice-brazilian-portuguese-complementary-dict-biglinux
+rhvoice-voice-evgeniy-eng
+sync-kde-and-gtk-places
