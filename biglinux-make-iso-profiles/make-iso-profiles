@@ -274,8 +274,8 @@ config-buildiso () {
     ## changes in /usr/share/manjaro-tools/  END ##
     
     #select folder with isoprofiles
-#     mkdir -p ~/.config/manjaro-tools/
-#     echo "run_dir=$workdir/$isoprofilesdir" > ~/.config/manjaro-tools/iso-profiles.conf
+    mkdir -p ~/.config/manjaro-tools/
+    echo "run_dir=$workdir/$isoprofilesdir" > ~/.config/manjaro-tools/iso-profiles.conf
     
     # # Faster compression
     if [ -n "$(echo $extrarepo | grep -s testing)" ];then
