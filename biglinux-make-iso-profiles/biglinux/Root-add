@@ -77,7 +77,8 @@ lib32-ocl-icd
 irqbalance
 retroarch-tweaks
 ds4-disable-led
-auto-zram-and-swappiness
+#auto-zram-and-swappiness
+biglinux-systemd-swap
 dbus-broker-enable
 
 

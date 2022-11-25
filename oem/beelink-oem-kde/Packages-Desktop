@@ -74,7 +74,7 @@ terminus-font
 >extra ttf-droid
 
 ## Games
->x86_64 >extra steam-manjaro
+>x86_64 >extra steam
 >x86_64 >extra steamos-compositor-plus
 
 ## Package management
@@ -225,7 +225,6 @@ telegram-desktop
 vivaldi
 vivaldi-ffmpeg-codecs
 yakuake
-matray
 
 ## Optional dependencis for cantata
 >extra mpd       # playback
@@ -236,7 +235,7 @@ matray
 #>extra jdk8-openjdk
 
 ## Documentation
-manjaro-documentation-en
+#manjaro-documentation-en
 
 ## Settings packages
 manjaro-browser-settings
@@ -277,8 +276,8 @@ perl-file-mimeinfo
 xdg-utils
 zensu
 >extra timeshift
-extra kernel-alive
-gnome-firmware
+#>extra kernel-alive
+#gnome-firmware
 
 ## Misc
 manjaro-hotfixes

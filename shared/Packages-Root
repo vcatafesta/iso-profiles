@@ -62,13 +62,14 @@ less
 logrotate
 lvm2
 man-db
-manjaro-firmware
+#manjaro-firmware
 manjaro-release
 manjaro-system
 manjaro-zsh-config
 man-pages
 mdadm
 memtest86+
+memtest86+-efi
 mhwd
 mhwd-db
 mkinitcpio-openswap
