@@ -175,7 +175,7 @@ smplayer-themes
 plasma5-applets-window-buttons
 plasma-simplemenu
 kvantum-qt5
-
+powerdevil
 
 ## Optional dependency for digikam
 #>extra kipi-plugins  # export to various online services
