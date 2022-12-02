@@ -80,7 +80,7 @@ ds4-disable-led
 #auto-zram-and-swappiness
 biglinux-systemd-swap
 dbus-broker-enable
-
+biglinux-neofetch
 
 #virtual-machines
 open-vm-tools
