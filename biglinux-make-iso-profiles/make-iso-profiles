@@ -137,15 +137,19 @@ lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
         
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*/\[biglinux-testing\]/;p;x;}' $makeisoprofilesdir/user-repos.conf
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*/\[biglinux-testing\]/;p;x;}' $makeisoprofilesdir/live-overlay/etc/pacman.conf
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*/\[biglinux-testing\]/;p;x;}' $makeisoprofilesdir/root-overlay/etc/pacman.conf
         
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*/SigLevel = PackageRequired/;p;x;}' $makeisoprofilesdir/user-repos.conf
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*/SigLevel = PackageRequired/;p;x;}' $makeisoprofilesdir/live-overlay/etc/pacman.conf
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*/SigLevel = PackageRequired/;p;x;}' $makeisoprofilesdir/root-overlay/etc/pacman.conf
         
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*/Server = https:\/\/repo.biglinux.com.br\/testing\/$arch/;p;x;}' $makeisoprofilesdir/user-repos.conf
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*/Server = https:\/\/repo.biglinux.com.br\/testing\/$arch/;p;x;}' $makeisoprofilesdir/live-overlay/etc/pacman.conf
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*/Server = https:\/\/repo.biglinux.com.br\/testing\/$arch/;p;x;}' $makeisoprofilesdir/root-overlay/etc/pacman.conf
         
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*//;p;x;}' $makeisoprofilesdir/user-repos.conf
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*//;p;x;}' $makeisoprofilesdir/live-overlay/etc/pacman.conf
+        sudo sed -i '/\[biglinux-stable\]/{h;s/.*//;p;x;}' $makeisoprofilesdir/root-overlay/etc/pacman.conf
     
 #         echo '
 #         [biglinux-testing]
