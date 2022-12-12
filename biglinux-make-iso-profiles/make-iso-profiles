@@ -151,7 +151,7 @@ lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*//;p;x;}' $makeisoprofilesdir/live-overlay/etc/pacman.conf
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*//;p;x;}' $makeisoprofilesdir/root-overlay/etc/pacman.conf
         
-        echo anti-ruscher | sudo tee -a $makeisoprofilesdir/Root-add
+        sudo echo anti-ruscher | sudo tee -a $makeisoprofilesdir/Root-add
     fi
 
 #join desktop in root and clean desktop
