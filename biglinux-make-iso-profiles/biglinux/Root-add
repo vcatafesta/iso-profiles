@@ -271,6 +271,7 @@ kernel-alive
 
 ## Imported from live
 virtualbox-guest-utils
+spice-vdagent-autostart-kde
 
 big-store
 biglinux-webapps
