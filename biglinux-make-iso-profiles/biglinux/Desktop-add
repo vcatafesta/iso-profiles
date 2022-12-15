@@ -55,7 +55,7 @@ biglinux-config
 feh
 materiav2-gtk-theme
 #grub-disable-zstd-in-legacy
-#gimp
+gimp
 lutris
 open-in-lutris-git
 jre11-openjdk
