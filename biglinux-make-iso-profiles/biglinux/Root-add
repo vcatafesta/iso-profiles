@@ -1,7 +1,8 @@
 grub-theme-biglinux
 bootsplash-theme-biglinux
 #manjaro-firmware
-
+manjaro-printer
+splix
 
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
@@ -288,3 +289,31 @@ sync-kde-and-gtk-places
 
 
 xdg-user-dirs
+
+
+helvum
+appimagelauncher
+cups
+tlpui
+ufw
+gufw
+jre11-openjdk
+pamac-updates-menu
+gnome-keyring
+bluez-plugins
+bluez-cups
+chmlib
+bigsudo
+manjaro-application-utility
+appmenu-gtk-module
+manjaro-settings-samba
+xdg-utils
+system-config-printer
+ipp-usb
+system-config-printer-jobs
+tesseract-data-spa
+jamesdsp
+sane-airscan
+web-installer-url-handler
+
+
