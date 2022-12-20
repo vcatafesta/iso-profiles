@@ -152,6 +152,15 @@ lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
         sudo sed -i '/\[biglinux-stable\]/{h;s/.*//;p;x;}' $makeisoprofilesdir/root-overlay/etc/pacman.conf
         
         echo anti-ruscher | sudo tee -a $makeisoprofilesdir/Packages-Root
+        
+        #echo biglinux-calamares-gnome | sudo tee -a $makeisoprofilesdir/Packages-Live
+        #echo biglinux-calamares-cutefish | sudo tee -a $makeisoprofilesdir/Packages-Live
+        #echo biglinux-calamares-lxqt | sudo tee -a $makeisoprofilesdir/Packages-Live
+        #echo biglinux-calamares-base | sudo tee -a $makeisoprofilesdir/Packages-Live
+        #echo biglinux-calamares-dde | sudo tee -a $makeisoprofilesdir/Packages-Live
+        #echo biglinux-calamares-wmaker | sudo tee -a $makeisoprofilesdir/Packages-Live
+        #echo  | sudo tee -a $makeisoprofilesdir/Packages-Live
+        
     fi
 
 #join desktop in root and clean desktop
