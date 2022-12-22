@@ -4,6 +4,7 @@ bootsplash-theme-biglinux
 manjaro-printer
 splix
 biglinux-vaapi
+mhwd-biglinux
 
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
