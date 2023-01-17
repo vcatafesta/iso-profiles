@@ -84,7 +84,7 @@ lib32-vkd3d
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 pacman-cleancache
-biglinux-meta-audio-config
+#biglinux-meta-audio-config
 vulkan-swrast
 ocl-icd
 lib32-ocl-icd
