@@ -67,7 +67,7 @@ biglinux-wallpapers-and-icons
 auto-tweaks-browser
 auto-unlock-pacman-git
 big-mount-git
-biglinux-name
+#biglinux-name
 big-first-boot
 bash-completion
 manjaro-tools-base
