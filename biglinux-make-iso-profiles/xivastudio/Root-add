@@ -147,7 +147,7 @@ libdvdcss
 manjaro-pipewire
 pipewire-jack
 pipewire-jack-dropin
-pipewire-biglinux-config-git
+#pipewire-biglinux-config-git
 wireplumber
 breeze-icons
 
