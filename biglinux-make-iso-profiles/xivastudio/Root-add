@@ -1,21 +1,21 @@
 grub-theme-biglinux
 grub-theme-xivastudio
 bootsplash-theme-xivastudio
-xivastudio-meta-audio-config
 
-
-##manjaro-firmware
-#nouveau-fw
-#b43-firmware
-##b43-firmware-classic
-#wd719x-firmware
-#aic94xx-firmware
-#bcm20702a1-firmware
-
-
-grub-theme-biglinux
 #manjaro-firmware
+manjaro-printer
+splix
+biglinux-vaapi
+mhwd-biglinux
 
+#xivastudio
+qpwgraph
+xivastudio-desktop
+pipewire-config
+xivastudio-name
+xivastudio-welcome
+xivastudio-session-and-themes
+xivastudio-meta-audio-config
 
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
@@ -67,6 +67,7 @@ biglinux-wallpapers-and-icons
 auto-tweaks-browser
 auto-unlock-pacman-git
 big-mount-git
+biglinux-name
 big-first-boot
 bash-completion
 manjaro-tools-base
@@ -83,15 +84,17 @@ lib32-vkd3d
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 pacman-cleancache
+biglinux-meta-audio-config
 vulkan-swrast
 ocl-icd
 lib32-ocl-icd
 irqbalance
 retroarch-tweaks
 ds4-disable-led
-auto-zram-and-swappiness
+#auto-zram-and-swappiness
+biglinux-systemd-swap
 dbus-broker-enable
-
+biglinux-neofetch
 
 #virtual-machines
 open-vm-tools
@@ -144,6 +147,7 @@ libdvdcss
 manjaro-pipewire
 pipewire-jack
 pipewire-jack-dropin
+pipewire-biglinux-config-git
 wireplumber
 breeze-icons
 
@@ -281,6 +285,7 @@ kernel-alive
 
 ## Imported from live
 virtualbox-guest-utils
+spice-vdagent-autostart-kde
 
 big-store
 biglinux-webapps
@@ -295,4 +300,33 @@ rhvoice-brazilian-portuguese-complementary-dict-biglinux
 rhvoice-voice-evgeniy-eng
 sync-kde-and-gtk-places
 
+
 xdg-user-dirs
+
+
+helvum
+appimagelauncher
+cups
+tlpui
+ufw
+gufw
+jre11-openjdk
+pamac-updates-menu
+gnome-keyring
+bluez-plugins
+bluez-cups
+chmlib
+bigsudo
+manjaro-application-utility
+appmenu-gtk-module
+manjaro-settings-samba
+xdg-utils
+system-config-printer
+ipp-usb
+system-config-printer-jobs
+tesseract-data-spa
+jamesdsp
+sane-airscan
+web-installer-url-handler
+
+
