@@ -271,6 +271,7 @@ powertop
 perl-file-mimeinfo
 zensu
 kernel-alive
+libappindicator-gtk3
 
 ## Imported from live
 virtualbox-guest-utils
