@@ -12,6 +12,8 @@ elif [ -n "$(echo $@ | grep -s xivastudio )" ];then
     profile=xivastudio
 elif [ -n "$(echo $@ | grep -s uai )" ];then
     profile=uai
+elif [ -n "$(echo $@ | grep -s small )" ];then
+    profile=big-small
 fi
 makeisoprofilesdir=$workdir/$isoprofilesdir/community/$profile
 
