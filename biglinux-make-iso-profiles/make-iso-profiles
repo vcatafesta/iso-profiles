@@ -164,6 +164,10 @@ lib32-mesa-tkg-git' >> $makeisoprofilesdir/Packages-Root
         #echo  | sudo tee -a $makeisoprofilesdir/Packages-Live
         
     fi
+    
+#     if [ -n "$(echo $@ | grep -s small )" ];then
+#         
+#     fi
 
 #join desktop in root and clean desktop
 # cat $makeisoprofilesdir/Packages-Desktop >> $makeisoprofilesdir/Packages-Root
