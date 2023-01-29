@@ -110,6 +110,11 @@ make-iso-profiles () {
         echo "ERROR"
         exit 1
     fi
+    
+    #add kernel-latest
+    if [ -n "$(echo $kernel | grep [0-9] )" ]; then
+        echo "linux-latest" >> $makeisoprofilesdir/Packages-Root
+    fi
 
     # Add some things from Packages-Desktop
     sed -n '/## Printing/,/^$/p'  $workdir/$isoprofilesdir/manjaro/kde/Packages-Desktop  >>  $makeisoprofilesdir/Packages-Desktop
