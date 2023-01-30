@@ -1,9 +1,5 @@
-gsmartcontrol
-qt6-webengine
 kwin-scripts-virtual-desktops-only-on-primary
-akonadi-contacts
 guvcview
-jdownloader2
 kalarm
 kmines
 kpat
@@ -21,12 +17,10 @@ qbittorrent
 big-preload
 plasmashell-fix-git
 kfind
-nm-connection-editor
 #hardinfo
 kdialog
 pavucontrol-qt
 kscreen
-lxqt-config
 kcm-wacomtablet
 plasma-thunderbolt
 kio-gdrive
@@ -37,17 +31,14 @@ filelight
 skanpage
 biglinux-config
 feh
-materiav2-gtk-theme
-#grub-disable-zstd-in-legacy
-#gimp
 #lutris
-open-in-lutris-git
+#open-in-lutris-git
+#grub-disable-zstd-in-legacy
 biglinux-changes-to-plasma-git
 #steam
 kde-service-menu-reimage
 kde-servicemenus-officeconverter
 mystiq
-gnome-sound-recorder
 rustdesk-bin
 kde-color-folder
 kdegraphics-mobipocket
@@ -61,10 +52,10 @@ plasmamenufork
 rootactions-servicemenu-biglinux
 biglinux-session-and-themes
 biglinux-themes-gui
-sddm-theme-biglinux
 sddm-xorg-failsafe
 libreoffice-fresh
 libreoffice-fresh-pt-br
+#onlyoffice-desktopeditors
 #firefox
 brave-browser
 #firefox-i18n-pt-br
@@ -121,13 +112,13 @@ plasma-vault
 cryfs
 
 ## Themes QT/GTK/SDDM
-sddm-breath-theme
-illyria-wallpaper
+#sddm-breath-theme
+#illyria-wallpaper
 
 ## KDE Applications
 ark
 #>extra digikam
-clementine
+#clementine
 dolphin
 dolphin-plugins
 #>extra filelight
@@ -145,8 +136,9 @@ gwenview
 gparted
 #>extra print-manager
 spectacle
-smplayer
-smplayer-themes
+#smplayer
+#smplayer-themes
+vlc-luajit
 plasma5-applets-window-buttons
 plasma-simplemenu
 kvantum-qt5
@@ -159,7 +151,6 @@ kvantum-qt5
 ## Optional dependencies for dolphin
 kdegraphics-thumbnailers  # PDF and PS thumbnails
 ffmpegthumbs              # video thumbnails
-ruby                      # installing new service menus with GHNS
 
 ## Optional dependencies for gwenview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
@@ -168,10 +159,8 @@ qt5-imageformats  # support for tiff, webp, and more image formats
 ## Optional dependencies for kaccounts-integration
 kaccounts-providers
 
-
 ## Optional dependencies for okular
 poppler-data  # encoding data to display PDF documents containing CJK characters
-
 
 ## Applications
 manjaro-application-utility
@@ -183,3 +172,4 @@ systemd-kcm
 ## Flatpak support
 xdg-desktop-portal-kde
 pamac-flatpak-plugin
+

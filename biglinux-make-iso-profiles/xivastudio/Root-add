@@ -49,6 +49,7 @@ make
 pacutils
 aspell-pt
 biglinux-keyring
+biglinux-key
 biglinux-l18n
 cfs-zen-tweaks
 #flatpak-xdg-utils
@@ -256,7 +257,7 @@ lib32-giflib
 >extra python-pillow
 >extra python-pip
 >extra python-pyqt5
->extra python-reportlab
+#>extra python-reportlab
 
 ## Optional dependencies for print-manager
 python-pysmbc          # SMB browser support
@@ -311,7 +312,7 @@ cups
 tlpui
 ufw
 gufw
-jre11-openjdk
+#jre11-openjdk
 pamac-updates-menu
 gnome-keyring
 bluez-plugins
