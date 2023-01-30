@@ -431,7 +431,7 @@ systemd-kcm
 perl-file-mimeinfo
 xdg-utils
 zensu
-kernel-alive
+#kernel-alive
 
 ## Flatpak support
 >extra xdg-desktop-portal

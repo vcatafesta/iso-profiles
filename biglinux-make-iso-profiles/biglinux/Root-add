@@ -271,7 +271,7 @@ powertop
 ## Desktop Utils
 perl-file-mimeinfo
 zensu
-kernel-alive
+#kernel-alive
 libappindicator-gtk3
 
 ## Imported from live

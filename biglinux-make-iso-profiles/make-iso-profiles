@@ -111,10 +111,15 @@ make-iso-profiles () {
         exit 1
     fi
     
-    #add kernel-latest
-    if [ -n "$(echo $kernel | grep [0-9] )" ]; then
-        echo "linux-latest" >> $makeisoprofilesdir/Packages-Root
-    fi
+#     #add kernel-latest
+#     #se só tiver 2 numeros adicionar 0 ao final da linha
+#     if [ "$(echo $kernel | sed "s/[a-z]//g" | wc -m)" -le "3" ]; then
+#         kernelVer=$(echo $kernel | sed "s/[a-z]//g")
+#         kernelVer+=0
+#     fi
+#     if [ "$kernelVer" -gt "600" ];then
+#         echo "linux-latest" >> $makeisoprofilesdir/Packages-Root
+#     fi
 
     # Add some things from Packages-Desktop
     sed -n '/## Printing/,/^$/p'  $workdir/$isoprofilesdir/manjaro/kde/Packages-Desktop  >>  $makeisoprofilesdir/Packages-Desktop
