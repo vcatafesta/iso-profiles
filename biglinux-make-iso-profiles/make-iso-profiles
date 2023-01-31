@@ -49,6 +49,7 @@ make-iso-profiles () {
     git clone https://github.com/biglinux/biglinux-key.git
     mkdir -p $makeisoprofilesdir/live-overlay/etc/pacman.d/gnupg/
     cp -r biglinux-key/usr/share/pacman/keyrings/* $makeisoprofilesdir/live-overlay/etc/pacman.d/gnupg/
+    cp -r biglinux-key/usr/share/pacman/keyrings/* $makeisoprofilesdir/root-overlay/etc/pacman.d/gnupg/
     rm -r biglinux-key
 
     # Remove Mhwd
