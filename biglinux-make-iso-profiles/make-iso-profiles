@@ -314,7 +314,7 @@ config-buildiso () {
     
     # # Faster compression
     if [ -n "$(echo $extrarepo | grep -s testing)" ];then
-        sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
+        #sudo sed -i 's|-Xcompression-level 20|-Xcompression-level 6|g' /usr/lib/manjaro-tools/util-iso.sh
         sudo sed -i 's|256K|1024K|g' /usr/lib/manjaro-tools/util-iso.sh
     fi
 }
