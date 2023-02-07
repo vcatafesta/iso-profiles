@@ -49,7 +49,6 @@ make
 pacutils
 aspell-pt
 biglinux-keyring
-biglinux-key
 biglinux-l18n
 cfs-zen-tweaks
 #flatpak-xdg-utils
