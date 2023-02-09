@@ -260,6 +260,8 @@ lib32-giflib
 
 ## Optional dependencies for print-manager
 python-pysmbc          # SMB browser support
+system-config-printer
+system-config-printer-jobs
 
 
 ## Optional dependencies for ark

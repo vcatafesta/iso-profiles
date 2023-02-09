@@ -136,8 +136,6 @@ kwalletmanager
 gwenview
 gparted
 #>extra print-manager
-system-config-printer
-system-config-printer-jobs
 spectacle
 #smplayer
 #smplayer-themes
