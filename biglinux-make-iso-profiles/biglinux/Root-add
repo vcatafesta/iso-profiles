@@ -45,7 +45,7 @@ hunspell-pt-br
 pulseaudio-alsa
 python-cssselect
 python-qtpy
-systemd-oomd-defaults
+#systemd-oomd-defaults
 uresourced
 xapian-core
 auto-rules-io
