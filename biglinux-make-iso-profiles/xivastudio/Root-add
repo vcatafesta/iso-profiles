@@ -50,7 +50,7 @@ pacutils
 aspell-pt
 biglinux-keyring
 biglinux-l18n
-cfs-zen-tweaks
+#cfs-zen-tweaks
 #flatpak-xdg-utils
 hunspell-pt-br
 pulseaudio-alsa
