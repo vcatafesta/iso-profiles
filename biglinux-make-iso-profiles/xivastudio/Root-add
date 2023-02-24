@@ -95,6 +95,7 @@ ds4-disable-led
 biglinux-systemd-swap
 dbus-broker-enable
 biglinux-neofetch
+x86_energy_perf_policy
 
 #virtual-machines
 open-vm-tools
