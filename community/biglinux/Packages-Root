@@ -27,7 +27,6 @@ util-linux
 xz
 
 # Manjaro
->multilib gcc-libs-multilib
 acpi
 acpid
 amd-ucode
@@ -36,7 +35,6 @@ btrfs-progs
 bzip2
 coreutils
 cpupower
-crda
 cronie
 cryptsetup
 device-mapper
@@ -84,13 +82,16 @@ usbutils
 vi
 wget
 which
+wireless-regdb
 wpa_supplicant
 xfsprogs
-
 grub-theme-biglinux
 bootsplash-theme-biglinux
 #manjaro-firmware
-
+manjaro-printer
+splix
+biglinux-vaapi
+mhwd-biglinux
 
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
@@ -125,13 +126,13 @@ pacutils
 aspell-pt
 biglinux-keyring
 biglinux-l18n
-cfs-zen-tweaks
+#cfs-zen-tweaks
 #flatpak-xdg-utils
 hunspell-pt-br
 pulseaudio-alsa
 python-cssselect
 python-qtpy
-systemd-oomd-defaults
+#systemd-oomd-defaults
 uresourced
 xapian-core
 auto-rules-io
@@ -166,9 +167,11 @@ lib32-ocl-icd
 irqbalance
 retroarch-tweaks
 ds4-disable-led
-auto-zram-and-swappiness
+#auto-zram-and-swappiness
+biglinux-systemd-swap
 dbus-broker-enable
-
+biglinux-neofetch
+x86_energy_perf_policy
 
 #virtual-machines
 open-vm-tools
@@ -330,10 +333,12 @@ lib32-giflib
 >extra python-pillow
 >extra python-pip
 >extra python-pyqt5
->extra python-reportlab
+#>extra python-reportlab
 
 ## Optional dependencies for print-manager
 python-pysmbc          # SMB browser support
+system-config-printer
+system-config-printer-jobs
 
 
 ## Optional dependencies for ark
@@ -355,10 +360,12 @@ powertop
 ## Desktop Utils
 perl-file-mimeinfo
 zensu
-kernel-alive
+#kernel-alive
+libappindicator-gtk3
 
 ## Imported from live
 virtualbox-guest-utils
+spice-vdagent-autostart-kde
 
 big-store
 biglinux-webapps
@@ -372,3 +379,32 @@ rhvoice-voice-leticia-f123
 rhvoice-brazilian-portuguese-complementary-dict-biglinux
 rhvoice-voice-evgeniy-eng
 sync-kde-and-gtk-places
+
+
+xdg-user-dirs
+
+
+helvum
+appimagelauncher
+cups
+tlpui
+ufw
+gufw
+#jre11-openjdk
+pamac-updates-menu
+gnome-keyring
+bluez-plugins
+bluez-cups
+chmlib
+bigsudo
+manjaro-application-utility
+appmenu-gtk-module
+manjaro-settings-samba
+xdg-utils
+ipp-usb
+tesseract-data-spa
+#jamesdsp
+sane-airscan
+#web-installer-url-handler
+biglinux-zsh-config
+biglinux-metapackage

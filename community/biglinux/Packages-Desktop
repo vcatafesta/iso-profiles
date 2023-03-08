@@ -1,13 +1,5 @@
-sane-airscan
-helvum
-gsmartcontrol
-qt6-webengine
 kwin-scripts-virtual-desktops-only-on-primary
-akonadi-contacts
-brightness-controller-git
 guvcview
-jamesdsp
-jdownloader2
 kalarm
 kmines
 kpat
@@ -16,68 +8,45 @@ kwin-window-positioning-scripts
 plasma5-applet-tiledmenu-git
 plasma5-applets-resources-monitor
 simplescreenrecorder
-tesseract-data-spa
 kde-snap-assist
 
 ## BigLinux
-spice-vdagent-autostart-kde
-system-config-printer-jobs
-appimagelauncher
 gamemode
 lib32-gamemode
 qbittorrent
 big-preload
 plasmashell-fix-git
 kfind
-nm-connection-editor
 #hardinfo
 kdialog
-system-config-printer
-cups
-ipp-usb
-manjaro-printer
 pavucontrol-qt
-tlpui
 kscreen
-lxqt-config
 kcm-wacomtablet
 plasma-thunderbolt
 kio-gdrive
 mintstick
 #qt6-base
-ufw
-gufw
 #plasma-firewall
-baobab
+filelight
 skanpage
-web-installer-url-handler
 biglinux-config
 feh
-materiav2-gtk-theme
-#grub-disable-zstd-in-legacy
-#gimp
 lutris
 open-in-lutris-git
-jre11-openjdk
+#grub-disable-zstd-in-legacy
 biglinux-changes-to-plasma-git
 steam
 kde-service-menu-reimage
 kde-servicemenus-officeconverter
 mystiq
-gnome-sound-recorder
 rustdesk-bin
-pamac-updates-menu
-gnome-keyring
 kde-color-folder
-bluez-plugins
-bluez-cups
 kdegraphics-mobipocket
-chmlib
 gtk3
 big-skel
-bigsudo
-manjaro-application-utility
-
+powerdevil
+biglinux-plasmoids
+packagekit-qt5
 
 
 bigcontrolcenter
@@ -89,12 +58,12 @@ sddm-theme-biglinux
 sddm-xorg-failsafe
 libreoffice-fresh
 libreoffice-fresh-pt-br
+#onlyoffice-desktopeditors
 #firefox
 brave-browser
 #firefox-i18n-pt-br
 #gimp-plugin-gmic
 #gimp
-appmenu-gtk-module
 xsettingsd
 keditbookmarks
 plasma-appsmenu-biglinux
@@ -103,7 +72,6 @@ mx-idevice-mounter
 
 ## Network
 #samba
-manjaro-settings-samba
 #ananicy-config-biglinux
 
 ## Libraries for Sound/Audio/Video
@@ -147,13 +115,13 @@ plasma-vault
 cryfs
 
 ## Themes QT/GTK/SDDM
-sddm-breath-theme
-illyria-wallpaper
+#sddm-breath-theme
+#illyria-wallpaper
 
 ## KDE Applications
 ark
 #>extra digikam
-clementine
+#clementine
 dolphin
 dolphin-plugins
 #>extra filelight
@@ -171,8 +139,9 @@ gwenview
 gparted
 #>extra print-manager
 spectacle
-smplayer
-smplayer-themes
+#smplayer
+#smplayer-themes
+vlc-luajit
 plasma5-applets-window-buttons
 plasma-simplemenu
 kvantum-qt5
@@ -185,7 +154,6 @@ kvantum-qt5
 ## Optional dependencies for dolphin
 kdegraphics-thumbnailers  # PDF and PS thumbnails
 ffmpegthumbs              # video thumbnails
-ruby                      # installing new service menus with GHNS
 
 ## Optional dependencies for gwenview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
@@ -194,13 +162,11 @@ qt5-imageformats  # support for tiff, webp, and more image formats
 ## Optional dependencies for kaccounts-integration
 kaccounts-providers
 
-
 ## Optional dependencies for okular
 poppler-data  # encoding data to display PDF documents containing CJK characters
 
-
 ## Applications
-manjaro-application-utility
+#manjaro-application-utility
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 systemd-kcm
@@ -208,7 +174,6 @@ systemd-kcm
 
 ## Flatpak support
 xdg-desktop-portal-kde
-xdg-utils
 pamac-flatpak-plugin
 
 ## Printing
