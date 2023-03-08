@@ -4,6 +4,9 @@ name: Make Profiles
 on:
   workflow_dispatch:
   
+  schedule:
+    - cron:  '0 0 * * 5'
+  
   push:
     #branches: [ "master", "main", "*" ]
     branches: [ "*" ]
