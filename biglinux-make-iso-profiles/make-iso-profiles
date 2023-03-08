@@ -196,8 +196,12 @@ copy() {
     cp -a $isoprofilesdir/*  $rootdir
 }
 
+rsync-profile() {
+    rsync -Cravzp --delete $isoprofilesdir/community/$profile  $rootdir/community
+}
+
 config-buildiso () {
-    ## changes in /usr/lib/manjaro-tools/  START ##
+    
     if [ -z "$(grep BigLinux /usr/lib/manjaro-tools/util-iso-image.sh)" ];then
         # Remove last } in /usr/lib/manjaro-tools/util-iso-image.sh
         sudo sed -i ':a;$!{N;ba;};s/\(.*\)}/\1/' /usr/lib/manjaro-tools/util-iso-image.sh
@@ -270,7 +274,6 @@ config-buildiso () {
 #     if [ -n "$(echo $kernel | grep -s xanmod )" ]; then
         sudo sed -i '/${iso_kernel}/s/^/#/' /usr/lib/manjaro-tools/util-iso.sh
 #     fi
-    ## changes in /usr/lib/manjaro-tools/  END ##
 
     
     # Add root-overlay
@@ -280,33 +283,40 @@ config-buildiso () {
 #     sudo sed -i 's|pacman -v -S|pacman --overwrite \\* -v -S|' /usr/lib/manjaro-tools/util-iso-image.sh
 
     
-    ## changes in /usr/share/manjaro-tools/  START ##
     #bootsplash
     if [ -z "$(grep bootsplash-$profile /usr/share/manjaro-tools/mkinitcpio.conf)" ]; then
         sudo sed -i "s|keyboard keymap|keyboard keymap bootsplash-$profile|g" /usr/share/manjaro-tools/mkinitcpio.conf
     fi
         
     #add big repository
+    if [ -z "$(grep biglinux-keyring /usr/share/manjaro-tools/pacman-default.conf)" ];then
+        sudo sed -i '/SyncFirst/s/$/ biglinux-keyring/' /usr/share/manjaro-tools/pacman-default.conf
+    fi
     if [ -z "$(grep biglinux-update-stable /usr/share/manjaro-tools/pacman-default.conf)" ];then
         sudo sed -i '/\[core\]/{h;s/.*/\[biglinux-update-stable\]/;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
         sudo sed -i '/\[core\]/{h;s/.*/SigLevel = PackageRequired/;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
         sudo sed -i '/\[core\]/{h;s/.*/Server = https:\/\/repo.biglinux.com.br\/update-stable\/$arch/;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
         sudo sed -i '/\[core\]/{h;s/.*//;p;x;}' /usr/share/manjaro-tools/pacman-default.conf
     fi
-    if [ -z "$(grep biglinux-stable /usr/share/manjaro-tools/pacman-default.conf)" ];then
-        echo '
-    [biglinux-stable]
-    SigLevel = PackageRequired
-    Server = https://repo.biglinux.com.br/stable/$arch' | sudo tee -a /usr/share/manjaro-tools/pacman-default.conf
+#     if [ -z "$(grep biglinux-stable /usr/share/manjaro-tools/pacman-default.conf)" ];then
+#         echo '
+#     [biglinux-stable]
+#     SigLevel = PackageRequired
+#     Server = https://repo.biglinux.com.br/stable/$arch' | sudo tee -a /usr/share/manjaro-tools/pacman-default.conf
+#     fi
+    
+    if [ -z "$(grep biglinux-keyring /usr/share/manjaro-tools/pacman-multilib.conf)" ];then
+        sudo sed -i '/SyncFirst/s/$/ biglinux-keyring/' /usr/share/manjaro-tools/pacman-multilib.conf
     fi
-    if [ -z "$(grep biglinux-keyring /usr/share/manjaro-tools/pacman-default.conf)" ];then
-        sudo sed -i '/SyncFirst/s/$/ biglinux-keyring/' /usr/share/manjaro-tools/pacman-default.conf
+    if [ -z "$(grep biglinux-update-stable /usr/share/manjaro-tools/pacman-multilib.conf)" ];then
+        sudo sed -i '/\[core\]/{h;s/.*/\[biglinux-update-stable\]/;p;x;}' /usr/share/manjaro-tools/pacman-multilib.conf
+        sudo sed -i '/\[core\]/{h;s/.*/SigLevel = PackageRequired/;p;x;}' /usr/share/manjaro-tools/pacman-multilib.conf
+        sudo sed -i '/\[core\]/{h;s/.*/Server = https:\/\/repo.biglinux.com.br\/update-stable\/$arch/;p;x;}' /usr/share/manjaro-tools/pacman-multilib.conf
+        sudo sed -i '/\[core\]/{h;s/.*//;p;x;}' /usr/share/manjaro-tools/pacman-multilib.conf
     fi
     
     # # Disable remove pkgs cache
     sudo sed -i 's|path=$1/var/lib/pacman/sync|path=$1/usr/share/man|'g /usr/lib/manjaro-tools/util-iso-image.sh
-    
-    ## changes in /usr/share/manjaro-tools/  END ##
     
     #select folder with isoprofiles
     mkdir -p ~/.config/manjaro-tools/
@@ -319,6 +329,7 @@ config-buildiso () {
     else
         sudo sed -i 's|256K|1024K|g' /usr/lib/manjaro-tools/util-iso.sh
     fi
+    
 }
 
 #Make backup
@@ -371,7 +382,8 @@ fi
 # runs
 if [ -n "$(echo $@ | grep -s makeprofiles )" ]; then
 	make-iso-profiles
-	move
+# 	move
+    rsync-profile
 elif [ -n "$(echo $@ | grep -s buildlocal )" -a -n "$2" -a -n "$3" -a -n "$4" ];then
     backup
     make-iso-profiles

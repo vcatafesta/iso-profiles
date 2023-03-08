@@ -1,0 +1,49 @@
+name: Make Profiles
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+  
+  push:
+    #branches: [ "master", "main", "*" ]
+    branches: [ "*" ]
+  #pull_request:
+    #branches: [ "master", "main", "*" ]
+    #branches: [ "*" ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+          
+      - name: Translate Package
+        shell: bash
+        run: |
+          cd biglinux-make-iso-profiles
+          bash make-iso-profiles makeprofiles biglinux
+          bash make-iso-profiles makeprofiles xivastudio
+          
+      ## Tmate ##
+      #- name: Setup tmate session
+        #uses: mxschmitt/action-tmate@v3 
+        
+      - name: Update github
+        run: |
+          git add --all
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [ -n "$(git commit -m "new profile" -a | grep "nothing to commit")" ];then exit 0; fi
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          
