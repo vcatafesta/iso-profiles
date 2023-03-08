@@ -198,6 +198,7 @@ copy() {
 
 rsync-profile() {
     rsync -Cravzp --delete $isoprofilesdir/community/$profile  $rootdir/community
+    rm -rf $isoprofilesdir
 }
 
 config-buildiso () {
