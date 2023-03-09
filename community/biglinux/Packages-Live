@@ -1,3 +1,12 @@
+calamares
+gparted
+grub-theme-live-manjaro
+#manjaro-architect
+manjaro-live-skel
+manjaro-live-systemd
+mkinitcpio-nfs-utils
+nbd
+snapper-gui
 calamares-biglinux
 biglinux-livecd
 biglinux-grub-restore 
