@@ -26,7 +26,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
           
-      - name: Translate Package
+      - name: Make Profile
         shell: bash
         run: |
           cd biglinux-make-iso-profiles
