@@ -7,6 +7,7 @@ manjaro-live-systemd
 mkinitcpio-nfs-utils
 nbd
 snapper-gui
+manjaro-rescue
 calamares-biglinux
 biglinux-livecd
 biglinux-grub-restore 

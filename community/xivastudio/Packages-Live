@@ -8,6 +8,7 @@ manjaro-live-systemd
 mkinitcpio-nfs-utils
 nbd
 snapper-gui
+manjaro-rescue
 calamares-biglinux
 calamares-xivastudio
 biglinux-livecd
