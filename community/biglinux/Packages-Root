@@ -410,7 +410,6 @@ biglinux-zsh-config
 biglinux-metapackage
 
 #udev
-ledger-live-bin
 usbasp-udev
 trezor-udev
 usbasp-udev
