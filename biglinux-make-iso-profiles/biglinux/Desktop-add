@@ -36,6 +36,8 @@ open-in-lutris-git
 #grub-disable-zstd-in-legacy
 biglinux-changes-to-plasma-git
 steam
+python-steam
+linux-steam-integration
 kde-service-menu-reimage
 kde-servicemenus-officeconverter
 mystiq
