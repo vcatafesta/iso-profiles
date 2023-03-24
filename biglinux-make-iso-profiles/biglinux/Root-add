@@ -1,5 +1,6 @@
 grub-theme-biglinux
-bootsplash-theme-biglinux
+#bootsplash-theme-biglinux
+plymouth-theme-biglinux
 #manjaro-firmware
 manjaro-printer
 splix

@@ -1,7 +1,7 @@
 grub-theme-biglinux
 grub-theme-xivastudio
-bootsplash-theme-xivastudio
-
+#bootsplash-theme-xivastudio
+plymouth-theme-xivastudio
 #manjaro-firmware
 manjaro-printer
 splix
