@@ -348,3 +348,4 @@ osc-udev-storage
 signal-hound-udev
 stadia-controller-udev
 usbtinyisp-udev
+usb-dirty-pages-udev
