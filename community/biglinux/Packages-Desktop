@@ -37,7 +37,7 @@ open-in-lutris-git
 biglinux-changes-to-plasma-git
 steam
 python-steam
-linux-steam-integration
+#linux-steam-integration
 kde-service-menu-reimage
 kde-servicemenus-officeconverter
 mystiq
