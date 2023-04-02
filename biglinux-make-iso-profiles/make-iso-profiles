@@ -286,7 +286,18 @@ config-buildiso () {
     
     #bootsplash
     if [ -z "$(grep bootsplash-$profile /usr/share/manjaro-tools/mkinitcpio.conf)" ]; then
-        sudo sed -i "s|keyboard keymap|keyboard keymap bootsplash-$profile|g" /usr/share/manjaro-tools/mkinitcpio.conf
+
+        # Add video modules to use plymouth in live mode
+        sudo sed -i "s|loop dm-snapshot|loop dm-snapshot amdgpu radeon i915 nouveau mgag200 bochs virtio-gpu qxl vmwgfx cirrus vmwgfx vboxvideo|g" /usr/share/manjaro-tools/mkinitcpio.conf
+
+        # Enable plymouth and remove not needed keyboard in initcpio
+        sudo sed -i "s|keyboard keymap|sd-plymouth|g" /usr/share/manjaro-tools/mkinitcpio.conf
+
+        # Disable pxe boot
+        sudo sed -i "s|miso_pxe_common miso_pxe_http miso_pxe_nbd miso_pxe_nfs||g" /usr/share/manjaro-tools/mkinitcpio.conf
+
+        # Change udev to systemd
+        sudo sed -i "s|base udev|systemd|g" /usr/share/manjaro-tools/mkinitcpio.conf
     fi
         
     #add big repository
