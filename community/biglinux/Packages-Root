@@ -93,6 +93,7 @@ manjaro-printer
 splix
 biglinux-vaapi
 mhwd-biglinux
+faster-mkinitcpio
 
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
