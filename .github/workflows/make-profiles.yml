@@ -1,42 +1,153 @@
 name: Make Profiles
 
-# Controls when the workflow will run
 on:
   workflow_dispatch:
-  
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'With TMATE'
+        required: false
+        default: false
+        
   schedule:
     - cron:  '0 0 * * 5'
   
   push:
-    #branches: [ "master", "main", "*" ]
     branches: [ "*" ]
-  #pull_request:
-    #branches: [ "master", "main", "*" ]
-    #branches: [ "*" ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+env:
+  manjaroProfiles: manjaro-iso-profiles
+  makeisoprofilesdir: biglinux-make-iso-profiles
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-          
-      - name: Make Profile
+      
+      # Tmate ##
+      - name: Setup TMATE Session
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+      
+      - name: Clone ManjaroIsoProfile
         shell: bash
         run: |
-          cd biglinux-make-iso-profiles
-          bash make-iso-profiles makeprofiles biglinux
-          bash make-iso-profiles makeprofiles xivastudio
+          # clone or Update git
+          if [ ! -d "$manjaroProfiles" ]; then
+              git clone https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git $manjaroProfiles
+          else
+              pushd $manjaroProfiles
+              git pull
+              popd
+          fi
           
-      ## Tmate ##
-      #- name: Setup tmate session
-        #uses: mxschmitt/action-tmate@v3 
-        
+      - name: Make Base
+        shell: bash
+        run: |
+          # Copy files
+          cp $makeisoprofilesdir/base/profile.conf shared/
+          cp $makeisoprofilesdir/base/pacman-default.conf  shared/
+          cp $makeisoprofilesdir/base/user-repos.conf  shared/
+          #Copy dirs
+          cp -r $makeisoprofilesdir/base/desktop-overlay/  shared/
+          cp -r $makeisoprofilesdir/base/root-overlay/  shared/
+          cp -r $makeisoprofilesdir/base/live-overlay/  shared/
+          
+          # Remove Mhwd
+          if [ -e "$makeisoprofilesdir/base/Mhwd-remove" ]; then
+              grep -v -f $makeisoprofilesdir/base/Mhwd-remove  $manjaroProfiles/shared/Packages-Mhwd  >  shared/Packages-Mhwd
+          else
+              echo "ERROR Remove Mhwd"
+              exit 1
+          fi
+          
+          # Remove Root
+          if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
+              grep -v -f $makeisoprofilesdir/base/Root-remove  $manjaroProfiles/shared/Packages-Root  >  shared/Packages-Root
+          else
+              echo "ERROR Remove Root"
+              exit 1
+          fi
+          
+          # Remove Live
+          if [ -e "$makeisoprofilesdir/base/Live-remove" ]; then
+              grep -v -f $makeisoprofilesdir/base/Live-remove  $manjaroProfiles/shared/Packages-Live  >  shared/Packages-Live
+          else
+              echo "ERROR Remove Live"
+              exit 1
+          fi
+          
+          # Add Mhwd
+          if [ -e "$makeisoprofilesdir/base/Mhwd-add" ]; then
+              cat $makeisoprofilesdir/base/Mhwd-add  >>  shared/Packages-Mhwd
+          else
+              echo "ERROR Add Mhwd"
+              exit 1
+          fi
+          
+          # Add Root
+          if [ -e "$makeisoprofilesdir/base/Root-add" ]; then
+              cat $makeisoprofilesdir/base/Root-add  >>  shared/Packages-Root
+          else
+              echo "ERROR Add Root"
+              exit 1
+          fi
+          
+          # Add Live
+          if [ -e "$makeisoprofilesdir/base/Live-add" ]; then
+          #     echo '' >> $manjaroProfiles/community/biglinux/Packages-Live
+              cat $makeisoprofilesdir/base/Live-add  >>  shared/Packages-Live
+          else
+              echo "ERROR Add Live"
+              exit 1
+          fi
+          
+      - name: Make Flavours
+        shell: bash
+        run: |
+          ## make FLAVOURS ##
+          # for i in $(ls -d */ | cut -f1 -d'/' | sed '/base/d'); do
+          for i in $(ls $makeisoprofilesdir | sed '/base/d'); do
+              echo ""
+              echo "MAKE $i"
+              echo ""
+              
+              rsync -Cravzp --delete shared/ biglinux/$i
+              
+              # # Remove Desktop
+              # if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
+              #     grep -v -f $makeisoprofilesdir/$i/Desktop-remove  $manjaroProfiles/shared/Packages-Desktop  >  biglinux/$i/Packages-Desktop
+              # else
+              #    echo "ERROR Remove Desktop $i"
+              #    exit 1
+              # fi
+              
+              # Add Desktop
+              if [ -e "$makeisoprofilesdir/$i/Desktop-add" ]; then
+                  cat  $makeisoprofilesdir/$i/Desktop-add  >  biglinux/$i/Packages-Desktop
+              else
+                  echo "ERROR Add Desktop $i"
+                  exit 1
+              fi
+              
+              # Remove Root
+              if [ -e "$makeisoprofilesdir/$i/base/Root-remove" ]; then
+                  grep -v -f $makeisoprofilesdir/$i/Root-remove  $manjaroProfiles/shared/Packages-Root  >  biglinux/$i/Packages-Root
+              else
+                  echo "no Remove Root in $i"
+              fi
+              
+              #run special commands
+              if [ -e "$makeisoprofilesdir/$i/special-commands.sh" ]; then
+                  bash -x $makeisoprofilesdir/$i/special-commands.sh
+              fi
+          done
+          
+          #remove manjaro profiles
+          rm -rf $manjaroProfiles
+          
+          
       - name: Update github
         run: |
           git add --all
