@@ -140,7 +140,7 @@ jobs:
               
               # Add Live
               if [ -e "$makeisoprofilesdir/$i/Live-add" ]; then
-                  cat $makeisoprofilesdir/$i/Live-add  >>  shared/Packages-Live
+                  cat $makeisoprofilesdir/$i/Live-add  >>  biglinux/$i/Packages-Live
               else
                   echo "no Add Live"
               fi
