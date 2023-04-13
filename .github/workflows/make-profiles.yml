@@ -138,6 +138,13 @@ jobs:
                   echo "no Remove Root in $i"
               fi
               
+              # Add Live
+              if [ -e "$makeisoprofilesdir/$i/Live-add" ]; then
+                  cat $makeisoprofilesdir/$i/Live-add  >>  shared/Packages-Live
+              else
+                  echo "no Add Live"
+              fi
+              
               #run special commands
               if [ -e "$makeisoprofilesdir/$i/special-commands.sh" ]; then
                   bash -x $makeisoprofilesdir/$i/special-commands.sh
