@@ -25,4 +25,6 @@ sed -i '/password=/s/password=.*/password="xivastudio"/' biglinux/xivastudio/pro
 cat biglinux/kde/Packages-Desktop  >>  biglinux/xivastudio/Packages-Desktop
 
 #remove desktop
-grep -v -f biglinux-make-iso-profiles/xivastudio/Desktop-remove  biglinux/xivastudio/Packages-Desktop  >  biglinux/xivastudio/Packages-Desktop
+mv biglinux/xivastudio/Packages-Desktop biglinux/xivastudio/Packages-Desktop-prov
+grep -v -f biglinux-make-iso-profiles/xivastudio/Desktop-remove  biglinux/xivastudio/Packages-Desktop-prov  >  biglinux/xivastudio/Packages-Desktop
+rm biglinux/xivastudio/Packages-Desktop-prov
