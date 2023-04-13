@@ -132,7 +132,7 @@ jobs:
               fi
               
               # Remove Root
-              if [ -e "$makeisoprofilesdir/$i/base/Root-remove" ]; then
+              if [ -e "$makeisoprofilesdir/$i/Root-remove" ]; then
                   grep -v -f $makeisoprofilesdir/$i/Root-remove  $manjaroProfiles/shared/Packages-Root  >  biglinux/$i/Packages-Root
               else
                   echo "no Remove Root in $i"
