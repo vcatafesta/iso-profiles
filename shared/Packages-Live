@@ -12,3 +12,12 @@ biglinux-grub-restore
 memtest86+
 memtest86+-efi
 biglinux-key
+calamares-biglinux
+calamares-xivastudio
+biglinux-livecd
+xivastudio-livecd
+biglinux-grub-restore 
+bootsplash-theme-xivastudio
+memtest86+
+memtest86+-efi
+biglinux-key

@@ -1,3 +1,4 @@
+plymouth-theme-xivastudio
 kwin-scripts-virtual-desktops-only-on-primary
 guvcview
 kalarm
@@ -31,11 +32,8 @@ filelight
 skanpage
 biglinux-config
 feh
-#lutris
-#open-in-lutris-git
 #grub-disable-zstd-in-legacy
 biglinux-changes-to-plasma-git
-#steam
 kde-service-menu-reimage
 kde-servicemenus-officeconverter
 mystiq
@@ -64,7 +62,7 @@ brave-browser
 #firefox-i18n-pt-br
 #gimp-plugin-gmic
 #gimp
-xsettingsd
+#xsettingsd
 keditbookmarks
 plasma-appsmenu-biglinux
 big-executable
@@ -201,7 +199,7 @@ xorg-mkfontscale
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-libinput
-xf86-input-void
+
 
 ## Misc
 manjaro-hotfixes
