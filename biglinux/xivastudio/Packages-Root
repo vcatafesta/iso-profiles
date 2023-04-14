@@ -143,7 +143,6 @@ biglinux-wallpapers-and-icons
 auto-tweaks-browser
 auto-unlock-pacman-git
 big-mount-git
-biglinux-name
 big-first-boot
 bash-completion
 manjaro-tools-base
@@ -160,7 +159,6 @@ lib32-vkd3d
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 pacman-cleancache
-biglinux-meta-audio-config
 vulkan-swrast
 ocl-icd
 lib32-ocl-icd
@@ -224,7 +222,6 @@ libdvdcss
 manjaro-pipewire
 pipewire-jack
 pipewire-jack-dropin
-pipewire-biglinux-config-git
 wireplumber
 breeze-icons
 
