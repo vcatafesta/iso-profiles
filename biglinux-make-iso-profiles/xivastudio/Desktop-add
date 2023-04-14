@@ -1,10 +1,11 @@
 #xivastudio
 plymouth-theme-xivastudio
 qpwgraph
-xivastudio-desktop
 pipewire-config
+xivastudio-desktop
 xivastudio-name
 xivastudio-welcome
 xivastudio-session-and-themes
 xivastudio-meta-audio-config
 grub-theme-xivastudio
+sddm-theme-xivastudio
