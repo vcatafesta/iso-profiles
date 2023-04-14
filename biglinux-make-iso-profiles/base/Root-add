@@ -350,3 +350,9 @@ signal-hound-udev
 stadia-controller-udev
 usbtinyisp-udev
 usb-dirty-pages-udev
+
+#AUR
+make
+automake
+autoconf
+libtool
