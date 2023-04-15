@@ -409,6 +409,7 @@ sane-airscan
 #web-installer-url-handler
 biglinux-zsh-config
 biglinux-metapackage
+nvtop
 
 #udev
 usbasp-udev
