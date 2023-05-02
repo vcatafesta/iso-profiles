@@ -10,6 +10,8 @@ xivastudio-meta-audio-config
 grub-theme-xivastudio
 sddm-theme-xivastudio
 plasma5-applets-sink-audio
+biglinux-browser-selector
+xivastudio-mime
 kwin-scripts-virtual-desktops-only-on-primary
 guvcview
 kalarm
@@ -69,7 +71,6 @@ libreoffice-fresh
 libreoffice-fresh-pt-br
 #onlyoffice-desktopeditors
 #firefox
-brave-browser
 #firefox-i18n-pt-br
 #gimp-plugin-gmic
 #gimp
