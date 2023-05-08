@@ -1,2 +1,5 @@
 KERNEL-headers
 libva-mesa
+KERNEL-zfs
+zfs-utils
+zfs-dkms
