@@ -7,11 +7,8 @@
 KERNEL-bbswitch
 KERNEL-broadcom-wl
 #KERNEL-r8168
-KERNEL-zfs
-zfs-utils
 #KERNEL-rt3562sta
 #KERNEL-virtualbox-guest-modules
-zfs-dkms
 libva-intel-driver
 libva-vdpau-driver
 >multilib lib32-libva-vdpau-driver
