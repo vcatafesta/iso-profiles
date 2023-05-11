@@ -173,6 +173,8 @@ biglinux-systemd-swap
 dbus-broker-enable
 biglinux-neofetch
 x86_energy_perf_policy
+biglinux-tlp-config
+power-profiles-daemon-biglinux
 
 #virtual-machines
 open-vm-tools
