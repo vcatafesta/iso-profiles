@@ -1,30 +1,5 @@
 # Base
-bash
-bzip2
-coreutils
-file
-filesystem
-findutils
-gawk
-gcc-libs
-gettext
-glibc
-grep
-gzip
-iproute2
-iputils
-licenses
-pacman
-pciutils
-procps-ng
-psmisc
-sed
-shadow
-systemd
-systemd-sysvcompat
-tar
-util-linux
-xz
+base
 
 # Manjaro
 acpi
@@ -140,7 +115,6 @@ auto-rules-io
 force-upgrade
 game-devices-udev
 biglinux-apps-rename
-biglinux-wallpapers-and-icons
 auto-tweaks-browser
 auto-unlock-pacman-git
 big-mount-git
@@ -175,6 +149,8 @@ biglinux-neofetch
 x86_energy_perf_policy
 biglinux-tlp-config
 power-profiles-daemon-biglinux
+biglinux-base-icons
+biglinux-theme-mod
 
 #virtual-machines
 open-vm-tools
