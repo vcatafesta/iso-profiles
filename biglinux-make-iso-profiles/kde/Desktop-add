@@ -77,7 +77,8 @@ mx-idevice-mounter
 #ananicy-config-biglinux
 
 ## Libraries for Sound/Audio/Video
-phonon-qt5-gstreamer
+#phonon-qt5-gstreamer
+phonon-qt5-vlc
 #pulseaudio-bluetooth
 #pulseaudio-ctl
 #pulseaudio-zeroconf
