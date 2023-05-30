@@ -108,7 +108,7 @@ jobs:
         run: |
           ## make FLAVOURS ##
           # for i in $(ls -d */ | cut -f1 -d'/' | sed '/base/d'); do
-          for i in $(ls $makeisoprofilesdir | sed '/base/d'); do
+          for i in $(ls $makeisoprofilesdir | sed '/base/d;/big-small/d'); do
               echo ""
               echo "MAKE $i"
               echo ""
