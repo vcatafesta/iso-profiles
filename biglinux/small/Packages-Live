@@ -8,7 +8,6 @@ mkinitcpio-nfs-utils
 nbd
 #snapper-gui
 
-
 calamares-biglinux
 biglinux-livecd
 biglinux-grub-restore
@@ -16,10 +15,6 @@ memtest86+
 sddm-xorg-failsafe
 big-skel
 grub-theme-live-common
-
-
-networkmanager
-
 
 zenity
 yad

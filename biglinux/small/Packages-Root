@@ -60,7 +60,6 @@ which
 wireless-regdb
 wpa_supplicant
 xfsprogs
-bash-completion
 
 #biglinux
 biglinux-neofetch
@@ -74,6 +73,9 @@ biglinux-name
 auto-unlock-pacman-git
 manjaro-settings-samba
 big-first-boot
+bash-completion
+disable-fsync
+networkmanager
 
 #virtual-machines
 open-vm-tools
