@@ -18,7 +18,7 @@ sed -i 's/file = "biglinux-grub.png"/file = "xivastudio.png"/' biglinux/xivastud
 sed -i '/hostname=/s/hostname=.*/hostname="xivastudio"/' biglinux/xivastudio/profile.conf
 sed -i '/username=/s/username=.*/username="xivastudio"/' biglinux/xivastudio/profile.conf
 sed -i '/password=/s/password=.*/password="xivastudio"/' biglinux/xivastudio/profile.conf
-sed -i '/Current=/s/Current=.*/Current=xivastudio/' biglinux/xivastudio/root-overlay/etc/sddm.conf
+# sed -i '/Current=/s/Current=.*/Current=xivastudio/' biglinux/xivastudio/root-overlay/etc/sddm.conf
 
 # sed -i '//s///' biglinux/xivastudio/
 
