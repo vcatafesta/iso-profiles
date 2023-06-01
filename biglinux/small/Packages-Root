@@ -67,9 +67,11 @@ manjaro-tools-base
 grub-theme-biglinux
 biglinux-vaapi
 #mhwd-biglinux
-biglinux-apps-rename
+#biglinux-apps-rename
+biglinux-name
 auto-unlock-pacman-git
 manjaro-settings-samba
+big-first-boot
 
 #virtual-machines
 open-vm-tools
