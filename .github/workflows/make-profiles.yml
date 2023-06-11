@@ -98,7 +98,6 @@ jobs:
           if [ -e "$makeisoprofilesdir/base/Live-add" ]; then
           #     echo '' >> $manjaroProfiles/community/biglinux/Packages-Live
               cat $makeisoprofilesdir/base/Live-add  >>  shared/Packages-Live
-              sed 's/calamares-git/calamares/' shared/Packages-Live
           else
               echo "ERROR Add Live"
               exit 1
