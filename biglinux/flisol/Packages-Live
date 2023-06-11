@@ -1,4 +1,3 @@
-calamares-git
 gparted
 grub-theme-live-manjaro
 #manjaro-architect
@@ -7,6 +6,7 @@ manjaro-live-systemd
 mkinitcpio-nfs-utils
 nbd
 timeshift
+calamares
 calamares-biglinux
 biglinux-livecd
 biglinux-grub-restore 
