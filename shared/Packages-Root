@@ -59,6 +59,19 @@ which
 wireless-regdb
 wpa_supplicant
 xfsprogs
+# trying better video driver support
+libxvmc
+lib32-mesa-vdpau
+lib32-vulkan-intel
+lib32-vulkan-radeon
+mesa-vdpau
+vulkan-intel
+vulkan-radeon
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+
 grub-theme-biglinux
 #bootsplash-theme-biglinux
 plymouth-theme-biglinux
