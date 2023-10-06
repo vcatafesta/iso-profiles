@@ -176,7 +176,7 @@ systemd-kcm
 
 ## Flatpak support
 pamac-flatpak-plugin
-
+xdg-desktop-portal-kde
 ## Printing
 >extra manjaro-printer
 >extra gtk3-print-backends
