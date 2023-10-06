@@ -375,7 +375,7 @@ sync-kde-and-gtk-places
 
 xdg-user-dirs
 xdg-desktop-portal-kde
-#uksmd
+uksmd
 
 helvum
 appimagelauncher
