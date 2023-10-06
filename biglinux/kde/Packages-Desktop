@@ -11,8 +11,8 @@ simplescreenrecorder
 kde-snap-assist
 
 ## BigLinux
-gamemode
-lib32-gamemode
+#gamemode
+#lib32-gamemode
 qbittorrent
 big-preload
 plasmashell-fix-git
@@ -175,7 +175,6 @@ systemd-kcm
 
 
 ## Flatpak support
-xdg-desktop-portal-kde
 pamac-flatpak-plugin
 
 ## Printing

@@ -265,7 +265,7 @@ pamac-cli
 #discover-snap
 #discover
 #packagekit-qt5
->extra fwupd 
+>extra fwupd
 #octopi
 #octopi-cachecleaner
 #octopi-repoeditor
@@ -374,6 +374,7 @@ sync-kde-and-gtk-places
 
 
 xdg-user-dirs
+xdg-desktop-portal-kde
 
 
 helvum
