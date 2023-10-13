@@ -106,7 +106,7 @@ psmisc
 sed
 shadow
 tar
-tlp
+#tlp
 util-linux
 xz
 make
@@ -156,7 +156,7 @@ biglinux-systemd-swap
 dbus-broker-enable
 biglinux-neofetch
 x86_energy_perf_policy
-biglinux-tlp-config
+#biglinux-tlp-config
 power-profiles-daemon-biglinux
 extra-biglinux-wallpapers
 biglinux-base-icons
@@ -374,7 +374,7 @@ xdg-desktop-portal-kde
 helvum
 appimagelauncher
 cups
-tlpui
+#tlpui
 ufw
 gufw
 #jre11-openjdk
