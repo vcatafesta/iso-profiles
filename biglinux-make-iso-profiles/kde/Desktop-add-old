@@ -1,8 +1,23 @@
+kwin-scripts-virtual-desktops-only-on-primary
+guvcview
+kalarm
+kmines
+kpat
+ksystemlog
+kwin-window-positioning-scripts
+plasma5-applet-tiledmenu-git
+plasma5-applets-resources-monitor
+simplescreenrecorder
+kde-snap-assist
+
 ## BigLinux
+#gamemode
+#lib32-gamemode
 qbittorrent
 big-preload
 plasmashell-fix-git
 kfind
+#hardinfo
 kdialog
 pavucontrol-qt
 kscreen
@@ -10,14 +25,18 @@ kcm-wacomtablet
 plasma-thunderbolt
 kio-gdrive
 mintstick
+#qt6-base
+#plasma-firewall
 filelight
 skanpage
 biglinux-config
 feh
 lutris
 open-in-lutris-git
+#grub-disable-zstd-in-legacy
 steam
 python-steam
+#linux-steam-integration
 kde-service-menu-reimage
 kde-servicemenus-officeconverter
 mystiq
@@ -29,6 +48,8 @@ big-skel
 powerdevil
 biglinux-plasmoids
 packagekit-qt5
+
+
 bigcontrolcenter
 rootactions-servicemenu-biglinux
 biglinux-session-and-themes
@@ -37,19 +58,32 @@ sddm-theme-biglinux
 sddm-xorg-failsafe
 libreoffice-fresh
 libreoffice-fresh-pt-br
+#onlyoffice-desktopeditors
+#firefox
 brave-browser
+#firefox-i18n-pt-br
+#gimp-plugin-gmic
+#gimp
+#xsettingsd
 keditbookmarks
 plasma-appsmenu-biglinux
 big-executable
 mx-idevice-mounter
 
 ## Network
+#samba
+#ananicy-config-biglinux
 
 ## Libraries for Sound/Audio/Video
+#phonon-qt5-gstreamer
 phonon-qt5-vlc
+#pulseaudio-bluetooth
+#pulseaudio-ctl
+#pulseaudio-zeroconf
 
 ## Connect Packages
 kamera
+
 
 ## Package management
 pamac-tray-icon-plasma
@@ -80,22 +114,18 @@ plasma-workspace
 systemsettings
 plasma-vault
 cryfs
-kwin-scripts-virtual-desktops-only-on-primary
-guvcview
-kalarm
-kmines
-kpat
-ksystemlog
-kwin-window-positioning-scripts
-plasma5-applet-tiledmenu-git
-plasma5-applets-resources-monitor
-simplescreenrecorder
-kde-snap-assist
+
+## Themes QT/GTK/SDDM
+#sddm-breath-theme
+#illyria-wallpaper
 
 ## KDE Applications
 ark
+#>extra digikam
+#clementine
 dolphin
 dolphin-plugins
+#>extra filelight
 kate
 gnome-calculator
 kfind
@@ -108,11 +138,19 @@ konsole
 kwalletmanager
 gwenview
 gparted
+#>extra print-manager
 spectacle
-vlc
+#smplayer
+#smplayer-themes
+vlc-luajit
 plasma5-applets-window-buttons
 plasma-simplemenu
 kvantum
+
+
+## Optional dependency for digikam
+#>extra kipi-plugins  # export to various online services
+#>extra hugin         # panorama tool
 
 ## Optional dependencies for dolphin
 kdegraphics-thumbnailers  # PDF and PS thumbnails
@@ -134,6 +172,7 @@ manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 systemd-kcm
 
+
 ## Flatpak support
 pamac-flatpak-plugin
-
+#xdg-desktop-portal-kde

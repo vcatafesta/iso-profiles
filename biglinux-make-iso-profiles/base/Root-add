@@ -1,30 +1,6 @@
-# trying better video driver support
-libxvmc
-lib32-mesa-vdpau
-lib32-vulkan-intel
-lib32-vulkan-radeon
-mesa-vdpau
-vulkan-intel
-vulkan-radeon
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-intel
-xf86-video-nouveau
-
-grub-theme-biglinux
-#bootsplash-theme-biglinux
-plymouth-theme-biglinux
-#manjaro-firmware
-manjaro-printer
-splix
-biglinux-vaapi
-mhwd-biglinux
-faster-mkinitcpio
-
+# Base
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
-biglinux-updates-tweaks
-biglinux-improve-compatibility
 KERNEL-headers
 bash
 file
@@ -46,65 +22,84 @@ psmisc
 sed
 shadow
 tar
-#tlp
 util-linux
 xz
 make
 pacutils
 aspell-pt
-biglinux-keyring
-biglinux-l18n
-#cfs-zen-tweaks
-#flatpak-xdg-utils
-hunspell-pt-br
-pulseaudio-alsa
+pulseaudio-alsa  # REMOVER ?
 python-cssselect
 python-qtpy
-#systemd-oomd-defaults
-uresourced
 xapian-core
-auto-rules-io
-force-upgrade
-game-devices-udev
-biglinux-apps-rename
-auto-tweaks-browser
-auto-unlock-pacman-git
-big-mount-git
-biglinux-name
-big-first-boot
 bash-completion
 manjaro-tools-base
 hunspell-en_us
 qt5-translations
-timeshift
-grub-btrfs-timeshift
-grub-btrfs
-debtap-mod
-rpmtoarch
-biglinux-mime
 vkd3d
 lib32-vkd3d
-network-manager-prefer-ipv4-dns
-network-manager-disable-random-mac
-pacman-cleancache
-biglinux-meta-audio-config
 vulkan-swrast
 ocl-icd
 lib32-ocl-icd
 irqbalance
-retroarch-tweaks
-ds4-disable-led
-#auto-zram-and-swappiness
-biglinux-systemd-swap
-dbus-broker-enable
-biglinux-neofetch
 x86_energy_perf_policy
-#biglinux-tlp-config
-power-profiles-daemon-biglinux
-extra-biglinux-wallpapers
-biglinux-base-icons
 
-#virtual-machines
+# BigLinux Packages
+  # visual
+    extra-biglinux-wallpapers
+    biglinux-base-icons
+    biglinux-apps-rename
+    
+    biglinux-metapackage
+    
+  # boot
+    grub-theme-biglinux
+    plymouth-theme-biglinux
+    timeshift
+    grub-btrfs-timeshift
+    grub-btrfs
+    big-first-boot
+
+  # tweaks
+    biglinux-name
+    biglinux-l18n
+    faster-mkinitcpio
+    biglinux-improve-compatibility
+    big-mount-git
+    biglinux-systemd-swap
+    disable-fsync  # REMOVER?
+    dbus-broker-enable
+    biglinux-neofetch
+    power-profiles-daemon-biglinux
+    auto-rules-io
+    auto-unlock-pacman-git
+    hunspell-pt-br
+    uresourced
+    bigsudo
+
+## Games
+# BigLinux
+  retroarch-tweaks
+  ds4-disable-led
+
+## Video and Driver Support
+# Biglinux
+  mhwd-biglinux
+  biglinux-vaapi
+libxvmc
+lib32-mesa-vdpau
+lib32-vulkan-intel
+lib32-vulkan-radeon
+mesa-vdpau
+vulkan-intel
+vulkan-radeon
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+nvtop
+switcheroo-control
+
+## Virtual Machines
 open-vm-tools
 qemu-guest-agent
 libdnet
@@ -112,16 +107,21 @@ gdk-pixbuf-xlib
 uriparser
 libmspack
 xf86-input-vmmouse
-
 compsize
-disable-fsync
-sysctl-network
 xf86-input-synaptics
 mtools
 fatresize
 thermald
+## Imported from live
+# BigLinux
+  spice-vdagent-autostart-kde
+virtualbox-guest-utils
 
 ## Network
+# BigLinux
+  network-manager-prefer-ipv4-dns
+  network-manager-disable-random-mac
+  sysctl-network
 avahi
 networkmanager
 networkmanager-openvpn
@@ -134,32 +134,11 @@ modemmanager
 openresolv
 openssh
 usb_modeswitch
+ufw
+gufw
+manjaro-settings-samba
 
-## Libraries for Sound/Audio/Video
-alsa-firmware
-alsa-utils
-ffmpeg
-ffmpeg4.4
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
-libcanberra
-#>multilib lib32-libcanberra
-libcanberra-pulse
-#>multilib lib32-libcanberra-pulse
-libdvdcss
-#manjaro-alsa
-#manjaro-pulse
-manjaro-pipewire
-pipewire-jack
-pipewire-jack-dropin
-pipewire-biglinux-config-git
-wireplumber
-breeze-icons
-
-## Connect Packages
+## Connect
 android-tools
 android-udev
 gvfs
@@ -171,13 +150,39 @@ gvfs-smb
 mtpfs
 udiskie
 udisks2
+bluez-plugins
+## Optional dependencies for kdeconnect
+sshfs  # remote filesystem browser
 
+## Sound/Audio/Video
+# BigLinux
+  biglinux-meta-audio-config
+  pipewire-jack-dropin  # REMOVER ?
+  biglinux-noise-reduction-pipewire
+alsa-firmware
+alsa-utils
+ffmpeg
+ffmpeg4.4
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+libcanberra
+libcanberra-pulse
+libdvdcss
+manjaro-pipewire
+pipewire-jack
+wireplumber
+breeze-icons
+helvum
+chmlib
+tesseract-data-spa
 
 ## Fonts
 ttf-dejavu
 cantarell-fonts        # Installed as gnome-themes-standard dependency
 noto-fonts               # default font
-#noto-fonts-cjk           # asian fonts - needed big package, ~76 mb compressed
 adobe-source-sans-pro-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
@@ -196,21 +201,20 @@ ttf-liberation
 ttf-lato
 ttf-ubuntu-font-family
 
-
 ## Package management
+# BigLinux
+  big-store
+  biglinux-keyring
+  biglinux-updates-tweaks
+  pamac-updates-menu
+  pacman-cleancache
+  force-upgrade
+  debtap-mod
+  rpmtoarch
 pamac-gtk
 pamac-cli
-#pamac-flatpak-plugin
-#discover-snap
-#discover
-#packagekit-qt5
 >extra fwupd
-#octopi
-#octopi-cachecleaner
-#octopi-repoeditor
-#octopi-notifier-frameworks
-#pamac-qt
-
+manjaro-application-utility
 
 #Better wine support
 lib32-pipewire
@@ -237,7 +241,6 @@ lib32-flac
 lib32-gmp
 lib32-gnutls
 lib32-libasyncns
-lib32-libcups
 lib32-libjpeg6-turbo
 lib32-libltdl
 lib32-libogg
@@ -259,27 +262,27 @@ lib32-v4l-utils
 sdl12-compat
 lib32-giflib
 
-
+# printers
+bluez-cups
+cups
+manjaro-printer
+lib32-libcups
+ipp-usb
+splix
+sane-airscan
 ## Optional dependencies for hplip
+# BigLinux
+  system-config-printer-jobs
 >extra python-pillow
 >extra python-pip
 >extra python-pyqt5
-#>extra python-reportlab
-
 ## Optional dependencies for print-manager
 python-pysmbc          # SMB browser support
 system-config-printer
-system-config-printer-jobs
-
 
 ## Optional dependencies for ark
 p7zip  # 7Z format support
 unarchiver  # RAR format support
-
-
-## Optional dependencies for kdeconnect
-sshfs  # remote filesystem browser
-
 
 ## Applications
 dmidecode # for inxi -m output
@@ -287,60 +290,32 @@ htop
 inxi
 powertop
 
-
 ## Desktop Utils
+# BigLinux
+  biglinux-mime
+  auto-tweaks-browser
+  sync-kde-and-gtk-places
+  pipewire-biglinux-config-git
+  biglinux-webapps
+  bigbashview
+  biglinux-bash-config
+  biglinux-zsh-config
+  bigocrpdf
+#     tesseract-data-por
+#     tesseract-data-eng
+  tts-biglinux
+#     rhvoice-voice-leticia-f123
+#     rhvoice-brazilian-portuguese-complementary-dict-biglinux
+#     rhvoice-voice-evgeniy-eng
 perl-file-mimeinfo
 zensu
-#kernel-alive
 libappindicator-gtk3
-
-## Imported from live
-virtualbox-guest-utils
-spice-vdagent-autostart-kde
-
-big-store
-biglinux-webapps
-bigbashview
-biglinux-noise-reduction-pipewire
-bigocrpdf
-tesseract-data-por
-tesseract-data-eng
-tts-biglinux
-rhvoice-voice-leticia-f123
-rhvoice-brazilian-portuguese-complementary-dict-biglinux
-rhvoice-voice-evgeniy-eng
-sync-kde-and-gtk-places
-
-
 xdg-user-dirs
 xdg-desktop-portal-kde
-
-helvum
 appimagelauncher
-cups
-#tlpui
-ufw
-gufw
-#jre11-openjdk
-pamac-updates-menu
 gnome-keyring
-bluez-plugins
-bluez-cups
-chmlib
-bigsudo
-manjaro-application-utility
 appmenu-gtk-module
-manjaro-settings-samba
 xdg-utils
-ipp-usb
-tesseract-data-spa
-#jamesdsp
-sane-airscan
-#web-installer-url-handler
-biglinux-bash-config
-biglinux-zsh-config
-biglinux-metapackage
-nvtop
 
 #udev
 usbasp-udev
@@ -368,6 +343,7 @@ signal-hound-udev
 stadia-controller-udev
 usbtinyisp-udev
 usb-dirty-pages-udev
+game-devices-udev
 
 #AUR
 make
