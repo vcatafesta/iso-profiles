@@ -44,47 +44,47 @@ irqbalance
 x86_energy_perf_policy
 
 # BigLinux Packages
-  # visual
-    extra-biglinux-wallpapers
-    biglinux-base-icons
-    biglinux-apps-rename
-    
-    biglinux-metapackage
-    
-  # boot
-    grub-theme-biglinux
-    plymouth-theme-biglinux
-    timeshift
-    grub-btrfs-timeshift
-    grub-btrfs
-    big-first-boot
+# visual
+extra-biglinux-wallpapers
+biglinux-base-icons
+biglinux-apps-rename
 
-  # tweaks
-    biglinux-name
-    biglinux-l18n
-    faster-mkinitcpio
-    biglinux-improve-compatibility
-    big-mount-git
-    biglinux-systemd-swap
-    disable-fsync  # REMOVER?
-    dbus-broker-enable
-    biglinux-neofetch
-    power-profiles-daemon-biglinux
-    auto-rules-io
-    auto-unlock-pacman-git
-    hunspell-pt-br
-    uresourced
-    bigsudo
+biglinux-metapackage
+
+# boot
+grub-theme-biglinux
+plymouth-theme-biglinux
+timeshift
+grub-btrfs-timeshift
+grub-btrfs
+big-first-boot
+
+# tweaks
+biglinux-name
+biglinux-l18n
+faster-mkinitcpio
+biglinux-improve-compatibility
+big-mount-git
+biglinux-systemd-swap
+disable-fsync  # REMOVER?
+dbus-broker-enable
+biglinux-neofetch
+power-profiles-daemon-biglinux
+auto-rules-io
+auto-unlock-pacman-git
+hunspell-pt-br
+uresourced
+bigsudo
 
 ## Games
 # BigLinux
-  retroarch-tweaks
-  ds4-disable-led
+retroarch-tweaks
+ds4-disable-led
 
 ## Video and Driver Support
 # Biglinux
-  mhwd-biglinux
-  biglinux-vaapi
+mhwd-biglinux
+biglinux-vaapi
 libxvmc
 lib32-mesa-vdpau
 lib32-vulkan-intel
@@ -114,14 +114,14 @@ fatresize
 thermald
 ## Imported from live
 # BigLinux
-  spice-vdagent-autostart-kde
+spice-vdagent-autostart-kde
 virtualbox-guest-utils
 
 ## Network
 # BigLinux
-  network-manager-prefer-ipv4-dns
-  network-manager-disable-random-mac
-  sysctl-network
+network-manager-prefer-ipv4-dns
+network-manager-disable-random-mac
+sysctl-network
 avahi
 networkmanager
 networkmanager-openvpn
@@ -156,9 +156,9 @@ sshfs  # remote filesystem browser
 
 ## Sound/Audio/Video
 # BigLinux
-  biglinux-meta-audio-config
-  pipewire-jack-dropin  # REMOVER ?
-  biglinux-noise-reduction-pipewire
+biglinux-meta-audio-config
+pipewire-jack-dropin  # REMOVER ?
+biglinux-noise-reduction-pipewire
 alsa-firmware
 alsa-utils
 ffmpeg
@@ -203,14 +203,14 @@ ttf-ubuntu-font-family
 
 ## Package management
 # BigLinux
-  big-store
-  biglinux-keyring
-  biglinux-updates-tweaks
-  pamac-updates-menu
-  pacman-cleancache
-  force-upgrade
-  debtap-mod
-  rpmtoarch
+big-store
+biglinux-keyring
+biglinux-updates-tweaks
+pamac-updates-menu
+pacman-cleancache
+force-upgrade
+debtap-mod
+rpmtoarch
 pamac-gtk
 pamac-cli
 >extra fwupd
@@ -272,7 +272,7 @@ splix
 sane-airscan
 ## Optional dependencies for hplip
 # BigLinux
-  system-config-printer-jobs
+system-config-printer-jobs
 >extra python-pillow
 >extra python-pip
 >extra python-pyqt5
@@ -292,18 +292,18 @@ powertop
 
 ## Desktop Utils
 # BigLinux
-  biglinux-mime
-  auto-tweaks-browser
-  sync-kde-and-gtk-places
-  pipewire-biglinux-config-git
-  biglinux-webapps
-  bigbashview
-  biglinux-bash-config
-  biglinux-zsh-config
-  bigocrpdf
+biglinux-mime
+auto-tweaks-browser
+sync-kde-and-gtk-places
+pipewire-biglinux-config-git
+biglinux-webapps
+bigbashview
+biglinux-bash-config
+biglinux-zsh-config
+bigocrpdf
 #     tesseract-data-por
 #     tesseract-data-eng
-  tts-biglinux
+tts-biglinux
 #     rhvoice-voice-leticia-f123
 #     rhvoice-brazilian-portuguese-complementary-dict-biglinux
 #     rhvoice-voice-evgeniy-eng
