@@ -106,29 +106,25 @@ jobs:
         shell: bash
         run: |
             ## make FLAVOURS ##
+            # for i in $(ls -d */ | cut -f1 -d'/' | sed '/base/d'); do
             for i in $(ls $makeisoprofilesdir | sed '/base/d;/big-small/d'); do
                 echo ""
                 echo "MAKE $i"
                 echo ""
                 
-                # Cria o diretório dentro de biglinux/ se ele não existir
-                mkdir -p biglinux/$i
-                
-                # Sincroniza os arquivos compartilhados para o diretório do sabor atual
                 rsync -Cravzp --delete shared/ biglinux/$i
                 
-                # Comando de depuração para verificar a estrutura do diretório após rsync
-                echo "Verificando a estrutura do diretório após rsync para $i:"
-                ls -la biglinux/$i
-                
-                # Remove Desktop
-                if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
-                    grep -v -f $makeisoprofilesdir/$i/Desktop-remove shared/Packages-Desktop > biglinux/$i/Packages-Desktop
-                fi
+                # # Remove Desktop
+                # if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
+                #     grep -v -f $makeisoprofilesdir/$i/Desktop-remove  $manjaroProfiles/shared/Packages-Desktop  >  biglinux/$i/Packages-Desktop
+                # else
+                #    echo "ERROR Remove Desktop $i"
+                #    exit 1
+                # fi
                 
                 # Add Desktop
                 if [ -e "$makeisoprofilesdir/$i/Desktop-add" ]; then
-                    cat $makeisoprofilesdir/$i/Desktop-add > biglinux/$i/Packages-Desktop
+                    cat  $makeisoprofilesdir/$i/Desktop-add  >  biglinux/$i/Packages-Desktop
                 else
                     echo "ERROR Add Desktop $i"
                     exit 1
