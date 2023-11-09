@@ -117,6 +117,10 @@ jobs:
                 # Sincroniza os arquivos compartilhados para o diretório do sabor atual
                 rsync -Cravzp --delete shared/ biglinux/$i
                 
+                # Comando de depuração para verificar a estrutura do diretório após rsync
+                echo "Verificando a estrutura do diretório após rsync para $i:"
+                ls -la biglinux/$i
+                
                 # Remove Desktop
                 if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
                     grep -v -f $makeisoprofilesdir/$i/Desktop-remove shared/Packages-Desktop > biglinux/$i/Packages-Desktop
