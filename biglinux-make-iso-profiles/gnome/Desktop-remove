@@ -1,3 +1,6 @@
 system-config-printer
 system-config-printer-jobs
 vi
+kernel-alive
+>multilib lib32-mesa-demos
+mesa-demos
