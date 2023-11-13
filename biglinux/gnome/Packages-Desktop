@@ -88,8 +88,8 @@ biglinux-zsh-config
 big-preload
 
 ## Printing
->extra manjaro-printer
->extra gtk3-print-backends
+#>extra manjaro-printer
+#>extra gtk3-print-backends
 
 ## Xorg Server and Graphics
 >multilib lib32-libva-intel-driver
