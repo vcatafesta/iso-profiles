@@ -71,20 +71,19 @@ gnome-shell-extension-pano
 gnome-shell-extensions
 
 ## Fonts
-ttf-fira-code
-ttf-icomoon-feather
-ttf-roboto
-ttf-roboto-mono
-ttf-roboto-slab
+#ttf-fira-code
+#ttf-icomoon-feather
+#ttf-roboto
+#ttf-roboto-mono
+#ttf-roboto-slab
 
 ## BigLinux Specific Configurations
 biglinux-driver-manager
-biglinux-nano-config
-biglinux-neofetch
+#biglinux-nano-config
 biglinux-settings-gnome
 biglinux-skel-gnome
 biglinux-vim-config
-biglinux-zsh-config
+#biglinux-zsh-config
 big-preload
 
 ## Printing
