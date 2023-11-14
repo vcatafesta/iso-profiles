@@ -13,6 +13,7 @@ gdm
 gnome-bluetooth-3.0
 gnome-calculator
 gnome-calendar
+gnome-connections
 gnome-characters
 gnome-clocks
 gnome-color-manager
@@ -22,6 +23,7 @@ gnome-control-center
 gnome-disk-utility
 gnome-font-viewer
 gnome-keyring
+gnome-logs
 gnome-menus
 gnome-online-accounts
 gnome-photos
@@ -34,11 +36,14 @@ gnome-tweaks
 gnome-user-share
 gnome-video-effects
 gnome-weather
+gvfs-goa
+gvfs-google
 gparted
 grilo-plugins
 guvcview
 hplip
 libreoffice-fresh-pt-br
+loupe
 malcontent
 mutter
 nautilus
@@ -50,6 +55,7 @@ python-nautilus
 rustdesk-bin
 rygel
 simple-scan
+snapshot
 steam
 sushi
 sync-gnome-theme-to-qt
