@@ -364,7 +364,7 @@ pipewire-biglinux-config-git
 biglinux-webapps
 bigbashview
 biglinux-bash-config
-biglinux-zsh-config
+# biglinux-zsh-config
 biglinux-nano-config
 bigocrpdf
 #     tesseract-data-por
