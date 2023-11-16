@@ -13,6 +13,7 @@ gdm
 gnome-bluetooth-3.0
 gnome-calculator
 gnome-calendar
+gnome-connections
 gnome-characters
 gnome-clocks
 gnome-color-manager
@@ -22,6 +23,7 @@ gnome-control-center
 gnome-disk-utility
 gnome-font-viewer
 gnome-keyring
+gnome-logs
 gnome-menus
 gnome-online-accounts
 gnome-photos
@@ -34,11 +36,15 @@ gnome-tweaks
 gnome-user-share
 gnome-video-effects
 gnome-weather
+gvfs-goa
+gvfs-google
 gparted
 grilo-plugins
+gtk-engine-murrine
 guvcview
 hplip
 libreoffice-fresh-pt-br
+loupe
 malcontent
 mutter
 nautilus
@@ -50,15 +56,19 @@ python-nautilus
 rustdesk-bin
 rygel
 simple-scan
+snapshot
 steam
 sushi
 sync-gnome-theme-to-qt
 totem
 tracker3-miners
+xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
 
 ## Themes
 biglinux-icons-material
+gnome-themes-extra
+sassc
 
 ## GNOME Shell Extensions
 gnome-shell-extension-appindicator
@@ -70,19 +80,8 @@ gnome-shell-extension-legacy-theme-auto-switcher
 gnome-shell-extension-pano
 gnome-shell-extensions
 
-## Fonts
-ttf-fira-code
-ttf-icomoon-feather
-ttf-roboto
-ttf-roboto-mono
-ttf-roboto-slab
-
 ## BigLinux Specific Configurations
 biglinux-driver-manager
-biglinux-nano-config
-biglinux-neofetch
 biglinux-settings-gnome
 biglinux-skel-gnome
-biglinux-vim-config
-biglinux-zsh-config
 big-preload
