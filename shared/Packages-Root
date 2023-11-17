@@ -236,7 +236,7 @@ manjaro-pipewire
 pipewire-jack
 wireplumber
 breeze-icons
-helvum
+# helvum
 chmlib
 tesseract-data-spa
 
