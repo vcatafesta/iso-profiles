@@ -47,16 +47,16 @@ jobs:
         run: |
             # Copy files
             cp $makeisoprofilesdir/base/profile.conf shared/
-            cp $makeisoprofilesdir/base/pacman-default.conf  shared/
+            cp $makeisoprofilesdir/base/pacman-default.conf shared/
             cp $makeisoprofilesdir/base/user-repos.conf  shared/
             #Copy dirs
-            cp -r $makeisoprofilesdir/base/desktop-overlay/  shared/
-            cp -r $makeisoprofilesdir/base/root-overlay/  shared/
-            cp -r $makeisoprofilesdir/base/live-overlay/  shared/
+            cp -r $makeisoprofilesdir/base/desktop-overlay/ shared/
+            cp -r $makeisoprofilesdir/base/root-overlay/ shared/
+            cp -r $makeisoprofilesdir/base/live-overlay/ shared/
             
             # Remove Mhwd
             if [ -e "$makeisoprofilesdir/base/Mhwd-remove" ]; then
-                grep -v -f $makeisoprofilesdir/base/Mhwd-remove  $manjaroProfiles/shared/Packages-Mhwd  >  shared/Packages-Mhwd
+                grep -v -f $makeisoprofilesdir/base/Mhwd-remove $manjaroProfiles/shared/Packages-Mhwd > shared/Packages-Mhwd
             else
                 echo "ERROR Remove Mhwd"
                 exit 1
@@ -64,7 +64,7 @@ jobs:
             
             # Remove Root
             if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
-                grep -v -f $makeisoprofilesdir/base/Root-remove  $manjaroProfiles/shared/Packages-Root  >  shared/Packages-Root
+                grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
             else
                 echo "ERROR Remove Root"
                 exit 1
