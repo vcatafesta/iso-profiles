@@ -377,6 +377,7 @@ perl-file-mimeinfo
 zensu
 libappindicator-gtk3
 xdg-user-dirs
+xdg-user-dirs-gtk
 xdg-desktop-portal-kde
 appimagelauncher
 #gnome-keyring
