@@ -66,6 +66,7 @@ xdg-user-dirs-gtk
 biglinux-icons-material
 gnome-themes-extra
 sassc
+qt6-svg
 
 ## GNOME Shell Extensions
 gnome-shell-extension-appindicator
