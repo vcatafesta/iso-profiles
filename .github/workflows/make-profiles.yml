@@ -115,12 +115,12 @@ jobs:
                 rsync -Cravzp --delete shared/ biglinux/$i
                 
                 # # Remove Desktop
-                # if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
-                #     grep -v -f $makeisoprofilesdir/$i/Desktop-remove  $manjaroProfiles/shared/Packages-Desktop  >  biglinux/$i/Packages-Desktop
-                # else
-                #    echo "ERROR Remove Desktop $i"
-                #    exit 1
-                # fi
+                if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
+                    grep -v -f $makeisoprofilesdir/$i/Desktop-remove  $manjaroProfiles/shared/Packages-Desktop  >  biglinux/$i/Packages-Desktop
+                else
+                   echo "ERROR Remove Desktop $i"
+                   exit 1
+                fi
                 
                 # Add Desktop
                 if [ -e "$makeisoprofilesdir/$i/Desktop-add" ]; then
