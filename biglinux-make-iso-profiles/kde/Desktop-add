@@ -44,7 +44,6 @@ big-executable
 mx-idevice-mounter
 breeze-icons
 helvum
-extra-biglinux-wallpapers
 
 ## Network
 
@@ -122,7 +121,7 @@ kdegraphics-thumbnailers  # PDF and PS thumbnails
 ffmpegthumbs              # video thumbnails
 
 ## Optional dependencies for gwenview
-#>extra kimageformats     # support for dds, xcf, exr, psd, and more image formats
+kimageformats5     # support for dds, xcf, exr, psd, and more image formats
 qt5-imageformats  # support for tiff, webp, and more image formats
 
 ## Optional dependencies for kaccounts-integration
