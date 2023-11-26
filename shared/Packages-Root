@@ -279,6 +279,7 @@ rpmtoarch
 pamac-gtk
 pamac-cli
 >extra fwupd
+qt6-wayland
 manjaro-application-utility
 
 #Better wine support
