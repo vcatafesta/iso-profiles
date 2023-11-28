@@ -1,3 +1,5 @@
+## BigLinux
+
 ## Applications
 deepin-account-faces
 deepin-album
@@ -60,6 +62,9 @@ dde-device-formatter
 docparser
 startdde
 xdg-desktop-portal-dde
+libreoffice-fresh
+libreoffice-fresh-pt-br
+brave-browser
 
 ## Themes
 biglinux-icons-material
@@ -80,3 +85,48 @@ biglinux-neofetch
 biglinux-skel-dde
 biglinux-zsh-config
 big-preload
+big-executable
+mx-idevice-mounter
+
+## Display manager
+lightdm
+
+## Applications
+#manjaro-application-utility
+manjaro-settings-manager-kcm
+manjaro-settings-manager-knotifier
+systemd-kcm
+
+## Flatpak support
+pamac-flatpak-plugin
+
+## Printing
+>extra manjaro-printer
+>extra gtk3-print-backends
+
+## Xorg Server and Graphics
+>multilib lib32-libva-intel-driver
+>multilib lib32-libva-mesa-driver
+>multilib lib32-libva-vdpau-driver
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
+mesa-utils
+>multilib lib32-mesa-utils
+numlockx
+xdg-user-dirs
+xorg-server
+xorg-twm
+xorg-xinit
+xorg-xkill
+xorg-mkfontscale
+
+## Xorg Input Drivers
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+
+
+## Misc
+manjaro-hotfixes
+>basic squashfs-tools
