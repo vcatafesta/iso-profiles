@@ -2,7 +2,7 @@ biglinux-bash-config
 extra-biglinux-wallpapers
 qt6-wayland
 spice-vdagent-autostart-kde
-ufw
+>extra ufw
 fatresize
 libdnet
 libmspack
@@ -10,7 +10,7 @@ thermald
 uriparser
 system-config-printer
 system-config-printer-jobs
-vi
-gufw
+>core vi
+>extra gufw
 open-vm-tools
 gnome-keyring
