@@ -1,9 +1,3 @@
-gparted
-helvum
 kernel-alive
 >multilib lib32-mesa-demos
 mesa-demos
-system-config-printer
-system-config-printer-jobs
-vi
-xdg-desktop-portal-kde

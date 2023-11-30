@@ -116,7 +116,7 @@ jobs:
                 
                 # # Remove Desktop
                 if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
-                    grep -v -f $makeisoprofilesdir/$i/Desktop-remove  $manjaroProfiles/shared/Packages-Desktop  >  biglinux/$i/Packages-Desktop
+                    grep -v -f $makeisoprofilesdir/$i/Desktop-remove $manjaroProfiles/shared/Packages-Desktop > biglinux/$i/Packages-Desktop
                 else
                    echo "ERROR Remove Desktop $i"
                    exit 1
@@ -124,7 +124,7 @@ jobs:
                 
                 # Add Desktop
                 if [ -e "$makeisoprofilesdir/$i/Desktop-add" ]; then
-                    cat  $makeisoprofilesdir/$i/Desktop-add  >  biglinux/$i/Packages-Desktop
+                    cat  $makeisoprofilesdir/$i/Desktop-add > biglinux/$i/Packages-Desktop
                 else
                     echo "ERROR Add Desktop $i"
                     exit 1
@@ -132,7 +132,7 @@ jobs:
                 
                 # Remove Root
                 if [ -e "$makeisoprofilesdir/$i/Root-remove" ]; then
-                    grep -v -f $makeisoprofilesdir/$i/Root-remove shared/Packages-Root > biglinux/$i/Packages-Root
+                    grep -v -f $makeisoprofilesdir/$i/Root-remove $manjaroProfiles/shared/Packages-Root > biglinux/$i/Packages-Root
                 else
                     echo "no Remove Root in $i"
                 fi

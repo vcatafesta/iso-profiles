@@ -359,7 +359,6 @@ powertop
 # BigLinux
 biglinux-mime
 auto-tweaks-browser
-sync-kde-and-gtk-places
 pipewire-biglinux-config-git
 biglinux-webapps
 bigbashview
@@ -377,7 +376,6 @@ perl-file-mimeinfo
 zensu
 libappindicator-gtk3
 xdg-user-dirs
-xdg-desktop-portal-kde
 appimagelauncher
 gnome-keyring
 appmenu-gtk-module
