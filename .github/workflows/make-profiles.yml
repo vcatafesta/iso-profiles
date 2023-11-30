@@ -41,6 +41,26 @@ jobs:
                 git pull
                 popd
             fi
+      - name: Modify Packages
+        shell: bash
+        run: |
+        for profile in $(find $makeisoprofilesdir -mindepth 1 -maxdepth 1 -type d); do
+            profile_name=$(basename $profile)
+
+            # Remove Mhwd
+            if [ -e "$profile/Mhwd-remove" ]; then
+                grep -v -f $profile/Mhwd-remove $manjaroProfiles/shared/Packages-Mhwd > shared/Packages-Mhwd
+            else
+                echo "No Mhwd-remove file in $profile_name, skipping..."
+            fi
+            
+            # Remove Root
+            if [ -e "$profile/Root-remove" ]; then
+                grep -v -f $profile/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
+            else
+                echo "No Root-remove file in $profile_name, skipping..."
+            fi
+        done    
           
       - name: Make Base
         shell: bash
