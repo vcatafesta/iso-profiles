@@ -123,8 +123,8 @@ manjaro-hotfixes
 >basic squashfs-tools
 
 # Base
-i686 archlinux32-keyring
-multilib gcc-libs-multilib
+# >i686 archlinux32-keyring
+# >multilib gcc-libs-multilib
 KERNEL-headers
 bash
 file
