@@ -100,9 +100,85 @@ xapian-core
 xfsprogs
 xz
 
-#Biglinux
+### BIGLINUX
 biglinux-base-icons
 biglinux-apps-rename
 biglinux-metapackage
 biglinux-bash-config
 biglinux-zsh-config
+
+## Themes
+biglinux-icons-material
+
+## BigLinux Specific Configurations
+biglinux-driver-manager
+biglinux-nano-config
+biglinux-neofetch
+biglinux-skel-dde
+biglinux-zsh-config
+big-preload
+big-executable
+mx-idevice-mounter
+
+# boot
+grub-theme-biglinux
+plymouth-theme-biglinux
+timeshift
+grub-btrfs-timeshift
+grub-btrfs
+big-first-boot
+
+# tweaks
+biglinux-name
+biglinux-l18n
+faster-mkinitcpio
+biglinux-improve-compatibility
+big-mount-git
+biglinux-systemd-swap
+dbus-broker-enable
+biglinux-neofetch
+power-profiles-daemon-biglinux
+auto-rules-io
+auto-unlock-pacman-git
+hunspell-pt-br
+uresourced
+bigsudo
+
+## Video and Driver Support
+mhwd-biglinux
+biglinux-vaapi
+libxvmc
+lib32-mesa-vdpau
+lib32-vulkan-intel
+lib32-vulkan-radeon
+mesa-vdpau
+vulkan-intel
+vulkan-radeon
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+nvtop
+switcheroo-control
+
+## Sound/Audio/Video
+biglinux-meta-audio-config
+pipewire-jack-dropin
+biglinux-noise-reduction-pipewire
+alsa-firmware
+alsa-utils
+ffmpeg
+ffmpeg4.4
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+libcanberra
+libcanberra-pulse
+libdvdcss
+manjaro-pipewire
+pipewire-jack
+wireplumber
+chmlib
+tesseract-data-spa

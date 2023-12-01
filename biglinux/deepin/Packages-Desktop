@@ -66,18 +66,7 @@ libreoffice-fresh-pt-br
 brave-browser
 
 ## Themes
-biglinux-icons-material
 qt6-svg
-
-## BigLinux Specific Configurations
-biglinux-driver-manager
-biglinux-nano-config
-biglinux-neofetch
-biglinux-skel-dde
-biglinux-zsh-config
-big-preload
-big-executable
-mx-idevice-mounter
 
 ## Display manager
 lightdm
@@ -121,57 +110,13 @@ xf86-input-libinput
 manjaro-hotfixes
 >basic squashfs-tools
 
-
-# BigLinux Packages
 # visual
 # extra-biglinux-wallpapers
-
-# boot
-grub-theme-biglinux
-plymouth-theme-biglinux
-timeshift
-grub-btrfs-timeshift
-grub-btrfs
-big-first-boot
-
-# tweaks
-biglinux-name
-biglinux-l18n
-faster-mkinitcpio
-biglinux-improve-compatibility
-big-mount-git
-biglinux-systemd-swap
-dbus-broker-enable
-biglinux-neofetch
-power-profiles-daemon-biglinux
-auto-rules-io
-auto-unlock-pacman-git
-hunspell-pt-br
-uresourced
-bigsudo
 
 ## Games
 # BigLinux
 retroarch-tweaks
 ds4-disable-led
-
-## Video and Driver Support
-# Biglinux
-mhwd-biglinux
-biglinux-vaapi
-libxvmc
-lib32-mesa-vdpau
-lib32-vulkan-intel
-lib32-vulkan-radeon
-mesa-vdpau
-vulkan-intel
-vulkan-radeon
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-intel
-xf86-video-nouveau
-nvtop
-switcheroo-control
 
 ## Virtual Machines
 # open-vm-tools
@@ -191,7 +136,6 @@ mtools
 virtualbox-guest-utils
 
 ## Network
-# BigLinux
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 sysctl-network
@@ -226,29 +170,6 @@ udisks2
 bluez-plugins
 ## Optional dependencies for kdeconnect
 sshfs  # remote filesystem browser
-
-## Sound/Audio/Video
-# BigLinux
-biglinux-meta-audio-config
-pipewire-jack-dropin
-biglinux-noise-reduction-pipewire
-alsa-firmware
-alsa-utils
-ffmpeg
-ffmpeg4.4
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
-libcanberra
-libcanberra-pulse
-libdvdcss
-manjaro-pipewire
-pipewire-jack
-wireplumber
-chmlib
-tesseract-data-spa
 
 ## Fonts
 ttf-dejavu
