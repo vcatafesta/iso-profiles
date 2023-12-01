@@ -86,13 +86,13 @@ jobs:
               exit 1
             fi
             
-#             # Remove Root
-#             if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
-#               grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
-#             else
-#               echo "ERROR Remove Root"
-#               exit 1
-#             fi
+            # Remove Root
+            if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
+              grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
+            else
+              echo "ERROR Remove Root"
+              exit 1
+            fi
             
             # Remove Live
             if [ -e "$makeisoprofilesdir/base/Live-remove" ]; then
