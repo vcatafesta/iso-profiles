@@ -159,49 +159,6 @@ xf86-input-libinput
 manjaro-hotfixes
 >basic squashfs-tools
 
-# Base
-# >i686 archlinux32-keyring
-# >multilib gcc-libs-multilib
-KERNEL-headers
-bash
-file
-filesystem
-findutils
-gawk
-gcc-libs
-gcc
-gettext
-glibc
-grep
-gzip
-iproute2
-iputils
-pacman
-pciutils
-procps-ng
-psmisc
-sed
-shadow
-tar
-util-linux
-xz
-pacutils
-aspell-pt
-python-cssselect
-python-qtpy
-xapian-core
-bash-completion
-manjaro-tools-base
-hunspell-en_us
-qt5-translations
-vkd3d
-lib32-vkd3d
-vulkan-swrast
-ocl-icd
-lib32-ocl-icd
-irqbalance
-x86_energy_perf_policy
-
 # BigLinux Packages
 # visual
 extra-biglinux-wallpapers

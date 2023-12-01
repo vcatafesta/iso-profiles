@@ -1,7 +1,7 @@
-calamares-git
+
 gsmartcontrol
 clonezilla
-virtualbox-guest-utils
+virtualbox-guest-utils # Colocar no live?
 btrfs-assistant
 snapper-gui
 manjaro-rescue

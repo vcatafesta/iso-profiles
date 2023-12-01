@@ -78,29 +78,29 @@ jobs:
 #               exit 1
 #             fi
             
-            # Remove Mhwd
-            if [ -e "$makeisoprofilesdir/base/Mhwd-remove" ]; then
-              grep -v -f $makeisoprofilesdir/base/Mhwd-remove $manjaroProfiles/shared/Packages-Mhwd > shared/Packages-Mhwd
-            else
-              echo "ERROR Remove Mhwd"
-              exit 1
-            fi
+#             # Remove Mhwd
+#             if [ -e "$makeisoprofilesdir/base/Mhwd-remove" ]; then
+#               grep -v -f $makeisoprofilesdir/base/Mhwd-remove $manjaroProfiles/shared/Packages-Mhwd > shared/Packages-Mhwd
+#             else
+#               echo "ERROR Remove Mhwd"
+#               exit 1
+#             fi
             
-            # Remove Root
-            if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
-              grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
-            else
-              echo "ERROR Remove Root"
-              exit 1
-            fi
+#             # Remove Root
+#             if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
+#               grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
+#             else
+#               echo "ERROR Remove Root"
+#               exit 1
+#             fi
             
-            # Remove Live
-            if [ -e "$makeisoprofilesdir/base/Live-remove" ]; then
-              grep -v -f $makeisoprofilesdir/base/Live-remove  $manjaroProfiles/shared/Packages-Live > shared/Packages-Live
-            else
-              echo "ERROR Remove Live"
-              exit 1
-            fi
+#             # Remove Live
+#             if [ -e "$makeisoprofilesdir/base/Live-remove" ]; then
+#               grep -v -f $makeisoprofilesdir/base/Live-remove  $manjaroProfiles/shared/Packages-Live > shared/Packages-Live
+#             else
+#               echo "ERROR Remove Live"
+#               exit 1
+#             fi
             
       - name: Make Flavours
         shell: bash
