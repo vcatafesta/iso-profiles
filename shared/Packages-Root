@@ -99,3 +99,10 @@ x86_energy_perf_policy
 xapian-core
 xfsprogs
 xz
+
+#Biglinux
+biglinux-base-icons
+biglinux-apps-rename
+biglinux-metapackage
+biglinux-bash-config
+biglinux-zsh-config

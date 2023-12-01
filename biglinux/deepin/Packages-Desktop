@@ -125,9 +125,6 @@ manjaro-hotfixes
 # BigLinux Packages
 # visual
 # extra-biglinux-wallpapers
-biglinux-base-icons
-biglinux-apps-rename
-biglinux-metapackage
 
 # boot
 grub-theme-biglinux
@@ -371,8 +368,6 @@ auto-tweaks-browser
 pipewire-biglinux-config-git
 biglinux-webapps
 bigbashview
-# biglinux-bash-config
-biglinux-zsh-config
 bigocrpdf
 tts-biglinux
 perl-file-mimeinfo
