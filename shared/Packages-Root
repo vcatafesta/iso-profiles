@@ -6,7 +6,7 @@ acpid
 amd-ucode
 aspell-pt
 b43-fwcutter
-bash
+# bash
 bash-completion
 btrfs-progs
 bzip2
