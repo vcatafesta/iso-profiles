@@ -48,11 +48,11 @@ jobs:
             # Copy files
             cp $makeisoprofilesdir/base/profile.conf shared/
             cp $makeisoprofilesdir/base/pacman-default.conf shared/
-            cp $makeisoprofilesdir/base/user-repos.conf  shared/
+            cp $makeisoprofilesdir/base/user-repos.conf shared/
             #Copy dirs
-            cp -r $makeisoprofilesdir/base/desktop-overlay/ shared/
-            cp -r $makeisoprofilesdir/base/root-overlay/ shared/
-            cp -r $makeisoprofilesdir/base/live-overlay/ shared/
+#             cp -r $makeisoprofilesdir/base/desktop-overlay/ shared/
+#             cp -r $makeisoprofilesdir/base/root-overlay/ shared/
+#             cp -r $makeisoprofilesdir/base/live-overlay/ shared/
             
             # Add Mhwd
             if [ -e "$makeisoprofilesdir/base/Mhwd-add" ]; then
@@ -113,20 +113,20 @@ jobs:
                 
                 rsync -Cravzp --delete shared/ biglinux/$i
                 
-                # Add Desktop
-                if [ -e "$makeisoprofilesdir/$i/Desktop-add" ]; then
-                  cat  $makeisoprofilesdir/$i/Desktop-add > biglinux/$i/Packages-Desktop
-                else
-                  echo "ERROR Add Desktop $i"
-                  exit 1
-                fi
+#                 # Add Desktop
+#                 if [ -e "$makeisoprofilesdir/$i/Desktop-add" ]; then
+#                   cat  $makeisoprofilesdir/$i/Desktop-add > biglinux/$i/Packages-Desktop
+#                 else
+#                   echo "ERROR Add Desktop $i"
+#                   exit 1
+#                 fi
                 
-                # Add Live
-                if [ -e "$makeisoprofilesdir/$i/Live-add" ]; then
-                  cat $makeisoprofilesdir/$i/Live-add >> biglinux/$i/Packages-Live
-                else
-                  echo "no Add Live"
-                fi
+#                 # Add Live
+#                 if [ -e "$makeisoprofilesdir/$i/Live-add" ]; then
+#                   cat $makeisoprofilesdir/$i/Live-add >> biglinux/$i/Packages-Live
+#                 else
+#                   echo "no Add Live"
+#                 fi
                 
                 # Remove Mhwd
                 if [ -e "$makeisoprofilesdir/$i/Mhwd-remove" ]; then
