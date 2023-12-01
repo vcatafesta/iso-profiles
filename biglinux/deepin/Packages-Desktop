@@ -44,8 +44,8 @@ deepin-pw-check
 deepin-qt5integration
 deepin-qt5platform-plugins
 deepin-screen-recorder
-deepin-screensaver
-deepin-screensaver-pp
+# deepin-screensaver
+# deepin-screensaver-pp
 deepin-session
 deepin-session-shell
 deepin-session-ui
@@ -68,7 +68,7 @@ brave-browser
 ## Themes
 biglinux-icons-material
 qt6-svg
-qt6-wayland
+# qt6-wayland
 
 ## Fonts
 # ttf-fira-code
