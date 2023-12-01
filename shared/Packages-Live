@@ -7,10 +7,9 @@ manjaro-live-systemd
 mkinitcpio-nfs-utils
 nbd
 timeshift
-calamares
 calamares-biglinux
 biglinux-livecd
-biglinux-grub-restore 
+biglinux-grub-restore
 memtest86+
 memtest86+-efi
 biglinux-livecd-key

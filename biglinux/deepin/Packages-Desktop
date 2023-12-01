@@ -68,14 +68,6 @@ brave-browser
 ## Themes
 biglinux-icons-material
 qt6-svg
-# qt6-wayland
-
-## Fonts
-# ttf-fira-code
-# ttf-icomoon-feather
-# ttf-roboto
-# ttf-roboto-mono
-# ttf-roboto-slab
 
 ## BigLinux Specific Configurations
 biglinux-driver-manager
@@ -129,3 +121,334 @@ xf86-input-libinput
 ## Misc
 manjaro-hotfixes
 >basic squashfs-tools
+
+# Base
+i686 archlinux32-keyring
+multilib gcc-libs-multilib
+KERNEL-headers
+bash
+file
+filesystem
+findutils
+gawk
+gcc-libs
+gcc
+gettext
+glibc
+grep
+gzip
+iproute2
+iputils
+pacman
+pciutils
+procps-ng
+psmisc
+sed
+shadow
+tar
+util-linux
+xz
+pacutils
+aspell-pt
+python-cssselect
+python-qtpy
+xapian-core
+bash-completion
+manjaro-tools-base
+hunspell-en_us
+qt5-translations
+vkd3d
+lib32-vkd3d
+vulkan-swrast
+ocl-icd
+lib32-ocl-icd
+irqbalance
+x86_energy_perf_policy
+
+# BigLinux Packages
+# visual
+# extra-biglinux-wallpapers
+biglinux-base-icons
+biglinux-apps-rename
+biglinux-metapackage
+
+# boot
+grub-theme-biglinux
+plymouth-theme-biglinux
+timeshift
+grub-btrfs-timeshift
+grub-btrfs
+big-first-boot
+
+# tweaks
+biglinux-name
+biglinux-l18n
+faster-mkinitcpio
+biglinux-improve-compatibility
+big-mount-git
+biglinux-systemd-swap
+dbus-broker-enable
+biglinux-neofetch
+power-profiles-daemon-biglinux
+auto-rules-io
+auto-unlock-pacman-git
+hunspell-pt-br
+uresourced
+bigsudo
+
+## Games
+# BigLinux
+retroarch-tweaks
+ds4-disable-led
+
+## Video and Driver Support
+# Biglinux
+mhwd-biglinux
+biglinux-vaapi
+libxvmc
+lib32-mesa-vdpau
+lib32-vulkan-intel
+lib32-vulkan-radeon
+mesa-vdpau
+vulkan-intel
+vulkan-radeon
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+nvtop
+switcheroo-control
+
+## Virtual Machines
+# open-vm-tools
+qemu-guest-agent
+# libdnet
+gdk-pixbuf-xlib
+# uriparser
+# libmspack
+xf86-input-vmmouse
+compsize
+xf86-input-synaptics
+mtools
+# fatresize
+# thermald
+## Imported from live
+# BigLinux
+virtualbox-guest-utils
+
+## Network
+# BigLinux
+network-manager-prefer-ipv4-dns
+network-manager-disable-random-mac
+sysctl-network
+avahi
+networkmanager
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+nss-mdns # NSS support for mDNS (optdepend for avahi)
+ntp
+mobile-broadband-provider-info
+modemmanager
+openresolv
+openssh
+usb_modeswitch
+# ufw
+# gufw
+manjaro-settings-samba
+
+## Connect
+android-tools
+android-udev
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+mtpfs
+udiskie
+udisks2
+bluez-plugins
+## Optional dependencies for kdeconnect
+sshfs  # remote filesystem browser
+
+## Sound/Audio/Video
+# BigLinux
+biglinux-meta-audio-config
+pipewire-jack-dropin
+biglinux-noise-reduction-pipewire
+alsa-firmware
+alsa-utils
+ffmpeg
+ffmpeg4.4
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+libcanberra
+libcanberra-pulse
+libdvdcss
+manjaro-pipewire
+pipewire-jack
+wireplumber
+chmlib
+tesseract-data-spa
+
+## Fonts
+ttf-dejavu
+cantarell-fonts        # Installed as gnome-themes-standard dependency
+noto-fonts               # default font
+adobe-source-sans-pro-fonts
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+adobe-source-han-sans-cn-fonts
+>extra noto-fonts-emoji
+terminus-font
+>extra ttf-inconsolata
+>extra ttf-indic-otf
+>extra ttf-liberation
+>extra ttf-droid
+ttf-caladea
+ttf-carlito
+ttf-liberation
+ttf-roboto
+ttf-lato
+ttf-ubuntu-font-family
+
+## Package management
+# BigLinux
+big-store
+biglinux-keyring
+biglinux-updates-tweaks
+pamac-updates-menu
+pacman-cleancache
+force-upgrade
+debtap-mod
+rpmtoarch
+pamac-gtk
+pamac-cli
+>extra fwupd
+# qt6-wayland
+manjaro-application-utility
+
+#Better wine support
+lib32-pipewire
+lib32-pipewire-jack
+lib32-lcms2
+lib32-libtiff
+lib32-libjpeg-turbo
+lib32-libxrandr
+lib32-fontconfig
+lib32-libxi
+lib32-faudio
+faudio
+lib32-sdl2
+lib32-gettext
+lib32-acl
+lib32-libsm
+lib32-libice
+lib32-libxcursor
+lib32-libxrender
+lib32-libpcap
+lib32-libnl
+lib32-glu
+lib32-flac
+lib32-gmp
+lib32-gnutls
+lib32-libasyncns
+lib32-libjpeg6-turbo
+lib32-libltdl
+lib32-libogg
+lib32-libpng12
+lib32-libpulse
+lib32-libsndfile
+lib32-libvorbis
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxslt
+lib32-libxtst
+lib32-mpg123
+lib32-nettle
+lib32-nss-mdns
+lib32-openal
+lib32-opus
+lib32-sdl12-compat
+lib32-v4l-utils
+sdl12-compat
+lib32-giflib
+
+# printers
+bluez-cups
+cups
+manjaro-printer
+lib32-libcups
+ipp-usb
+splix
+sane-airscan
+## Optional dependencies for hplip
+# BigLinux
+# system-config-printer-jobs
+>extra python-pillow
+>extra python-pip
+>extra python-pyqt5
+## Optional dependencies for print-manager
+python-pysmbc          # SMB browser support
+# system-config-printer
+
+## Optional dependencies for ark
+p7zip  # 7Z format support
+unarchiver  # RAR format support
+
+## Applications
+dmidecode # for inxi -m output
+htop
+inxi
+powertop
+
+## Desktop Utils
+# BigLinux
+biglinux-mime
+auto-tweaks-browser
+pipewire-biglinux-config-git
+biglinux-webapps
+bigbashview
+# biglinux-bash-config
+biglinux-zsh-config
+bigocrpdf
+tts-biglinux
+perl-file-mimeinfo
+zensu
+libappindicator-gtk3
+xdg-user-dirs
+appimagelauncher
+# gnome-keyring
+appmenu-gtk-module
+xdg-utils
+
+#udev
+usbasp-udev
+trezor-udev
+numworks-udev
+apple-superdrive-udev
+nx-udev
+keepkey-udev
+bitbox-udev
+adafruit-boards-udev
+allow-input-accelerometer-udev
+avrisp-udev
+btchip-udev
+crazyflie-udev
+crazyradio-udev
+duckypad-udev
+mooltipass-udev
+nintendo-udev
+onlykey-udev
+openrgb-udev-rules
+osc-udev-storage
+signal-hound-udev
+stadia-controller-udev
+usbtinyisp-udev
+usb-dirty-pages-udev
+game-devices-udev

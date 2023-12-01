@@ -54,29 +54,29 @@ jobs:
 #             cp -r $makeisoprofilesdir/base/root-overlay/ shared/
 #             cp -r $makeisoprofilesdir/base/live-overlay/ shared/
             
-            # Add Mhwd
-            if [ -e "$makeisoprofilesdir/base/Mhwd-add" ]; then
-              cat $makeisoprofilesdir/base/Mhwd-add  >>  shared/Packages-Mhwd
-            else
-              echo "ERROR Add Mhwd"
-              exit 1
-            fi
+#             # Add Mhwd
+#             if [ -e "$makeisoprofilesdir/base/Mhwd-add" ]; then
+#               cat $makeisoprofilesdir/base/Mhwd-add  >>  shared/Packages-Mhwd
+#             else
+#               echo "ERROR Add Mhwd"
+#               exit 1
+#             fi
             
-            # Add Root
-            if [ -e "$makeisoprofilesdir/base/Root-add" ]; then
-              cat $makeisoprofilesdir/base/Root-add  >>  shared/Packages-Root
-            else
-              echo "ERROR Add Root"
-              exit 1
-            fi
+#             # Add Root
+#             if [ -e "$makeisoprofilesdir/base/Root-add" ]; then
+#               cat $makeisoprofilesdir/base/Root-add  >>  shared/Packages-Root
+#             else
+#               echo "ERROR Add Root"
+#               exit 1
+#             fi
             
-            # Add Live
-            if [ -e "$makeisoprofilesdir/base/Live-add" ]; then
-              cat $makeisoprofilesdir/base/Live-add  >>  shared/Packages-Live
-            else
-              echo "ERROR Add Live"
-              exit 1
-            fi
+#             # Add Live
+#             if [ -e "$makeisoprofilesdir/base/Live-add" ]; then
+#               cat $makeisoprofilesdir/base/Live-add  >>  shared/Packages-Live
+#             else
+#               echo "ERROR Add Live"
+#               exit 1
+#             fi
             
             # Remove Mhwd
             if [ -e "$makeisoprofilesdir/base/Mhwd-remove" ]; then
@@ -86,17 +86,17 @@ jobs:
               exit 1
             fi
             
-            # Remove Root
-            if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
-              grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
-            else
-              echo "ERROR Remove Root"
-              exit 1
-            fi
+#             # Remove Root
+#             if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
+#               grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
+#             else
+#               echo "ERROR Remove Root"
+#               exit 1
+#             fi
             
             # Remove Live
             if [ -e "$makeisoprofilesdir/base/Live-remove" ]; then
-              grep -v -f $makeisoprofilesdir/base/Live-remove  $manjaroProfiles/shared/Packages-Live  >  shared/Packages-Live
+              grep -v -f $makeisoprofilesdir/base/Live-remove  $manjaroProfiles/shared/Packages-Live > shared/Packages-Live
             else
               echo "ERROR Remove Live"
               exit 1
