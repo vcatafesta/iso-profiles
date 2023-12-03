@@ -55,12 +55,7 @@ totem
 tracker3-miners
 xdg-user-dirs-gtk
 
-## Themes
-biglinux-icons-material
-qt6-svg
-qt6-wayland
-
-## GNOME Shell Extensions
+## Gnome Shell Extensions
 gnome-shell-extension-appindicator
 gnome-shell-extension-blur-my-shell
 gnome-shell-extension-dash-to-dock
@@ -70,124 +65,54 @@ gnome-shell-extension-legacy-theme-auto-switcher
 gnome-shell-extension-pano
 gnome-shell-extensions
 
-## BigLinux Specific Configurations
-biglinux-driver-manager
-biglinux-nano-config
-biglinux-neofetch
+## Themes
+qt6-svg
+qt6-wayland
+
+## BigLinux Specific Configurations Gnome
 biglinux-settings-gnome
 biglinux-skel-gnome
-biglinux-bash-config
-big-preload
 
 ## Printing
 #>extra manjaro-printer
 #>extra gtk3-print-backends
-
-## Xorg Server and Graphics
->multilib lib32-libva-intel-driver
->multilib lib32-libva-mesa-driver
->multilib lib32-libva-vdpau-driver
-libva-intel-driver
-libva-mesa-driver
-libva-vdpau-driver
-mesa-utils
->multilib lib32-mesa-utils
-numlockx
-#xdg-user-dirs - REMOVIDO
-xorg-server
-xorg-twm
-xorg-xinit
-xorg-xkill
-xorg-mkfontscale
-
-## Xorg Input Drivers
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-libinput
 
 ## Misc
 manjaro-hotfixes
 >basic squashfs-tools
 
 ## Fonts
-ttf-dejavu
-cantarell-fonts        # Installed as gnome-themes-standard dependency
-noto-fonts               # default font
-adobe-source-sans-pro-fonts
+>extra noto-fonts-emoji
+adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
-adobe-source-han-sans-cn-fonts
->extra noto-fonts-emoji
+adobe-source-sans-pro-fonts
+cantarell-fonts # Installed as gnome-themes-standard dependency
+>extra ttf-droid
 terminus-font
 >extra ttf-inconsolata
 >extra ttf-indic-otf
 >extra ttf-liberation
->extra ttf-droid
 ttf-caladea
 ttf-carlito
-ttf-liberation
-ttf-lato
-ttf-ubuntu-font-family
-##
+ttf-dejavu
 ttf-fira-code
 ttf-icomoon-feather
+ttf-lato
+ttf-liberation
+noto-fonts # default font
 ttf-roboto
 ttf-roboto-mono
 ttf-roboto-slab
+ttf-ubuntu-font-family
 
-# BigLinux Packages
-# visual
+## Visual
+# BigLinux
 extra-biglinux-wallpapers
-biglinux-base-icons
-biglinux-apps-rename
-biglinux-metapackage
-
-# boot
-grub-theme-biglinux
-plymouth-theme-biglinux
-timeshift
-grub-btrfs-timeshift
-grub-btrfs
-big-first-boot
-
-# tweaks
-biglinux-name
-biglinux-l18n
-faster-mkinitcpio
-biglinux-improve-compatibility
-big-mount-git
-biglinux-systemd-swap
-dbus-broker-enable
-biglinux-neofetch
-power-profiles-daemon-biglinux
-auto-rules-io
-auto-unlock-pacman-git
-hunspell-pt-br
-uresourced
-bigsudo
 
 ## Games
-# BigLinux
-retroarch-tweaks
 ds4-disable-led
-
-## Video and Driver Support
-# Biglinux
-mhwd-biglinux
-biglinux-vaapi
-libxvmc
-lib32-mesa-vdpau
-lib32-vulkan-intel
-lib32-vulkan-radeon
-mesa-vdpau
-vulkan-intel
-vulkan-radeon
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-intel
-xf86-video-nouveau
-nvtop
-switcheroo-control
+retroarch-tweaks
 
 ## Virtual Machines
 open-vm-tools
@@ -202,13 +127,12 @@ xf86-input-synaptics
 mtools
 fatresize
 thermald
+
 ## Imported from live
 # BigLinux
-# spice-vdagent-autostart-kde
 virtualbox-guest-utils
 
 ## Network
-# BigLinux
 network-manager-prefer-ipv4-dns
 network-manager-disable-random-mac
 sysctl-network
@@ -244,31 +168,7 @@ bluez-plugins
 ## Optional dependencies for kdeconnect
 sshfs  # remote filesystem browser
 
-## Sound/Audio/Video
-# BigLinux
-biglinux-meta-audio-config
-pipewire-jack-dropin
-biglinux-noise-reduction-pipewire
-alsa-firmware
-alsa-utils
-ffmpeg
-ffmpeg4.4
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
-libcanberra
-libcanberra-pulse
-libdvdcss
-manjaro-pipewire
-pipewire-jack
-wireplumber
-chmlib
-tesseract-data-spa
-
 ## Package management
-# BigLinux
 big-store
 biglinux-keyring
 biglinux-updates-tweaks
@@ -283,7 +183,100 @@ pamac-cli
 qt6-wayland
 manjaro-application-utility
 
-#Better wine support
+## Printers
+bluez-cups
+cups
+manjaro-printer
+lib32-libcups
+ipp-usb
+splix
+sane-airscan
+## Optional dependencies for hplip
+# system-config-printer-jobs
+>extra python-pillow
+>extra python-pip
+>extra python-pyqt5
+## Optional dependencies for print-manager
+python-pysmbc          # SMB browser support
+# system-config-printer
+
+## Optional dependencies for ark
+p7zip  # 7Z format support
+unarchiver  # RAR format support
+
+## Applications
+dmidecode # for inxi -m output
+htop
+inxi
+powertop
+
+## Desktop Utils
+appimagelauncher
+appmenu-gtk-module
+auto-tweaks-browser
+bigbashview
+biglinux-mime
+biglinux-webapps
+bigocrpdf
+gnome-keyring
+libappindicator-gtk3
+perl-file-mimeinfo
+pipewire-biglinux-config-git
+tts-biglinux
+xdg-user-dirs
+xdg-user-dirs-gtk
+xdg-utils
+zensu
+
+## Xorg Server and Graphics
+>multilib lib32-libva-intel-driver
+>multilib lib32-libva-mesa-driver
+>multilib lib32-libva-vdpau-driver
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
+mesa-utils
+>multilib lib32-mesa-utils
+numlockx
+#xdg-user-dirs
+xorg-server
+xorg-twm
+xorg-xinit
+xorg-xkill
+xorg-mkfontscale
+
+## Xorg Input Drivers
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+
+## Udev
+adafruit-boards-udev
+allow-input-accelerometer-udev
+apple-superdrive-udev
+avrisp-udev
+bitbox-udev
+btchip-udev
+crazyflie-udev
+crazyradio-udev
+duckypad-udev
+game-devices-udev
+keepkey-udev
+mooltipass-udev
+nintendo-udev
+numworks-udev
+nx-udev
+onlykey-udev
+openrgb-udev-rules
+osc-udev-storage
+signal-hound-udev
+stadia-controller-udev
+trezor-udev
+usb-dirty-pages-udev
+usbasp-udev
+usbtinyisp-udev
+
+## Better wine support
 lib32-pipewire
 lib32-pipewire-jack
 lib32-lcms2
@@ -328,78 +321,3 @@ lib32-sdl12-compat
 lib32-v4l-utils
 sdl12-compat
 lib32-giflib
-
-# printers
-bluez-cups
-cups
-manjaro-printer
-lib32-libcups
-ipp-usb
-splix
-sane-airscan
-## Optional dependencies for hplip
-# BigLinux
-# system-config-printer-jobs
->extra python-pillow
->extra python-pip
->extra python-pyqt5
-## Optional dependencies for print-manager
-python-pysmbc          # SMB browser support
-# system-config-printer
-
-## Optional dependencies for ark
-p7zip  # 7Z format support
-unarchiver  # RAR format support
-
-## Applications
-dmidecode # for inxi -m output
-htop
-inxi
-powertop
-
-## Desktop Utils
-# BigLinux
-biglinux-mime
-auto-tweaks-browser
-pipewire-biglinux-config-git
-biglinux-webapps
-bigbashview
-biglinux-bash-config
-# biglinux-zsh-config
-bigocrpdf
-tts-biglinux
-perl-file-mimeinfo
-zensu
-libappindicator-gtk3
-xdg-user-dirs
-xdg-user-dirs-gtk
-appimagelauncher
-gnome-keyring
-appmenu-gtk-module
-xdg-utils
-
-#udev
-usbasp-udev
-trezor-udev
-numworks-udev
-apple-superdrive-udev
-nx-udev
-keepkey-udev
-bitbox-udev
-adafruit-boards-udev
-allow-input-accelerometer-udev
-avrisp-udev
-btchip-udev
-crazyflie-udev
-crazyradio-udev
-duckypad-udev
-mooltipass-udev
-nintendo-udev
-onlykey-udev
-openrgb-udev-rules
-osc-udev-storage
-signal-hound-udev
-stadia-controller-udev
-usbtinyisp-udev
-usb-dirty-pages-udev
-game-devices-udev

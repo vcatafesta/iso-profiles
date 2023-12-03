@@ -55,7 +55,7 @@ deepin-system-monitor
 deepin-terminal
 deepin-turbo
 deepin-voice-note
-deepin-wallpapers
+# deepin-wallpapers
 deepin-widgets
 deepin-wloutput-daemon
 docparser
@@ -64,6 +64,7 @@ xdg-desktop-portal-dde
 libreoffice-fresh
 libreoffice-fresh-pt-br
 brave-browser
+biglinux-wallpapers-dde
 
 ## Themes
 qt6-svg

@@ -1,4 +1,4 @@
-# Base
+## Base
 >i686 archlinux32-keyring
 >multilib gcc-libs-multilib
 acpi
@@ -101,25 +101,24 @@ xfsprogs
 xz
 
 ### BIGLINUX
-biglinux-base-icons
-biglinux-apps-rename
-biglinux-metapackage
 biglinux-bash-config
 biglinux-zsh-config
 
-## Themes
+## Visual/theme
+biglinux-base-icons
+biglinux-apps-rename
 biglinux-icons-material
+biglinux-metapackage
 
 ## BigLinux Specific Configurations
 biglinux-driver-manager
 biglinux-nano-config
 biglinux-neofetch
-biglinux-zsh-config
 big-preload
 big-executable
 mx-idevice-mounter
 
-# boot
+## Boot
 grub-theme-biglinux
 plymouth-theme-biglinux
 timeshift
@@ -127,7 +126,7 @@ grub-btrfs-timeshift
 grub-btrfs
 big-first-boot
 
-# tweaks
+## Tweaks
 biglinux-name
 biglinux-l18n
 faster-mkinitcpio

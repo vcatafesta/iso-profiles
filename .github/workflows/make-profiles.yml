@@ -16,7 +16,7 @@ on:
     branches: [ "*" ]
 
 env:
-  manjaroProfiles: manjaro-iso-profiles
+#   manjaroProfiles: manjaro-iso-profiles
   makeisoprofilesdir: biglinux-make-iso-profiles
 
 jobs:
@@ -30,77 +30,25 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event.inputs.debug_enabled }}
       
-      - name: Clone ManjaroIsoProfile
-        shell: bash
-        run: |
-            # clone or Update git
-            if [ ! -d "$manjaroProfiles" ]; then
-              git clone https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git $manjaroProfiles
-            else
-              pushd $manjaroProfiles
-              git pull
-              popd
-            fi
+#       - name: Clone ManjaroIsoProfile
+#         shell: bash
+#         run: |
+#             # clone or Update git
+#             if [ ! -d "$manjaroProfiles" ]; then
+#               git clone https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git $manjaroProfiles
+#             else
+#               pushd $manjaroProfiles
+#               git pull
+#               popd
+#             fi
          
-      - name: Make Base
-        shell: bash
-        run: |
-            # Copy files
-            cp $makeisoprofilesdir/base/profile.conf shared/
-            cp $makeisoprofilesdir/base/pacman-default.conf shared/
-            cp $makeisoprofilesdir/base/user-repos.conf shared/
-            #Copy dirs
-#             cp -r $makeisoprofilesdir/base/desktop-overlay/ shared/
-#             cp -r $makeisoprofilesdir/base/root-overlay/ shared/
-#             cp -r $makeisoprofilesdir/base/live-overlay/ shared/
-            
-#             # Add Mhwd
-#             if [ -e "$makeisoprofilesdir/base/Mhwd-add" ]; then
-#               cat $makeisoprofilesdir/base/Mhwd-add  >>  shared/Packages-Mhwd
-#             else
-#               echo "ERROR Add Mhwd"
-#               exit 1
-#             fi
-            
-#             # Add Root
-#             if [ -e "$makeisoprofilesdir/base/Root-add" ]; then
-#               cat $makeisoprofilesdir/base/Root-add  >>  shared/Packages-Root
-#             else
-#               echo "ERROR Add Root"
-#               exit 1
-#             fi
-            
-#             # Add Live
-#             if [ -e "$makeisoprofilesdir/base/Live-add" ]; then
-#               cat $makeisoprofilesdir/base/Live-add  >>  shared/Packages-Live
-#             else
-#               echo "ERROR Add Live"
-#               exit 1
-#             fi
-            
-#             # Remove Mhwd
-#             if [ -e "$makeisoprofilesdir/base/Mhwd-remove" ]; then
-#               grep -v -f $makeisoprofilesdir/base/Mhwd-remove $manjaroProfiles/shared/Packages-Mhwd > shared/Packages-Mhwd
-#             else
-#               echo "ERROR Remove Mhwd"
-#               exit 1
-#             fi
-            
-#             # Remove Root
-#             if [ -e "$makeisoprofilesdir/base/Root-remove" ]; then
-#               grep -v -f $makeisoprofilesdir/base/Root-remove $manjaroProfiles/shared/Packages-Root > shared/Packages-Root
-#             else
-#               echo "ERROR Remove Root"
-#               exit 1
-#             fi
-            
-#             # Remove Live
-#             if [ -e "$makeisoprofilesdir/base/Live-remove" ]; then
-#               grep -v -f $makeisoprofilesdir/base/Live-remove  $manjaroProfiles/shared/Packages-Live > shared/Packages-Live
-#             else
-#               echo "ERROR Remove Live"
-#               exit 1
-#             fi
+#       - name: Make Base
+#         shell: bash
+#         run: |
+#             # Copy files
+#             cp $makeisoprofilesdir/base/profile.conf shared/
+#             cp $makeisoprofilesdir/base/pacman-default.conf shared/
+#             cp $makeisoprofilesdir/base/user-repos.conf shared/
             
       - name: Make Flavours
         shell: bash
@@ -111,53 +59,29 @@ jobs:
                 echo "MAKE $i"
                 echo ""
                 
-                rsync -Cravzp --delete shared/ biglinux/$i
-                
-#                 # Add Desktop
-#                 if [ -e "$makeisoprofilesdir/$i/Desktop-add" ]; then
-#                   cat  $makeisoprofilesdir/$i/Desktop-add > biglinux/$i/Packages-Desktop
-#                 else
-#                   echo "ERROR Add Desktop $i"
-#                   exit 1
-#                 fi
-                
-#                 # Add Live
-#                 if [ -e "$makeisoprofilesdir/$i/Live-add" ]; then
-#                   cat $makeisoprofilesdir/$i/Live-add >> biglinux/$i/Packages-Live
-#                 else
-#                   echo "no Add Live"
-#                 fi
+#                 rsync -Cravzp --delete shared/ biglinux/$i
                 
                 # Remove Mhwd
                 if [ -e "$makeisoprofilesdir/$i/Mhwd-remove" ]; then
-                  grep -v -f $makeisoprofilesdir/$i/Mhwd-remove $manjaroProfiles/shared/Packages-Mhwd > biglinux/$i/Packages-Mhwd
+                  grep -v -f $makeisoprofilesdir/$i/Mhwd-remove shared/Packages-Mhwd > shared/Packages-Mhwd.tmp
+                  mv -f shared/Packages-Mhwd.tmp shared/Packages-Mhwd
                 else
                   echo "no Remove Mhwd in $i"
                 fi                
                 
                 # Remove Root
                 if [ -e "$makeisoprofilesdir/$i/Root-remove" ]; then
-                  grep -v -f $makeisoprofilesdir/$i/Root-remove $manjaroProfiles/shared/Packages-Root > biglinux/$i/Packages-Root
+                  grep -v -f "$makeisoprofilesdir/$i/Root-remove" shared/Packages-Root > shared/Packages-Root.tmp
+                  mv -f shared/Packages-Root.tmp shared/Packages-Root
                 else
                   echo "no Remove Root in $i"
-                fi
-                
-                # Remove Desktop
-                if [ -e "$makeisoprofilesdir/$i/Desktop-remove" ]; then
-                  grep -v -f $makeisoprofilesdir/$i/Desktop-remove $manjaroProfiles/shared/Packages-Desktop > biglinux/$i/Packages-Desktop
-                else
-                  echo "ERROR Remove Desktop $i"
-                  exit 1
-                fi                
+                fi               
                 
                 # Run special commands
                 if [ -e "$makeisoprofilesdir/$i/special-commands.sh" ]; then
                   bash -x $makeisoprofilesdir/$i/special-commands.sh
                 fi
             done
-            
-            #remove manjaro profiles
-            rm -rf $manjaroProfiles
           
       - name: Update github
         run: |
