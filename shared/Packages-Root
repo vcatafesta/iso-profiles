@@ -4,6 +4,7 @@
 acpi
 acpid
 amd-ucode
+archlinux-keyring
 aspell-pt
 b43-fwcutter
 # bash
@@ -47,12 +48,14 @@ jfsutils
 KERNEL
 KERNEL-headers
 less
+licenses
 lib32-ocl-icd
 lib32-vkd3d
 logrotate
 lvm2
 make
 #manjaro-firmware
+manjaro-keyring
 manjaro-release
 manjaro-system
 manjaro-tools-base
@@ -84,6 +87,7 @@ sof-firmware
 sudo
 sysfsutils
 systemd
+systemd-sysvcompat
 tar
 texinfo
 usbutils
