@@ -97,12 +97,12 @@ adobe-source-sans-pro-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
-extra noto-fonts-emoji
+>extra noto-fonts-emoji
 terminus-font
-extra ttf-inconsolata
-extra ttf-indic-otf
-extra ttf-liberation
-extra ttf-droid
+>extra ttf-inconsolata
+>extra ttf-indic-otf
+>extra ttf-liberation
+>extra ttf-droid
 ttf-caladea
 ttf-carlito
 ttf-liberation
