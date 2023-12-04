@@ -119,8 +119,6 @@ biglinux-driver-manager
 biglinux-nano-config
 biglinux-neofetch
 big-preload
-big-executable
-mx-idevice-mounter
 
 ## Boot
 grub-theme-biglinux

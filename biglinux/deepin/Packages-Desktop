@@ -1,8 +1,6 @@
-## BigLinux
-
 ## Applications
 deepin-account-faces
-deepin-album
+# deepin-album
 deepin-anything
 deepin-api
 deepin-app-services
@@ -64,16 +62,18 @@ xdg-desktop-portal-dde
 libreoffice-fresh
 libreoffice-fresh-pt-br
 brave-browser
-biglinux-wallpapers-dde
 
 ## Themes
 qt6-svg
+
+## BigLinux Specific Configurations Deepin
+biglinux-skel-dde
 
 ## Display manager
 lightdm
 
 ## Applications
-#manjaro-application-utility
+# manjaro-application-utility
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 systemd-kcm
@@ -85,56 +85,53 @@ pamac-flatpak-plugin
 >extra manjaro-printer
 >extra gtk3-print-backends
 
-## Xorg Server and Graphics
->multilib lib32-libva-intel-driver
->multilib lib32-libva-mesa-driver
->multilib lib32-libva-vdpau-driver
-libva-intel-driver
-libva-mesa-driver
-libva-vdpau-driver
-mesa-utils
->multilib lib32-mesa-utils
-numlockx
-xdg-user-dirs
-xorg-server
-xorg-twm
-xorg-xinit
-xorg-xkill
-xorg-mkfontscale
-
-## Xorg Input Drivers
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-libinput
-
 ## Misc
 manjaro-hotfixes
 >basic squashfs-tools
 
+## Fonts
+ttf-dejavu
+cantarell-fonts        # Installed as gnome-themes-standard dependency
+noto-fonts             # default font
+adobe-source-sans-pro-fonts
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+adobe-source-han-sans-cn-fonts
+extra noto-fonts-emoji
+terminus-font
+extra ttf-inconsolata
+extra ttf-indic-otf
+extra ttf-liberation
+extra ttf-droid
+ttf-caladea
+ttf-carlito
+ttf-liberation
+ttf-roboto
+ttf-lato
+ttf-ubuntu-font-family
+
 # visual
-# extra-biglinux-wallpapers
-biglinux-skel-dde
+biglinux-wallpapers-dde
 
 ## Games
-# BigLinux
 retroarch-tweaks
 ds4-disable-led
 
 ## Virtual Machines
-# open-vm-tools
+open-vm-tools
 qemu-guest-agent
-# libdnet
+libdnet
 gdk-pixbuf-xlib
-# uriparser
-# libmspack
+uriparser
+libmspack
 xf86-input-vmmouse
 compsize
 xf86-input-synaptics
 mtools
-# fatresize
-# thermald
+fatresize
+thermald
+
 ## Imported from live
-# BigLinux
 virtualbox-guest-utils
 
 ## Network
@@ -173,29 +170,7 @@ bluez-plugins
 ## Optional dependencies for kdeconnect
 sshfs  # remote filesystem browser
 
-## Fonts
-ttf-dejavu
-cantarell-fonts        # Installed as gnome-themes-standard dependency
-noto-fonts               # default font
-adobe-source-sans-pro-fonts
-adobe-source-han-sans-jp-fonts
-adobe-source-han-sans-kr-fonts
-adobe-source-han-sans-cn-fonts
->extra noto-fonts-emoji
-terminus-font
->extra ttf-inconsolata
->extra ttf-indic-otf
->extra ttf-liberation
->extra ttf-droid
-ttf-caladea
-ttf-carlito
-ttf-liberation
-ttf-roboto
-ttf-lato
-ttf-ubuntu-font-family
-
 ## Package management
-# BigLinux
 big-store
 biglinux-keyring
 biglinux-updates-tweaks
@@ -210,52 +185,6 @@ pamac-cli
 # qt6-wayland
 manjaro-application-utility
 
-#Better wine support
-lib32-pipewire
-lib32-pipewire-jack
-lib32-lcms2
-lib32-libtiff
-lib32-libjpeg-turbo
-lib32-libxrandr
-lib32-fontconfig
-lib32-libxi
-lib32-faudio
-faudio
-lib32-sdl2
-lib32-gettext
-lib32-acl
-lib32-libsm
-lib32-libice
-lib32-libxcursor
-lib32-libxrender
-lib32-libpcap
-lib32-libnl
-lib32-glu
-lib32-flac
-lib32-gmp
-lib32-gnutls
-lib32-libasyncns
-lib32-libjpeg6-turbo
-lib32-libltdl
-lib32-libogg
-lib32-libpng12
-lib32-libpulse
-lib32-libsndfile
-lib32-libvorbis
-lib32-libxcomposite
-lib32-libxinerama
-lib32-libxslt
-lib32-libxtst
-lib32-mpg123
-lib32-nettle
-lib32-nss-mdns
-lib32-openal
-lib32-opus
-lib32-sdl12-compat
-lib32-v4l-utils
-sdl12-compat
-lib32-giflib
-
 # printers
 bluez-cups
 cups
@@ -265,7 +194,6 @@ ipp-usb
 splix
 sane-airscan
 ## Optional dependencies for hplip
-# BigLinux
 # system-config-printer-jobs
 >extra python-pillow
 >extra python-pip
@@ -285,45 +213,111 @@ inxi
 powertop
 
 ## Desktop Utils
-# BigLinux
-biglinux-mime
-auto-tweaks-browser
-pipewire-biglinux-config-git
-biglinux-webapps
-bigbashview
-bigocrpdf
-tts-biglinux
-perl-file-mimeinfo
-zensu
-libappindicator-gtk3
-xdg-user-dirs
 appimagelauncher
-# gnome-keyring
 appmenu-gtk-module
+auto-tweaks-browser
+bigbashview
+biglinux-mime
+biglinux-webapps
+bigocrpdf
+libappindicator-gtk3
+perl-file-mimeinfo
+pipewire-biglinux-config-git
+tts-biglinux
+xdg-user-dirs
 xdg-utils
+zensu
 
-#udev
-usbasp-udev
-trezor-udev
-numworks-udev
-apple-superdrive-udev
-nx-udev
-keepkey-udev
-bitbox-udev
+## Xorg Server and Graphics
+>multilib lib32-libva-intel-driver
+>multilib lib32-libva-mesa-driver
+>multilib lib32-libva-vdpau-driver
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
+mesa-utils
+>multilib lib32-mesa-utils
+numlockx
+#xdg-user-dirs
+xorg-server
+xorg-twm
+xorg-xinit
+xorg-xkill
+xorg-mkfontscale
+
+## Xorg Input Drivers
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+
+## Udev
 adafruit-boards-udev
 allow-input-accelerometer-udev
+apple-superdrive-udev
 avrisp-udev
+bitbox-udev
 btchip-udev
 crazyflie-udev
 crazyradio-udev
 duckypad-udev
+game-devices-udev
+keepkey-udev
 mooltipass-udev
 nintendo-udev
+numworks-udev
+nx-udev
 onlykey-udev
 openrgb-udev-rules
 osc-udev-storage
 signal-hound-udev
 stadia-controller-udev
-usbtinyisp-udev
+trezor-udev
 usb-dirty-pages-udev
-game-devices-udev
+usbasp-udev
+usbtinyisp-udev
+
+## Better wine support
+faudio
+lib32-acl
+lib32-faudio
+lib32-flac
+lib32-fontconfig
+lib32-gettext
+lib32-glu
+lib32-gmp
+lib32-gnutls
+lib32-libasyncns
+lib32-libice
+lib32-libjpeg-turbo
+lib32-libjpeg6-turbo
+lib32-libltdl
+lib32-libnl
+lib32-libogg
+lib32-libpcap
+lib32-libpng12
+lib32-libpulse
+lib32-libsndfile
+lib32-libtiff
+lib32-libvorbis
+lib32-libxcomposite
+lib32-libxcursor
+lib32-libxi
+lib32-libxinerama
+lib32-libxrandr
+lib32-libxrender
+lib32-libxslt
+lib32-libxtst
+lib32-lcms2
+lib32-libsndfile
+lib32-mpg123
+lib32-nettle
+lib32-nss-mdns
+lib32-openal
+lib32-opus
+lib32-pipewire
+lib32-pipewire-jack
+lib32-sdl12-compat
+lib32-sdl2
+lib32-v4l-utils
+lib32-libjpeg6-turbo
+sdl12-compat
