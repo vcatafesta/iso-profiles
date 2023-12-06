@@ -16,6 +16,7 @@ gnome-calendar
 gnome-characters
 gnome-clocks
 gnome-color-manager
+gnome-connections
 gnome-console
 gnome-contacts
 gnome-control-center
@@ -67,6 +68,7 @@ gnome-shell-extension-pano
 gnome-shell-extensions
 
 ## Themes
+breeze-icons
 gnome-themes-extra
 gtk-engine-murrine
 qt6-svg
