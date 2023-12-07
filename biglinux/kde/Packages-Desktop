@@ -66,7 +66,7 @@ kalarm
 kde-gtk-config
 kde-snap-assist
 kdeplasma-addons
-kgamma5
+kgamma # Alterou de kgamma5
 kinfocenter
 kmenuedit
 kmines
