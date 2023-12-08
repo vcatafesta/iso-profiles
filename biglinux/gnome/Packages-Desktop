@@ -251,6 +251,8 @@ xorg-twm
 xorg-xinit
 xorg-xkill
 xorg-mkfontscale
+wayland-protocols
+wayland-utils
 
 ## Xorg Input Drivers
 xf86-input-elographics
