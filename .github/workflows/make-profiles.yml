@@ -17,7 +17,7 @@ on:
 
 env:
 #   manjaroProfiles: manjaro-iso-profiles
-  makeisoprofilesdir: biglinux-make-iso-profiles
+  makeisoprofilesdir: custom-profiles
 
 jobs:
   build:
