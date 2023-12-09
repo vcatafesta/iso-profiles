@@ -4,7 +4,7 @@ amberol
 baobab
 brave-browser
 dconf-editor
-# eog
+eog
 evince
 file-roller
 fragments
@@ -25,7 +25,7 @@ gnome-font-viewer
 # gnome-logs
 gnome-menus
 gnome-online-accounts
-gnome-photos
+# gnome-photos
 gnome-remote-desktop
 gnome-session
 gnome-settings-daemon
