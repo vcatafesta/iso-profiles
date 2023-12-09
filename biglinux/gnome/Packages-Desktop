@@ -4,7 +4,7 @@ amberol
 baobab
 brave-browser
 dconf-editor
-eog
+# eog
 evince
 file-roller
 fragments
@@ -39,6 +39,7 @@ grilo-plugins
 # guvcview
 hplip
 libreoffice-fresh-pt-br
+loupe
 malcontent
 mutter
 nautilus
