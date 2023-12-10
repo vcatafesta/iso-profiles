@@ -289,8 +289,8 @@ xdg-utils
 zensu
 
 ## Development
-syntax-highlighting
-libkdcraw
+# syntax-highlighting
+# libkdcraw
 
 ## Xorg Server and Graphics
 >multilib lib32-libva-intel-driver
