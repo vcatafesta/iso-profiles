@@ -5,7 +5,7 @@
 Server = http://mirrors.manjaro.org/repo/unstable/$repo/$arch
 
 ## CDN from cloudflare redirecting
-Server = http://manjaro.biglinux.com.br/manjaro/unstable/$repo/$arch
+Server = http://manjaro.biglinux.com.br/manjaro/testing/$repo/$arch
 
 ## CDN from cloudflare redirecting
-Server = http://manjaro2.biglinux.com.br/manjaro/unstable/$repo/$arch
+Server = http://manjaro2.biglinux.com.br/manjaro/testing/$repo/$arch

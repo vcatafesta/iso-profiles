@@ -30,7 +30,7 @@ mintstick
 mystiq
 mx-idevice-mounter
 open-in-lutris-git
-packagekit-qt5
+packagekit-qt6
 pavucontrol-qt
 plasma-appsmenu-biglinux
 plasma-thunderbolt
@@ -46,7 +46,8 @@ skanpage
 steam
 
 ## Libraries for Sound/Audio/Video
-phonon-qt5-vlc
+phonon-qt6
+phonon-qt6-vlc
 
 ## Connect Packages
 kamera
@@ -58,7 +59,7 @@ pamac-tray-icon-plasma
 sddm
 sddm-kcm
 
-## Plasma5
+## Plasma
 bluedevil
 cryfs
 guvcview
@@ -66,7 +67,7 @@ kalarm
 kde-gtk-config
 kde-snap-assist
 kdeplasma-addons
-kgamma # Alterou de kgamma5
+kgamma
 kinfocenter
 kmenuedit
 kmines
@@ -88,7 +89,7 @@ plasma-vault
 plasma-workspace
 plasma5-applet-tiledmenu-git
 plasma5-applets-resources-monitor
-qt5-virtualkeyboard  # Virtual keyboard support for kwin-wayland
+qt6-virtualkeyboard  # Virtual keyboard support for kwin-wayland
 simplescreenrecorder
 systemsettings
 
@@ -118,8 +119,8 @@ ffmpegthumbs              # video thumbnails
 kdegraphics-thumbnailers  # PDF and PS thumbnails
 
 ## Optional dependencies for gwenview
-kimageformats5     # support for dds, xcf, exr, psd, and more image formats
-qt5-imageformats  # support for tiff, webp, and more image formats
+kimageformats     # support for dds, xcf, exr, psd, and more image formats
+qt6-imageformats  # support for tiff, webp, and more image formats
 
 ## Optional dependencies for kaccounts-integration
 kaccounts-providers
@@ -253,7 +254,7 @@ sane-airscan
 system-config-printer-jobs
 >extra python-pillow
 >extra python-pip
->extra python-pyqt5
+>extra python-pyqt6
 ## Optional dependencies for print-manager
 python-pysmbc          # SMB browser support
 system-config-printer
@@ -286,6 +287,10 @@ xdg-user-dirs-gtk
 xdg-desktop-portal-kde
 xdg-utils
 zensu
+
+## Development
+syntax-highlighting
+libkdcraw
 
 ## Xorg Server and Graphics
 >multilib lib32-libva-intel-driver
