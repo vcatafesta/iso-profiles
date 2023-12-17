@@ -11,6 +11,7 @@ fragments
 gamemode
 gdm
 gnome-bluetooth-3.0
+gnome-browser-connector
 gnome-calculator
 gnome-calendar
 gnome-characters
@@ -332,3 +333,9 @@ lib32-sdl2
 lib32-v4l-utils
 lib32-libjpeg6-turbo
 sdl12-compat
+
+## AUR
+make
+automake
+autoconf
+libtool
