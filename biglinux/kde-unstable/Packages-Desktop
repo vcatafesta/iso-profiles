@@ -99,16 +99,16 @@ dolphin
 dolphin-plugins
 gparted
 gnome-calculator
-gwenview
+# gwenview
 kate
 kdeconnect
 kdenetwork-filesharing
 khotkeys
-kio-extras
+# kio-extras
 konsole
 kvantum
 kwalletmanager
-okular
+# okular
 plasma-simplemenu
 plasma5-applets-window-buttons
 spectacle
