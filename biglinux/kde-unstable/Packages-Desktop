@@ -77,7 +77,7 @@ ksshaskpass
 ksysguard
 ksystemlog
 kwallet-pam
-kwayland-integration
+# kwayland-integration
 kwin
 kwin-scripts-virtual-desktops-only-on-primary
 kwin-window-positioning-scripts
