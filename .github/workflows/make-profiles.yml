@@ -29,26 +29,6 @@ jobs:
       - name: Setup TMATE Session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event.inputs.debug_enabled }}
-      
-#       - name: Clone ManjaroIsoProfile
-#         shell: bash
-#         run: |
-#             # clone or Update git
-#             if [ ! -d "$manjaroProfiles" ]; then
-#               git clone https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git $manjaroProfiles
-#             else
-#               pushd $manjaroProfiles
-#               git pull
-#               popd
-#             fi
-         
-#       - name: Make Base
-#         shell: bash
-#         run: |
-#             # Copy files
-#             cp $makeisoprofilesdir/base/profile.conf shared/
-#             cp $makeisoprofilesdir/base/pacman-default.conf shared/
-#             cp $makeisoprofilesdir/base/user-repos.conf shared/
             
       - name: Make Flavours
         shell: bash
@@ -58,8 +38,6 @@ jobs:
                 echo ""
                 echo "MAKE $i"
                 echo ""
-                
-#                 rsync -Cravzp --delete shared/ biglinux/$i
                 
                 # Remove Mhwd
                 if [ -e "$makeisoprofilesdir/$i/Mhwd-remove" ]; then
