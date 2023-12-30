@@ -5,7 +5,7 @@ big-skel
 bigcontrolcenter
 biglinux-config
 biglinux-plasmoids
-biglinux-session-and-themes
+# biglinux-session-and-themes
 biglinux-themes-gui
 brave-browser
 breeze-icons
@@ -13,7 +13,7 @@ feh
 filelight
 gtk3
 helvum
-kcm-wacomtablet
+# kcm-wacomtablet
 kde-color-folder
 kde-servicemenus-officeconverter
 kde-service-menu-reimage
@@ -23,7 +23,7 @@ keditbookmarks
 kfind
 kio-gdrive
 knewstuff
-kscreen
+# kscreen
 libreoffice-fresh
 libreoffice-fresh-pt-br
 lutris
@@ -36,7 +36,7 @@ pavucontrol-qt
 plasma-appsmenu-biglinux
 plasma-framework
 plasma-thunderbolt
-plasmashell-fix-git
+# plasmashell-fix-git
 powerdevil
 python-steam
 qbittorrent
@@ -80,7 +80,7 @@ ksysguard
 ksystemlog
 kwallet-pam
 kwayland
-kwin
+# kwin
 kwin-scripts-virtual-desktops-only-on-primary
 kwin-window-positioning-scripts
 kwrited
@@ -286,7 +286,7 @@ pipewire-biglinux-config-git
 tts-biglinux
 xdg-user-dirs
 xdg-user-dirs-gtk
-xdg-desktop-portal-kde
+# xdg-desktop-portal-kde
 xdg-utils
 zensu
 
