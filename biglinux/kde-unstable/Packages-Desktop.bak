@@ -2,12 +2,18 @@
 big-executable
 big-preload
 big-skel
+bigcontrolcenter
+biglinux-config
+biglinux-plasmoids
+# biglinux-session-and-themes
+biglinux-themes-gui
 brave-browser
 breeze-icons
 feh
 filelight
 gtk3
 helvum
+# kcm-wacomtablet
 kde-color-folder
 kde-servicemenus-officeconverter
 kde-service-menu-reimage
@@ -17,14 +23,21 @@ keditbookmarks
 kfind
 kio-gdrive
 knewstuff
+# kscreen
 libreoffice-fresh
 libreoffice-fresh-pt-br
+lutris
 mintstick
 mystiq
 mx-idevice-mounter
 open-in-lutris-git
 packagekit-qt6
 pavucontrol-qt
+plasma-appsmenu-biglinux
+# plasma-framework
+plasma-thunderbolt
+# plasmashell-fix-git
+powerdevil
 python-steam
 qbittorrent
 rootactions-servicemenu-biglinux
@@ -46,6 +59,7 @@ pamac-tray-icon-plasma
 
 ## Display manager
 sddm
+sddm-kcm
 
 ## Plasma
 bluedevil
@@ -54,6 +68,9 @@ guvcview
 kalarm
 kde-gtk-config
 kde-snap-assist
+kdeplasma-addons
+kgamma
+kinfocenter
 kmenuedit
 kmines
 kpat
@@ -63,9 +80,20 @@ ksysguard
 ksystemlog
 kwallet-pam
 kwayland
+# kwin
+kwin-scripts-virtual-desktops-only-on-primary
+kwin-window-positioning-scripts
 kwrited
+plasma-desktop
+plasma-nm
+plasma-pa
+plasma-vault
+plasma-workspace
+plasma5-applet-tiledmenu-git
+plasma5-applets-resources-monitor
 qt6-virtualkeyboard  # Virtual keyboard support for kwin-wayland
 simplescreenrecorder
+systemsettings
 
 ## KDE Applications
 ark
@@ -73,11 +101,18 @@ dolphin
 dolphin-plugins
 gparted
 gnome-calculator
+# gwenview
 kate
+kdeconnect
 kdenetwork-filesharing
+khotkeys
+# kio-extras
 konsole
 kvantum
 kwalletmanager
+# okular
+plasma-simplemenu
+plasma5-applets-window-buttons
 spectacle
 vlc
 
@@ -98,6 +133,7 @@ poppler-data  # encoding data to display PDF documents containing CJK characters
 ## Applications
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
+systemd-kcm
 
 ## Flatpak support
 pamac-flatpak-plugin
@@ -250,6 +286,7 @@ pipewire-biglinux-config-git
 tts-biglinux
 xdg-user-dirs
 xdg-user-dirs-gtk
+# xdg-desktop-portal-kde
 xdg-utils
 zensu
 
@@ -268,6 +305,7 @@ libva-vdpau-driver
 mesa-utils
 >multilib lib32-mesa-utils
 numlockx
+#xdg-user-dirs
 xorg-server
 xorg-twm
 xorg-xinit
