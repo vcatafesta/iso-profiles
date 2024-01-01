@@ -34,7 +34,7 @@ open-in-lutris-git
 packagekit-qt6
 pavucontrol-qt
 plasma-appsmenu-biglinux
-plasma-framework
+# plasma-framework
 plasma-thunderbolt
 # plasmashell-fix-git
 powerdevil

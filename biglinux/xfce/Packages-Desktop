@@ -340,3 +340,9 @@ lib32-sdl2
 lib32-v4l-utils
 lib32-libjpeg6-turbo
 sdl12-compat
+
+#AUR
+make
+automake
+autoconf
+libtool
