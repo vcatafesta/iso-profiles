@@ -1,17 +1,21 @@
 ## Applications
+catfish
 exo
 ffmpegthumbnailer
 fluent-icon-theme-git
 garcon
+gtk-xfce-engine
 guvcview
 guvcview-qt
 mate-calc
 materiav2-gtk-theme
 mate-calc
+mousepad
 mugshot
 mystiq
 numlockx
 ocs-url
+parole
 pavucontrol
 ristretto
 simplescreenrecorder
@@ -19,11 +23,10 @@ thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
+thunarx-python
 tumbler
 vlc
+xfburn
 xfce4-appfinder
 xfce4-artwork
 xfce4-battery-plugin
@@ -50,7 +53,6 @@ xfce4-screensaver
 xfce4-screenshooter
 xfce4-sensors-plugin
 xfce4-session
-xfce4-settings
 xfce4-settings
 xfce4-smartbookmark-plugin
 xfce4-systemload-plugin
