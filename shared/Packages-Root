@@ -126,6 +126,7 @@ timeshift
 grub-btrfs-timeshift
 grub-btrfs
 big-first-boot
+update-grub
 
 ## Tweaks
 biglinux-name
