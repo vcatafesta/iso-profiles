@@ -246,6 +246,7 @@ xorg-twm
 xorg-xinit
 xorg-xkill
 xorg-mkfontscale
+xorg-xdpyinfo
 
 ## Xorg Input Drivers
 xf86-input-elographics
