@@ -59,6 +59,11 @@ totem
 tracker3-miners
 xdg-user-dirs-gtk
 
+## Acessibilidade
+orca
+espeak-ng
+speech-dispatcher
+
 ## Gnome Shell Extensions
 gnome-shell-extension-appindicator
 gnome-shell-extension-blur-my-shell

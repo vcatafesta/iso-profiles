@@ -6,7 +6,7 @@ deepin-api
 deepin-app-services
 deepin-appearance
 deepin-application-manager
-deepin-boot-maker
+# deepin-boot-maker
 deepin-calendar
 deepin-calculator
 deepin-camera
