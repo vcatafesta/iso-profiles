@@ -41,6 +41,7 @@ primus
 qemu-guest-agent
 bumblebee
 nvidia-prime
+nvtop
 gtkmm3
 spice-vdagent
 virtualbox-guest-utils
@@ -65,3 +66,7 @@ xf86-video-vmware
 xf86-video-voodoo
 #optimus-manager
 switcheroo-control
+
+## Video and Driver Support Biglinux
+mhwd-biglinux
+biglinux-vaapi
