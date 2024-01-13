@@ -66,6 +66,7 @@ rustdesk-bin
 
 ## Themes
 qt6-svg
+qt6-webengine
 
 ## BigLinux Specific Configurations Deepin
 biglinux-skel-dde
