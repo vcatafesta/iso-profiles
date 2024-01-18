@@ -86,7 +86,7 @@ plank
 
 ## BigLinux Specific Configurations Deepin
 biglinux-settings
-# biglinux-skel-xfce
+biglinux-skel-xfce
 
 ## Display manager
 lightdm
