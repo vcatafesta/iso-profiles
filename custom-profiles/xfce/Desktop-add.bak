@@ -1,0 +1,80 @@
+## Applications
+deepin-account-faces
+deepin-album
+deepin-anything
+deepin-api
+deepin-app-services
+deepin-appearance
+deepin-application-manager
+deepin-boot-maker
+deepin-calendar
+deepin-calculator
+deepin-camera
+deepin-clipboard
+deepin-clone
+deepin-compressor
+deepin-control-center
+deepin-daemon
+deepin-desktop-base
+deepin-desktop-schemas
+deepin-desktop-theme
+deepin-device-formatter
+deepin-dock
+deepin-draw
+deepin-editor
+deepin-file-manager
+deepin-font-manager
+deepin-grand-search
+deepin-gtk-theme
+deepin-icon-theme
+deepin-image-viewer
+deepin-launcher
+deepin-menu
+deepin-movie
+deepin-music
+deepin-network-core
+deepin-network-utils
+deepin-picker
+deepin-polkit-agent
+deepin-polkit-agent-ext-gnomekeyring
+deepin-printer
+deepin-pw-check
+deepin-qt5integration
+deepin-qt5platform-plugins
+deepin-screen-recorder
+deepin-screensaver
+deepin-screensaver-pp
+deepin-session
+deepin-session-shell
+deepin-session-ui
+deepin-shortcut-viewer
+deepin-sound-theme
+deepin-system-monitor
+deepin-terminal
+deepin-turbo
+deepin-voice-note
+deepin-wallpapers
+deepin-widgets
+deepin-wloutput-daemon
+docparser
+startdde
+xdg-desktop-portal-dde
+
+## Themes
+biglinux-icons-material
+qt6-svg
+
+## Fonts
+# ttf-fira-code
+# ttf-icomoon-feather
+# ttf-roboto
+# ttf-roboto-mono
+# ttf-roboto-slab
+
+## BigLinux Specific Configurations
+biglinux-driver-manager
+biglinux-nano-config
+biglinux-neofetch
+biglinux-skel-dde
+biglinux-zsh-config
+big-preload
