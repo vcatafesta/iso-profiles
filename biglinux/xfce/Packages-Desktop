@@ -95,10 +95,12 @@ biglinux-skel-xfce
 biglinux-config
 
 ## Display manager
+flat-remix-gtk
 lightdm
 lightdm-gtk-greeter
 lightdm-slick-biglinux-greeter
 lightdm-webkit2-greeter
+lightdm-webkit2-theme-glorious
 
 ## Applications
 # manjaro-application-utility
