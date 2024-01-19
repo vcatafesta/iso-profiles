@@ -6,6 +6,7 @@ fluent-icon-theme-git
 garcon
 guvcview
 guvcview-qt
+intltool
 mate-calc
 materiav2-gtk-theme
 mate-calc
@@ -13,6 +14,8 @@ mousepad
 mugshot
 mystiq
 numlockx
+network-manager-applet
+nm-connection-editor
 ocs-url
 parole
 pavucontrol
