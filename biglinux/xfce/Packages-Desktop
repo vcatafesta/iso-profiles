@@ -95,7 +95,6 @@ biglinux-skel-xfce
 biglinux-config
 
 ## Display manager
-flat-remix-gtk
 lightdm
 lightdm-gtk-greeter
 lightdm-slick-biglinux-greeter
