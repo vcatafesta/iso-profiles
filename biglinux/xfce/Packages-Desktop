@@ -87,6 +87,8 @@ qt5ct
 qt6-svg
 qogir-gtk-theme
 qogir-icon-theme
+xfce4-docklike-plugin
+ulauncher
 
 ## BigLinux Specific Configurations Deepin
 biglinux-settings
