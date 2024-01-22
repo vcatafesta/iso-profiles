@@ -69,7 +69,7 @@ xfce4-weather-plugin
 xfce4-xkb-plugin
 xfce4-whiskermenu-plugin
 xfconf
-xfdesktop
+# xfdesktop
 xfwm4
 xfwm4-themes
 xarchiver
