@@ -55,7 +55,6 @@ kamera
 pamac-tray-icon-plasma
 
 ## Display manager
-plymouth-theme-biglinux
 sddm
 sddm-kcm
 

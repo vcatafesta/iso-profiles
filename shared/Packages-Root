@@ -124,6 +124,7 @@ timeshift
 grub-btrfs-timeshift
 grub-btrfs
 big-first-boot
+plymouth-theme-biglinux
 update-grub
 
 ## Tweaks
