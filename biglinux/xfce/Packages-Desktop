@@ -98,7 +98,7 @@ biglinux-config
 ## Display manager
 lightdm
 lightdm-webkit2-greeter
-lightdm-webkit2-theme-glorious
+lightdm-webkit2-theme-biglinux
 
 ## Applications
 # manjaro-application-utility
