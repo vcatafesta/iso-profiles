@@ -97,7 +97,7 @@ biglinux-config
 
 ## Display manager
 lightdm
-lightdm-gtk-greeter
+# lightdm-gtk-greeter
 lightdm-slick-biglinux-greeter
 lightdm-webkit2-greeter
 lightdm-webkit2-theme-glorious

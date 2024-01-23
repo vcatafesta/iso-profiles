@@ -120,7 +120,6 @@ big-preload
 
 ## Boot
 grub-theme-biglinux
-plymouth-theme-biglinux
 timeshift
 grub-btrfs-timeshift
 grub-btrfs
