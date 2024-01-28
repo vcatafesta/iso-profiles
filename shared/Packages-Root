@@ -38,6 +38,7 @@ glibc
 grep
 grub
 gzip
+hdparm
 hunspell-en_us
 inetutils
 intel-ucode
@@ -69,6 +70,8 @@ ntfs-3g
 ocl-icd
 os-prober
 pacman
+pacman-cleancache
+pacman-contrib
 pacutils
 pciutils
 perl

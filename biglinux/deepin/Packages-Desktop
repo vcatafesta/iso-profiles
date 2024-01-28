@@ -177,7 +177,6 @@ big-store
 biglinux-keyring
 biglinux-updates-tweaks
 # pamac-updates-menu
-pacman-cleancache
 force-upgrade
 debtap-mod
 rpmtoarch
