@@ -2,10 +2,10 @@
 ## Static mirrors from CDN
 
 ## General CDN from manjaro
-Server = http://mirrors.manjaro.org/repo/testing/$repo/$arch
+Server = http://mirrors.manjaro.org/repo/stable/$repo/$arch
 
-## CDN from cloudflare redirecting
-Server = http://manjaro.biglinux.com.br/manjaro/testing/$repo/$arch
+## Country : Global
+Server = https://mirrors.cicku.me/manjaro/stable/$repo/$arch
 
-## CDN from cloudflare redirecting
-Server = http://manjaro2.biglinux.com.br/manjaro/testing/$repo/$arch
+## Country : Global
+Server = https://mirrors2.manjaro.org/stable/$repo/$arch
