@@ -11,21 +11,17 @@ fragments
 gamemode
 gdm
 gnome-bluetooth-3.0
-gnome-browser-connector
 gnome-calculator
 gnome-calendar
 gnome-characters
 gnome-clocks
 gnome-color-manager
-gnome-connections
 gnome-console
 gnome-contacts
 gnome-control-center
 gnome-disk-utility
 gnome-font-viewer
-# gnome-logs
 gnome-menus
-gnome-network-displays
 gnome-online-accounts
 # gnome-photos
 gnome-remote-desktop
@@ -41,7 +37,6 @@ grilo-plugins
 # guvcview
 hplip
 libreoffice-fresh-pt-br
-loupe
 malcontent
 mutter
 nautilus
@@ -60,11 +55,6 @@ totem
 tracker3-miners
 xdg-user-dirs-gtk
 
-## Acessibilidade
-orca
-espeak-ng
-speech-dispatcher
-
 ## Gnome Shell Extensions
 gnome-shell-extension-appindicator
 gnome-shell-extension-blur-my-shell
@@ -76,10 +66,6 @@ gnome-shell-extension-pano
 gnome-shell-extensions
 
 ## Themes
-bibata-cursor-theme
-breeze-icons
-gnome-themes-extra
-gtk-engine-murrine
 qt6-svg
 qt6-wayland
 
@@ -121,7 +107,8 @@ ttf-roboto-slab
 ttf-ubuntu-font-family
 
 ## Visual
-biglinux-wallpapers-gnome
+# BigLinux
+extra-biglinux-wallpapers
 
 ## Games
 ds4-disable-led
@@ -142,6 +129,7 @@ fatresize
 thermald
 
 ## Imported from live
+# BigLinux
 virtualbox-guest-utils
 
 ## Network
@@ -169,8 +157,6 @@ android-tools
 android-udev
 gvfs
 gvfs-afc
-gvfs-goa
-gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
@@ -187,6 +173,7 @@ big-store
 biglinux-keyring
 biglinux-updates-tweaks
 pamac-updates-menu
+pacman-cleancache
 force-upgrade
 debtap-mod
 rpmtoarch
@@ -205,13 +192,13 @@ ipp-usb
 splix
 sane-airscan
 ## Optional dependencies for hplip
-system-config-printer-jobs
-system-config-printer
+# system-config-printer-jobs
 >extra python-pillow
 >extra python-pip
 >extra python-pyqt5
 ## Optional dependencies for print-manager
 python-pysmbc          # SMB browser support
+# system-config-printer
 
 ## Optional dependencies for ark
 p7zip  # 7Z format support
@@ -236,8 +223,6 @@ libappindicator-gtk3
 perl-file-mimeinfo
 pipewire-biglinux-config-git
 tts-biglinux
-xdg-desktop-portal-gnome
-xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
@@ -259,8 +244,6 @@ xorg-twm
 xorg-xinit
 xorg-xkill
 xorg-mkfontscale
-wayland-protocols
-wayland-utils
 
 ## Xorg Input Drivers
 xf86-input-elographics
@@ -294,53 +277,47 @@ usbasp-udev
 usbtinyisp-udev
 
 ## Better wine support
-faudio
-lib32-acl
-lib32-faudio
-lib32-flac
+lib32-pipewire
+lib32-pipewire-jack
+lib32-lcms2
+lib32-libtiff
+lib32-libjpeg-turbo
+lib32-libxrandr
 lib32-fontconfig
+lib32-libxi
+lib32-faudio
+faudio
+lib32-sdl2
 lib32-gettext
+lib32-acl
+lib32-libsm
+lib32-libice
+lib32-libxcursor
+lib32-libxrender
+lib32-libpcap
+lib32-libnl
 lib32-glu
+lib32-flac
 lib32-gmp
 lib32-gnutls
 lib32-libasyncns
-lib32-libice
-lib32-libjpeg-turbo
 lib32-libjpeg6-turbo
 lib32-libltdl
-lib32-libnl
 lib32-libogg
-lib32-libpcap
 lib32-libpng12
 lib32-libpulse
 lib32-libsndfile
-lib32-libtiff
 lib32-libvorbis
 lib32-libxcomposite
-lib32-libxcursor
-lib32-libxi
 lib32-libxinerama
-lib32-libxrandr
-lib32-libxrender
 lib32-libxslt
 lib32-libxtst
-lib32-lcms2
-lib32-libsndfile
 lib32-mpg123
 lib32-nettle
 lib32-nss-mdns
 lib32-openal
 lib32-opus
-lib32-pipewire
-lib32-pipewire-jack
 lib32-sdl12-compat
-lib32-sdl2
 lib32-v4l-utils
-lib32-libjpeg6-turbo
 sdl12-compat
-
-## AUR
-make
-automake
-autoconf
-libtool
+lib32-giflib
