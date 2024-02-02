@@ -133,7 +133,7 @@ update-grub
 ## Tweaks
 biglinux-name
 biglinux-l18n
-faster-mkinitcpio
+# faster-mkinitcpio
 biglinux-improve-compatibility
 big-mount-git
 biglinux-systemd-swap

@@ -25,7 +25,6 @@ gnome-disk-utility
 gnome-font-viewer
 # gnome-logs
 gnome-menus
-gnome-network-displays
 gnome-online-accounts
 # gnome-photos
 gnome-remote-desktop
@@ -59,11 +58,6 @@ sync-gnome-theme-to-qt
 totem
 tracker3-miners
 xdg-user-dirs-gtk
-
-## Acessibilidade
-orca
-espeak-ng
-speech-dispatcher
 
 ## Gnome Shell Extensions
 gnome-shell-extension-appindicator
@@ -187,6 +181,7 @@ big-store
 biglinux-keyring
 biglinux-updates-tweaks
 pamac-updates-menu
+pacman-cleancache
 force-upgrade
 debtap-mod
 rpmtoarch
