@@ -11,6 +11,7 @@ fragments
 gamemode
 gdm
 gnome-bluetooth-3.0
+gnome-browser-connector
 gnome-calculator
 gnome-calendar
 gnome-characters
@@ -24,6 +25,7 @@ gnome-disk-utility
 gnome-font-viewer
 # gnome-logs
 gnome-menus
+gnome-network-displays
 gnome-online-accounts
 # gnome-photos
 gnome-remote-desktop
@@ -57,6 +59,11 @@ sync-gnome-theme-to-qt
 totem
 tracker3-miners
 xdg-user-dirs-gtk
+
+## Acessibilidade
+orca
+espeak-ng
+speech-dispatcher
 
 ## Gnome Shell Extensions
 gnome-shell-extension-appindicator
@@ -180,7 +187,6 @@ big-store
 biglinux-keyring
 biglinux-updates-tweaks
 pamac-updates-menu
-pacman-cleancache
 force-upgrade
 debtap-mod
 rpmtoarch
@@ -332,3 +338,9 @@ lib32-sdl2
 lib32-v4l-utils
 lib32-libjpeg6-turbo
 sdl12-compat
+
+## AUR
+make
+automake
+autoconf
+libtool
