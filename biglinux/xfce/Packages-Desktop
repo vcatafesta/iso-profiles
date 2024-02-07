@@ -80,6 +80,8 @@ brave-browser
 rustdesk-bin
 
 ## Themes
+adw-gtk3
+adw-gtk-theme
 gtk-engines
 gtk-engine-murrine
 qt5ct
