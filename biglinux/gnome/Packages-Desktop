@@ -103,7 +103,7 @@ adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-sans-pro-fonts
 cantarell-fonts # Installed as gnome-themes-standard dependency
-noto-fonts-lite # New default
+noto-fonts-lite # New default font
 >extra ttf-droid
 terminus-font
 >extra ttf-inconsolata
@@ -116,7 +116,7 @@ ttf-fira-code
 ttf-icomoon-feather
 ttf-lato
 ttf-liberation
-noto-fonts # default font
+# noto-fonts # default font
 ttf-roboto
 ttf-roboto-mono
 ttf-roboto-slab
