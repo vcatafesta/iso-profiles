@@ -86,7 +86,7 @@ ffmpegthumbs              # video thumbnails
 kdegraphics-thumbnailers  # PDF and PS thumbnails
 
 ## Optional dependencies for gwenview
-kimageformats     # support for dds, xcf, exr, psd, and more image formats
+# kimageformats     # support for dds, xcf, exr, psd, and more image formats # REMOVIDO
 qt6-imageformats  # support for tiff, webp, and more image formats
 
 ## Optional dependencies for kaccounts-integration
@@ -255,9 +255,9 @@ xdg-utils
 zensu
 
 ## Development
-syntax-highlighting
-libkdcraw
-kguiaddons
+# syntax-highlighting # REMOVIDO
+# libkdcraw # REMOVIDO
+# kguiaddons # REMOVIDO
 
 ## Xorg Server and Graphics
 >multilib lib32-libva-intel-driver
