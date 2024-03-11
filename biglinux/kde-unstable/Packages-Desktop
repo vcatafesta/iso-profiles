@@ -63,7 +63,7 @@ ksystemlog
 kwallet-pam
 kwayland
 kwrited
-qt6-virtualkeyboard  # Virtual keyboard support for kwin-wayland
+#
 simplescreenrecorder
 
 ## KDE Applications
@@ -81,18 +81,18 @@ spectacle
 vlc
 
 ## Optional dependencies for dolphin
-ffmpegthumbs              # video thumbnails
-kdegraphics-thumbnailers  # PDF and PS thumbnails
+#
+#
 
 ## Optional dependencies for gwenview
 # kimageformats     # support for dds, xcf, exr, psd, and more image formats # REMOVIDO
-qt6-imageformats  # support for tiff, webp, and more image formats
+#
 
 ## Optional dependencies for kaccounts-integration
 kaccounts-providers
 
 ## Optional dependencies for okular
-poppler-data  # encoding data to display PDF documents containing CJK characters
+#
 
 ## Applications
 manjaro-settings-manager-kcm
@@ -102,31 +102,25 @@ manjaro-settings-manager-knotifier
 pamac-flatpak-plugin
 
 ## Printing
->extra manjaro-printer
->extra gtk3-print-backends
+
 
 ## Misc
 manjaro-hotfixes
->basic squashfs-tools
 
 ## Fonts
-ttf-dejavu
-cantarell-fonts        # Installed as gnome-themes-standard dependency
-noto-fonts-lite # New default font
+noto-fonts-lite
 noto-fonts-sans-nerd
 adobe-source-sans-pro-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
->extra noto-fonts-emoji
 terminus-font
->extra ttf-inconsolata
->extra ttf-indic-otf
->extra ttf-liberation
->extra ttf-droid
 ttf-caladea
 ttf-carlito
+ttf-dejavu
 ttf-liberation
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
 ttf-roboto
 ttf-lato
 ttf-ubuntu-font-family
@@ -165,7 +159,7 @@ networkmanager
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-nss-mdns # NSS support for mDNS (optdepend for avahi)
+nss-mdns
 ntp
 mobile-broadband-provider-info
 modemmanager
@@ -190,7 +184,7 @@ udiskie
 udisks2
 bluez-plugins
 ## Optional dependencies for kdeconnect
-sshfs  # remote filesystem browser
+#
 
 ## Package management
 big-store
@@ -203,7 +197,6 @@ debtap-mod
 rpmtoarch
 pamac-gtk
 pamac-cli
->extra fwupd
 qt6-wayland
 manjaro-application-utility
 
@@ -218,19 +211,17 @@ sane-airscan
 ## Optional dependencies for hplip
 # BigLinux
 system-config-printer-jobs
->extra python-pillow
->extra python-pip
->extra python-pyqt6
+
 ## Optional dependencies for print-manager
-python-pysmbc          # SMB browser support
+#
 system-config-printer
 
 ## Optional dependencies for ark
-p7zip  # 7Z format support
-unarchiver  # RAR format support
+#
+#
 
 ## Applications
-dmidecode # for inxi -m output
+dmidecode
 htop
 inxi
 powertop
@@ -259,14 +250,10 @@ zensu
 # kguiaddons # REMOVIDO
 
 ## Xorg Server and Graphics
->multilib lib32-libva-intel-driver
->multilib lib32-libva-mesa-driver
->multilib lib32-libva-vdpau-driver
 libva-intel-driver
 libva-mesa-driver
 libva-vdpau-driver
 mesa-utils
->multilib lib32-mesa-utils
 numlockx
 xorg-server
 xorg-twm
@@ -355,3 +342,117 @@ make
 automake
 autoconf
 libtool
+
+## NOVOS (Frameworks e Bibliotecas KDE)
+appstream-qt
+attica
+baloo
+bluez-qt
+frameworkintegration
+karchive
+kauth
+kbookmarks
+kcalendarcore
+kcmutils
+kcodecs
+kcolorpicker
+kcolorscheme
+kcompletion
+kconfig
+kconfigwidgets
+kcontacts
+kcoreaddons
+kcrash
+kdbusaddons
+kdeclarative
+kded
+kdesu
+kdnssd
+kdsoap-qt6
+kdsoap-ws-discovery-client
+kfilemetadata
+kglobalaccel
+kglobalacceld
+kguiaddons
+kholidays
+ki18n
+kiconthemes
+kidletime
+kimageannotator
+kio
+kirigami
+kirigami-addons
+kitemmodels
+kitemviews
+kjobwidgets
+knewstuff
+knotifications
+knotifyconfig
+kpackage
+kparts
+kpeople
+kpty
+kquickcharts
+kquickimageeditor
+krunner
+kservice
+kstatusnotifieritem
+ksvg
+ktexteditor
+ktexttemplate
+ktextwidgets
+kunitconversion
+kuserfeedback
+kwallet
+kwayland
+kwidgetsaddons
+kwindowsystem
+kxmlgui
+libblockdev-crypto
+libblockdev-fs
+libblockdev-loop
+libblockdev-mdraid
+libblockdev-nvme
+libblockdev-part
+libblockdev-swap
+libdisplay-info
+libkdcraw
+libplasma
+libqaccessibilityclient-qt6
+modemmanager-qt
+networkmanager-qt
+ocean-sound-theme
+openucx
+phonon-qt6
+phonon-qt6-vlc
+plasma5support
+plasma-activities
+plasma-activities-stats
+polkit-qt6
+poppler-qt6
+prison
+purpose
+python-unidecode
+qca-qt6
+qcoro-qt6
+qqc2-breeze-style
+qqc2-desktop-style
+qt6-5compat
+qt6-multimedia
+qt6-multimedia-ffmpeg
+qt6-sensors
+qt6-shadertools
+qt6-speech
+qt6-tools
+qt6-virtualkeyboard
+qt6-wayland
+qt6-websockets
+qtkeychain-qt6
+rpm-sequoia
+solid
+sonnet
+syndication
+syntax-highlighting
+threadweaver
+translate-shell
+xorg-xwayland
