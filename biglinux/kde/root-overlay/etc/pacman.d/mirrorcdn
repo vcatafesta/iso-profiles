@@ -1,8 +1,1 @@
-##
-## Static mirrors from CDN
-
-## Country : Global
-Server = https://mirrors.cicku.me/manjaro/testing/$repo/$arch
-
-## Country : Global
-Server = https://mirrors2.manjaro.org/testing/$repo/$arch
+../../../../../shared/root-overlay/etc/pacman.d/mirrorcdn
