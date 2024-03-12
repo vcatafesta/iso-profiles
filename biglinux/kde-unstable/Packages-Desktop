@@ -38,48 +38,142 @@ steam
 ## Libraries for Sound/Audio/Video
 phonon-qt6
 phonon-qt6-vlc
+qt6-multimedia
+qt6-multimedia-ffmpeg
+qt6-speech
 
 ## Connect Packages
+bluez-qt
+modemmanager-qt
+networkmanager-qt
 kamera
 
 ## Package management
+appstream-qt
+kpackage
 pamac-tray-icon-plasma
+rpm-sequoia
 
 ## Display manager
 sddm
+sddm-kcm
 
 ## Plasma
+baloo
 bluedevil
-cryfs
-guvcview
-kalarm
-kde-gtk-config
-kde-snap-assist
+frameworkintegration
+kactivities
+kactivities-stats
+kded
+kdeclarative
+kglobalaccel
+kglobalacceld
+kholidays
+ki18n
+kiconthemes
+kidletime
+kimageannotator
+kirigami
+kirigami-addons
 kmenuedit
 kmines
+knotifications
+knotifyconfig
 kpat
+kparts
+kpeople
+kquickcharts
+kquickimageeditor
+krunner
 kscreenlocker
-ksshaskpass
-ksystemlog
-kwallet-pam
+kservice
+kstatusnotifieritem
+ktextwidgets
+kuserfeedback
+kwallet
 kwayland
+kwindowsystem
 kwrited
-#
-simplescreenrecorder
+kxmlgui
+libdisplay-info
+libplasma
+libqaccessibilityclient-qt6
+ocean-sound-theme
+plasma-activities
+plasma-activities-stats
+polkit-qt6
+prison
+purpose
+qca-qt6
+qqc2-breeze-style
+qqc2-desktop-style
+qt6-5compat
+qt6-sensors
+qt6-shadertools
+qt6-virtualkeyboard
+qt6-wayland
+qt6-websockets
+qtkeychain-qt6
+solid
+sonnet
+syndication
+threadweaver
+xorg-xwayland
 
 ## KDE Applications
 ark
+attica
 dolphin
 dolphin-plugins
-gparted
-gnome-calculator
+kalarm
 kate
+karchive
+kauth
+kbookmarks
+kcalendarcore
+kcmutils
+kcodecs
+kcolorpicker
+kcolorscheme
+kcompletion
+kconfig
+kconfigwidgets
+kcontacts
+kcoreaddons
+kcrash
+kde-gtk-config
+kde-snap-assist
+kdbusaddons
 kdenetwork-filesharing
+kdsoap-qt6
+kdsoap-ws-discovery-client
+kfilemetadata
+kio
+kitemmodels
+kitemviews
+kjobwidgets
+knewstuff
 konsole
-kvantum
+kparts
+kpty
+kshaskpass
+ktexteditor
+ktexttemplate
+kunitconversion
 kwalletmanager
+kwallet-pam
+kwidgetsaddons
+kwayland
+ksystemlog
+kvantum
+kxmlgui
 spectacle
-vlc
+translate-shell
+
+cryfs
+guvcview
+simplescreenrecorder
+
 
 ## Optional dependencies for dolphin
 #
@@ -100,13 +194,22 @@ manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 
 ## Flatpak support
+flatpak-kcm
 pamac-flatpak-plugin
 
 ## Printing
-
+print-manager
 
 ## Misc
+libblockdev-crypto
+libblockdev-fs
+libblockdev-loop
+libblockdev-mdraid
+libblockdev-nvme
+libblockdev-part
+libblockdev-swap
 manjaro-hotfixes
+python-unidecode
 
 ## Fonts
 noto-fonts-lite
@@ -246,9 +349,9 @@ xdg-utils
 zensu
 
 ## Development
-# syntax-highlighting # REMOVIDO
-# libkdcraw # REMOVIDO
-# kguiaddons # REMOVIDO
+syntax-highlighting
+libkdcraw
+kguiaddons
 
 ## Xorg Server and Graphics
 libva-intel-driver
@@ -344,152 +447,25 @@ automake
 autoconf
 libtool
 
-## NOVOS (Frameworks e Bibliotecas KDE)
-appstream-qt
-attica
-baloo
-bluez-qt
-frameworkintegration
-karchive
-kauth
-kbookmarks
-kcalendarcore
-kcmutils
-kcodecs
-kcolorpicker
-kcolorscheme
-kcompletion
-kconfig
-kconfigwidgets
-kcontacts
-kcoreaddons
-kcrash
-kdbusaddons
-kdeclarative
-kded
-kdesu
-kdnssd
-kdsoap-qt6
-kdsoap-ws-discovery-client
-kfilemetadata
-kglobalaccel
-kglobalacceld
-kguiaddons
-kholidays
-ki18n
-kiconthemes
-kidletime
-kimageannotator
-kio
-kirigami
-kirigami-addons
-kitemmodels
-kitemviews
-kjobwidgets
-knewstuff
-knotifications
-knotifyconfig
-kpackage
-kparts
-kpeople
-kpty
-kquickcharts
-kquickimageeditor
-krunner
-kservice
-kstatusnotifieritem
-ksvg
-ktexteditor
-ktexttemplate
-ktextwidgets
-kunitconversion
-kuserfeedback
-kwallet
-kwayland
-kwidgetsaddons
-kwindowsystem
-kxmlgui
-libblockdev-crypto
-libblockdev-fs
-libblockdev-loop
-libblockdev-mdraid
-libblockdev-nvme
-libblockdev-part
-libblockdev-swap
-libdisplay-info
-libkdcraw
-libplasma
-libqaccessibilityclient-qt6
-modemmanager-qt
-networkmanager-qt
-ocean-sound-theme
-openucx
-phonon-qt6
-phonon-qt6-vlc
-plasma5support
-plasma-activities
-plasma-activities-stats
-polkit-qt6
-poppler-qt6
-prison
-purpose
-python-unidecode
-qca-qt6
-qcoro-qt6
-qqc2-breeze-style
-qqc2-desktop-style
-qt6-5compat
-qt6-multimedia
-qt6-multimedia-ffmpeg
-qt6-sensors
-qt6-shadertools
-qt6-speech
-qt6-tools
-qt6-virtualkeyboard
-qt6-wayland
-qt6-websockets
-qtkeychain-qt6
-rpm-sequoia
-solid
-sonnet
-syndication
-syntax-highlighting
-threadweaver
-translate-shell
-xorg-xwayland
-
+## Outros
 accountsservice
 aha
 bolt
+breeze-gtk
 clinfo
 ddcutil
 discount
 i2c-tools
-kio-fuse
-kwayland5
-libqalculate
-libxaw
-python-certifi
-python-pygdbmi
-python-sentry_sdk
-qt6-webview
-source-highlight
-vulkan-tools
-wayland-utils
-xf86-input-wacom
-xorg-xdpyinfo
-xorg-xmessage
-xorg-xsetroot
-breeze-gtk
-flatpak-kcm
 kactivitymanagerd
-kde-cli-tools
+kcli-tools
 kdeplasma-addons
 kgamma
 kinfocenter
+kio-fuse
 kscreen
 ksystemstats
 kwayland-integration
+kwayland5
 libksysguard
 plasma-browser-integration
 plasma-desktop
@@ -506,13 +482,24 @@ plasma-workspace
 plymouth-kcm
 polkit-kde-agent
 powerdevil
-print-manager
-sddm-kcm
-systemsettings
+python-certifi
+python-pygdbmi
+python-sentry_sdk
+qt6-webview
+source-highlight
+vulkan-tools
 wacomtablet
+wayland-utils
 xdg-desktop-portal-kde
-kimageformats
+xf86-input-wacom
+xorg-xdpyinfo
+xorg-xmessage
+xorg-xsetroot
+
 
 # Remover na ISO final
 llvm16-libs
 
+gnome-calculator
+gparted
+vlc
