@@ -566,7 +566,7 @@ sd
 sshfs
 switcheroo-control
 sync-kde-and-gtk-places
-systemd-kcm
+#systemd-kcm
 tesseract-data-eng
 tesseract-data-por
 ttf-croscore
