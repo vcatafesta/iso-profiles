@@ -308,7 +308,7 @@ usbasp-udev
 usbtinyisp-udev
 
 ## Better wine support
-faudio
+#faudio
 lib32-acl
 lib32-flac
 lib32-fontconfig
