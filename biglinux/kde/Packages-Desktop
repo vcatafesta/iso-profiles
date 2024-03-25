@@ -293,7 +293,6 @@ usbasp-udev
 usbtinyisp-udev
 
 ## Better wine support
-#faudio
 lib32-acl
 lib32-flac
 lib32-fontconfig
@@ -538,7 +537,6 @@ intel-media-driver
 kdeconnect
 kdegraphics-thumbnailers
 kldap
-lib32-faudio
 lib32-giflib
 lib32-libsm
 lib32-libunwind

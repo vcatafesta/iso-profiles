@@ -538,7 +538,7 @@ intel-media-driver
 kdeconnect
 kdegraphics-thumbnailers
 kldap
-lib32-faudio
+#lib32-faudio
 lib32-giflib
 lib32-libsm
 lib32-libunwind
