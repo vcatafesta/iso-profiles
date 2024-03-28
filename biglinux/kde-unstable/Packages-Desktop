@@ -250,9 +250,6 @@ zensu
 # kguiaddons # REMOVIDO
 
 ## Xorg Server and Graphics
-libva-intel-driver
-libva-mesa-driver
-libva-vdpau-driver
 mesa-utils
 numlockx
 xorg-server
@@ -580,8 +577,4 @@ virtualbox-guest-utils
 #vulkan-swrast
 wl-clipboard
 wl-mirror
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-intel
-xf86-video-nouveau
 plasma-framework5
