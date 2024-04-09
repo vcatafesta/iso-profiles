@@ -73,6 +73,7 @@ biglinux-skel-dde
 
 ## Display manager
 lightdm
+llvm16-libs
 
 ## Applications
 # manjaro-application-utility
@@ -235,9 +236,6 @@ zensu
 >multilib lib32-libva-intel-driver
 >multilib lib32-libva-mesa-driver
 >multilib lib32-libva-vdpau-driver
-libva-intel-driver
-libva-mesa-driver
-libva-vdpau-driver
 mesa-utils
 >multilib lib32-mesa-utils
 numlockx
