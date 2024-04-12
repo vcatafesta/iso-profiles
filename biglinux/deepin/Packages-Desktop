@@ -75,12 +75,6 @@ biglinux-skel-dde
 lightdm
 llvm16-libs
 
-## Applications
-# manjaro-application-utility
-manjaro-settings-manager-kcm
-manjaro-settings-manager-knotifier
-# systemd-kcm
-
 ## Flatpak support
 pamac-flatpak-plugin
 
