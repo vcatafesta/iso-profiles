@@ -82,10 +82,6 @@ pamac-flatpak-plugin
 >extra manjaro-printer
 >extra gtk3-print-backends
 
-## Misc
-manjaro-hotfixes
->basic squashfs-tools
-
 ## Fonts
 ttf-dejavu
 cantarell-fonts        # Installed as gnome-themes-standard dependency

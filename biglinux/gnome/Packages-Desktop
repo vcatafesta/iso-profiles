@@ -92,10 +92,6 @@ biglinux-skel-gnome
 #>extra manjaro-printer
 #>extra gtk3-print-backends
 
-## Misc
-manjaro-hotfixes
->basic squashfs-tools
-
 ## Fonts
 >extra noto-fonts-emoji
 adobe-source-han-sans-cn-fonts
@@ -180,7 +176,7 @@ gvfs-smb
 mtpfs
 udiskie
 udisks2
-bluez-plugins
+bluez-utils
 ## Optional dependencies for kdeconnect
 sshfs  # remote filesystem browser
 
