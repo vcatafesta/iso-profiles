@@ -93,9 +93,9 @@ qogir-icon-theme
 plank
 xfce4-docklike-plugin
 
-## BigLinux Specific Configurations Deepin
+## BigLinux Specific Configurations XFCE
 biglinux-settings
-biglinux-skel-xfce
+big-xfce-config
 biglinux-config
 
 ## Display manager
