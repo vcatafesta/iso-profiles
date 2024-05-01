@@ -82,6 +82,7 @@ rustdesk-bin
 ## Themes
 adw-gtk3
 adw-gtk-theme
+bibata-cursor-theme
 gtk-engines
 gtk-engine-murrine
 qt5ct
