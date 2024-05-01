@@ -264,6 +264,7 @@ zensu
 libva-intel-driver
 libva-mesa-driver
 libva-vdpau-driver
+mesa-tkg-stable
 mesa-utils
 >multilib lib32-mesa-utils
 numlockx
