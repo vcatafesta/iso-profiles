@@ -23,6 +23,7 @@ parole
 pavucontrol
 ristretto
 simplescreenrecorder
+sync-gnome-theme-to-qt
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -144,6 +145,7 @@ biglinux-wallpapers-xfce
 ## Games
 retroarch-tweaks
 ds4-disable-led
+gamemode
 
 ## Virtual Machines
 open-vm-tools
