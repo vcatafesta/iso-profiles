@@ -66,6 +66,9 @@ kwayland
 kwrited
 plasma-applet-window-buttons
 plasma6-applets-panel-colorizer
+plasma6-applets-netspeed
+plasma6-applets-resources-monitor
+plasma6-applets-window-title
 #
 simplescreenrecorder
 
