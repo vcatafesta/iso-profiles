@@ -86,7 +86,7 @@ qt6-wayland
 
 ## BigLinux Specific Configurations Gnome
 biglinux-settings-gnome
-biglinux-skel-gnome
+big-gnome-config
 
 ## Printing
 #>extra manjaro-printer
