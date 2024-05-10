@@ -343,4 +343,4 @@ autoconf
 libtool
 
 ## Temp
-llvm16-libs
+# llvm16-libs # Descomentar para gerar com repositório testing ou unstble
