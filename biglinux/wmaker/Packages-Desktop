@@ -11,6 +11,7 @@ garcon
 galculator
 gnome-disk-utility
 guvcview
+gwenview
 hardinfo-gtk3
 imake
 lxdm
@@ -52,7 +53,6 @@ rootactions-servicemenu-biglinux
 qpwgraph
 xorg-fonts-cyrillic
 pamac-tray-icon-plasma
-gwenview
 spectacle
 
 
