@@ -1,79 +1,82 @@
 ## Applications
-deepin-account-faces
-# deepin-album
-deepin-anything
-deepin-api
-deepin-app-services
-deepin-appearance
-deepin-application-manager
-# deepin-boot-maker
-deepin-calendar
-deepin-calculator
-deepin-camera
-deepin-clipboard
-deepin-clone
-deepin-compressor
-deepin-control-center
-deepin-daemon
-deepin-desktop-base
-deepin-desktop-schemas
-deepin-desktop-theme
-deepin-device-formatter
-deepin-dock
-deepin-draw
-deepin-editor
-deepin-file-manager
-deepin-font-manager
-deepin-grand-search
-deepin-gtk-theme
-deepin-icon-theme
-deepin-image-viewer
-deepin-launchpad
-deepin-menu
-deepin-movie
-deepin-music
-deepin-network-core
-deepin-network-utils
-deepin-picker
-deepin-polkit-agent
-deepin-polkit-agent-ext-gnomekeyring
-deepin-printer
-deepin-pw-check
-deepin-qt5integration
-deepin-qt5platform-plugins
-deepin-screen-recorder
-# deepin-screensaver
-# deepin-screensaver-pp
-deepin-session
-deepin-session-shell
-deepin-session-ui
-deepin-shortcut-viewer
-deepin-sound-theme
-deepin-system-monitor
-deepin-terminal
-deepin-turbo
-deepin-voice-note
-# deepin-wallpapers
-deepin-widgets
-deepin-wloutput-daemon
-docparser
-startdde
-xdg-desktop-portal-dde
+autoconf
+atril
+big-wmaker-config
+brave-browserblueman
+catfish
+exo
+ffmpegthumbnailer
+clipit
+garcon
+galculator
+gnome-disk-utility
+guvcview
+hardinfo-gtk3
+imake
+lxdm
+lxdm-biglinux-theme
+lxrandr
+menumaker
+mousepad
+mousetweaks
+network-manager-applet
+notification-daemon
+numlockx
+onboard
+sync-gnome-theme-to-qt
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+thunarx-python
+tango-icon-theme
+tumbler
+vlc
+volumeicon
+windowmaker
+wmautomenu-biglinux
+wmclock
+wmix
+wmmemload
+wmnd
+wmsystemtray
+xfce4-appfinder
+xfce4-notifyd
+xfce4-settings
+xfce4-taskmanager
+xfce4-terminal
+xterm
+
 libreoffice-fresh
 libreoffice-fresh-pt-br
 brave-browser
 rustdesk-bin
 
 ## Themes
+adw-gtk3
+adw-gtk-theme
+bibata-cursor-theme
+gtk-engines
+gtk-engine-murrine
+qt5ct
 qt6-svg
-qt6-webengine
+qogir-gtk-theme
+qogir-icon-theme
 
-## BigLinux Specific Configurations Deepin
-big-dde-config
+## BigLinux Specific Configurations XFCE
+big-wmaker-config
+biglinux-config
 
 ## Display manager
 lightdm
-llvm16-libs
+lightdm-webkit2-greeter
+lightdm-webkit2-theme-biglinux
+
+## Applications
+# manjaro-application-utility
+manjaro-settings-manager-kcm
+manjaro-settings-manager-knotifier
+# systemd-kcm
 
 ## Flatpak support
 pamac-flatpak-plugin
@@ -105,11 +108,12 @@ ttf-lato
 ttf-ubuntu-font-family
 
 # visual
-biglinux-wallpapers-dde
+biglinux-wallpapers-xfce
 
 ## Games
 retroarch-tweaks
 ds4-disable-led
+gamemode
 
 ## Virtual Machines
 open-vm-tools
@@ -168,7 +172,8 @@ sshfs  # remote filesystem browser
 big-store
 biglinux-keyring
 biglinux-updates-tweaks
-# pamac-updates-menu
+pamac-updates-menu
+pamac-gtk3
 force-upgrade
 debtap-mod
 rpmtoarch
@@ -226,6 +231,9 @@ zensu
 >multilib lib32-libva-intel-driver
 >multilib lib32-libva-mesa-driver
 >multilib lib32-libva-vdpau-driver
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
 mesa-utils
 >multilib lib32-mesa-utils
 numlockx
@@ -235,7 +243,6 @@ xorg-twm
 xorg-xinit
 xorg-xkill
 xorg-mkfontscale
-xorg-xdpyinfo
 
 ## Xorg Input Drivers
 xf86-input-elographics
@@ -312,3 +319,9 @@ lib32-sdl2
 lib32-v4l-utils
 lib32-libjpeg6-turbo
 sdl12-compat
+
+#AUR
+make
+automake
+autoconf
+libtool
