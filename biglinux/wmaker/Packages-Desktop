@@ -2,6 +2,7 @@
 autoconf
 atril
 big-wmaker-config
+bluedevil
 catfish
 exo
 ffmpegthumbnailer
@@ -35,7 +36,7 @@ volumeicon
 windowmaker
 wmautomenu-biglinux
 wmclock
-#wmix
+wmix
 wmmemload
 wmnd
 wmsystemtray
@@ -45,6 +46,15 @@ xfce4-settings
 xfce4-taskmanager
 xfce4-terminal
 xterm
+
+polkit-kde-agent
+rootactions-servicemenu-biglinux
+qpwgraph
+xorg-fonts-cyrillic
+pamac-tray-icon-plasma
+gwenview
+spectacle
+
 
 libreoffice-fresh
 libreoffice-fresh-pt-br
