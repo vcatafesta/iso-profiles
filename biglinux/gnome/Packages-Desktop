@@ -100,7 +100,8 @@ adobe-source-han-sans-kr-fonts
 adobe-source-sans-pro-fonts
 cantarell-fonts # Installed as gnome-themes-standard dependency
 noto-fonts-lite # New default font
-noto-fonts-sans-nerd
+noto-nerd-fonts-lite
+#noto-fonts-sans-nerd
 >extra ttf-droid
 terminus-font
 >extra ttf-inconsolata

@@ -98,7 +98,8 @@ pamac-flatpak-plugin
 ttf-dejavu
 cantarell-fonts        # Installed as gnome-themes-standard dependency
 noto-fonts-lite # New default font
-noto-fonts-sans-nerd
+noto-nerd-fonts-lite
+# noto-fonts-sans-nerd
 adobe-source-sans-pro-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
