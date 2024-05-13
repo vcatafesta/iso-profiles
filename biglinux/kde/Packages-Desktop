@@ -111,7 +111,8 @@ pamac-flatpak-plugin
 
 ## Fonts
 noto-fonts-lite
-noto-fonts-sans-nerd
+noto-nerd-fonts-lite
+# noto-fonts-sans-nerd
 adobe-source-sans-pro-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
@@ -121,8 +122,8 @@ ttf-caladea
 ttf-carlito
 ttf-dejavu
 ttf-liberation
-ttf-nerd-fonts-symbols
-ttf-nerd-fonts-symbols-mono
+# ttf-nerd-fonts-symbols
+# ttf-nerd-fonts-symbols-mono
 ttf-roboto
 ttf-lato
 ttf-ubuntu-font-family
@@ -425,7 +426,7 @@ ocean-sound-theme
 openucx
 phonon-qt6
 phonon-qt6-vlc
-plasma5support
+#plasma5support
 plasma-activities
 plasma-activities-stats
 polkit-qt6
@@ -498,7 +499,7 @@ plasma-firewall
 plasma-integration
 plasma-nm
 plasma-pa
-plasma-sdk
+plasma5-integration
 plasma-systemmonitor
 plasma-thunderbolt
 plasma-vault
