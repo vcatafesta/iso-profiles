@@ -8,7 +8,6 @@ breeze-icons
 feh
 filelight
 qpwgraph
-gtk3
 kde-color-folder
 kde-servicemenus-officeconverter
 kde-service-menu-reimage
@@ -55,6 +54,7 @@ guvcview
 kalarm
 kde-gtk-config
 kde-snap-assist
+klassy
 kmenuedit
 kmines
 kpat

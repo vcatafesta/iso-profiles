@@ -1,13 +1,27 @@
 ## BigLinux
+bbv-framework
+bigcontrolcenter
 big-executable
+big-theme-colloided-adwaita
 big-preload
+biglinux-session-and-themes
 big-skel
+big-store
+biglinux-config
+biglinux-keyring
+biglinux-plasmoids
+biglinux-systemd-swap
+biglinux-themes-gui
+biglinux-updates-tweaks
+bigbashview
+biglinux-mime
+biglinux-webapps
+bigocrpdf
 brave-browser
 breeze-icons
 feh
 filelight
-gtk3
-helvum
+qpwgraph
 kde-color-folder
 kde-servicemenus-officeconverter
 kde-service-menu-reimage
@@ -21,9 +35,10 @@ libreoffice-fresh
 libreoffice-fresh-pt-br
 mintstick
 mystiq
-mx-idevice-mounter
+# mx-idevice-mounter # VERIFICAR
 open-in-lutris-git
 packagekit-qt6
+plasma-appsmenu-biglinux
 pavucontrol-qt
 python-steam
 qbittorrent
@@ -54,6 +69,7 @@ guvcview
 kalarm
 kde-gtk-config
 kde-snap-assist
+klassy
 kmenuedit
 kmines
 kpat
@@ -62,7 +78,12 @@ ksshaskpass
 ksystemlog
 kwallet-pam
 kwayland
-kwrited
+# kwrited VERIFICAR
+plasma-applet-window-buttons
+plasma6-applets-panel-colorizer
+plasma6-applets-netspeed
+plasma6-applets-resources-monitor
+plasma6-applets-window-title
 #
 simplescreenrecorder
 
@@ -103,13 +124,9 @@ pamac-flatpak-plugin
 
 ## Printing
 
-
-## Misc
-manjaro-hotfixes
-
 ## Fonts
 noto-fonts-lite
-noto-fonts-sans-nerd
+noto-nerd-fonts-lite
 adobe-source-sans-pro-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
@@ -119,8 +136,8 @@ ttf-caladea
 ttf-carlito
 ttf-dejavu
 ttf-liberation
-ttf-nerd-fonts-symbols
-ttf-nerd-fonts-symbols-mono
+# ttf-nerd-fonts-symbols
+# ttf-nerd-fonts-symbols-mono
 ttf-roboto
 ttf-lato
 ttf-ubuntu-font-family
@@ -187,9 +204,6 @@ bluez-plugins
 #
 
 ## Package management
-big-store
-biglinux-keyring
-biglinux-updates-tweaks
 pamac-updates-menu
 pacman-cleancache
 force-upgrade
@@ -198,7 +212,6 @@ rpmtoarch
 pamac-gtk
 pamac-cli
 qt6-wayland
-manjaro-application-utility
 
 # printers
 bluez-cups
@@ -230,10 +243,6 @@ powertop
 appimagelauncher
 appmenu-gtk-module
 auto-tweaks-browser
-bigbashview
-biglinux-mime
-biglinux-webapps
-bigocrpdf
 gnome-keyring
 libappindicator-gtk3
 perl-file-mimeinfo
@@ -246,7 +255,6 @@ zensu
 
 ## Development
 # syntax-highlighting # REMOVIDO
-# libkdcraw # REMOVIDO
 # kguiaddons # REMOVIDO
 
 ## Xorg Server and Graphics
@@ -293,7 +301,6 @@ usbasp-udev
 usbtinyisp-udev
 
 ## Better wine support
-faudio
 lib32-acl
 lib32-flac
 lib32-fontconfig
@@ -425,7 +432,7 @@ ocean-sound-theme
 openucx
 phonon-qt6
 phonon-qt6-vlc
-plasma5support
+#plasma5support
 plasma-activities
 plasma-activities-stats
 polkit-qt6
@@ -456,3 +463,116 @@ syntax-highlighting
 threadweaver
 translate-shell
 xorg-xwayland
+
+# Add Bruno
+accountsservice
+aha
+bolt
+clinfo
+ddcutil
+discount
+i2c-tools
+kio-fuse
+kwayland5
+libqalculate
+libxaw
+python-certifi
+python-pygdbmi
+python-sentry_sdk
+qt6-webview
+source-highlight
+vulkan-tools
+wayland-utils
+xf86-input-wacom
+xorg-xdpyinfo
+xorg-xmessage
+xorg-xsetroot
+breeze-gtk
+flatpak-kcm
+kactivitymanagerd
+kde-cli-tools
+kdeplasma-addons
+kgamma
+kinfocenter
+kscreen
+ksystemstats
+kwayland-integration
+libksysguard
+plasma-browser-integration
+plasma-disks
+plasma-firewall
+plasma-integration
+plasma-nm
+plasma-pa
+plasma5-integration
+plasma-systemmonitor
+plasma-thunderbolt
+plasma-vault
+plasma-workspace
+plymouth-kcm
+polkit-kde-agent
+powerdevil
+print-manager
+sddm-kcm
+systemsettings
+wacomtablet
+xdg-desktop-portal-kde
+
+
+# Tira bug estranho de sumir ícones
+llvm16-libs
+
+### Mais pacotes
+apparmor
+aria2
+cabextract
+faster-mkinitcpio
+ffmpegthumbs
+gconf
+geticons
+gwenview
+intel-media-driver
+kdeconnect
+kdegraphics-thumbnailers
+kldap
+lib32-giflib
+lib32-libsm
+lib32-libunwind
+lib32-libva
+lib32-libva-intel-driver
+#lib32-libva-mesa-driver
+#lib32-libva-vdpau-driver
+#lib32-libvdpau
+#lib32-mesa
+lib32-mesa-utils
+#lib32-mesa-vdpau
+#lib32-vulkan-intel
+#lib32-vulkan-radeon
+lib32-xcb-util-keysyms
+libdbusmenu-gtk2
+#libva-mesa-driver
+lutris
+#noto-fonts
+nvtop
+okular
+p7zip
+plasma-wayland-protocols
+sd
+sshfs
+switcheroo-control
+sync-kde-and-gtk-places
+#systemd-kcm
+tesseract-data-eng
+tesseract-data-por
+ttf-croscore
+ttf-droid
+ttf-font-awesome
+unarchiver
+unzip
+virtualbox-guest-utils
+#vulkan-intel
+#vulkan-radeon
+#vulkan-swrast
+wl-clipboard
+wl-mirror
+plasma-framework5
