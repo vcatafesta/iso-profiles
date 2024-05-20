@@ -1,15 +1,43 @@
-## Applications
+# Browsers
+brave-browser
+
+# Development Tools
+autoconf
+automake
+make
+
+# Fonts
+>extra noto-fonts-emoji
+>extra ttf-droid
+>extra ttf-inconsolata
+>extra ttf-indic-otf
+>extra ttf-liberation
+adobe-source-han-sans-cn-fonts
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+adobe-source-sans-pro-fonts
+cantarell-fonts # Installed as gnome-themes-standard dependency
+noto-fonts-lite # New default font
+noto-nerd-fonts-lite
+# terminus-font
+# ttf-caladea
+# ttf-carlito
+# ttf-dejavu
+# ttf-fira-code
+# ttf-icomoon-feather
+# ttf-liberation
+ttf-roboto
+ttf-roboto-mono
+ttf-roboto-slab
+
+# GNOME Applications
 adw-gtk3
 amberol
 baobab
-brave-browser
 dconf-editor
-# eog
 evince
 file-roller
 fragments
-gamemode
-gdm
 gnome-bluetooth-3.0
 gnome-browser-connector
 gnome-calculator
@@ -23,24 +51,17 @@ gnome-contacts
 gnome-control-center
 gnome-disk-utility
 gnome-font-viewer
-# gnome-logs
 gnome-menus
 gnome-network-displays
 gnome-online-accounts
-# gnome-photos
 gnome-remote-desktop
 gnome-session
-gnome-settings-daemon
 gnome-system-monitor
 gnome-text-editor
 gnome-tweaks
 gnome-user-share
 gnome-video-effects
 gnome-weather
-grilo-plugins
-# guvcview
-hplip
-libreoffice-fresh-pt-br
 loupe
 malcontent
 mutter
@@ -50,22 +71,15 @@ nautilus-empty-file
 nautilus-image-converter
 nautilus-share
 python-nautilus
-rustdesk-bin
 rygel
 simple-scan
-steam
 sushi
-sync-gnome-theme-to-qt
+sync-gnome-theme-to-qt # Pacote Biglinux
 totem
 tracker3-miners
 xdg-user-dirs-gtk
 
-## Acessibilidade
-orca
-espeak-ng
-speech-dispatcher
-
-## Gnome Shell Extensions
+# GNOME Shell Extensions
 gnome-shell-extension-appindicator
 gnome-shell-extension-blur-my-shell
 gnome-shell-extension-dash-to-dock
@@ -75,198 +89,120 @@ gnome-shell-extension-legacy-theme-auto-switcher
 gnome-shell-extension-pano
 gnome-shell-extensions
 
-## Themes
-bibata-cursor-theme
-breeze-icons
-gnome-themes-extra
-qadwaitadecorations-qt6
-gtk-engine-murrine
-qt6-svg
-qt6-wayland
-
-## BigLinux Specific Configurations Gnome
-biglinux-settings-gnome
-big-gnome-config
-
-## Printing
-#>extra manjaro-printer
-#>extra gtk3-print-backends
-
-## Fonts
->extra noto-fonts-emoji
-adobe-source-han-sans-cn-fonts
-adobe-source-han-sans-jp-fonts
-adobe-source-han-sans-kr-fonts
-adobe-source-sans-pro-fonts
-cantarell-fonts # Installed as gnome-themes-standard dependency
-noto-fonts-lite # New default font
-noto-nerd-fonts-lite
-#noto-fonts-sans-nerd
->extra ttf-droid
-terminus-font
->extra ttf-inconsolata
->extra ttf-indic-otf
->extra ttf-liberation
-ttf-caladea
-ttf-carlito
-ttf-dejavu
-ttf-fira-code
-ttf-icomoon-feather
-ttf-lato
-ttf-liberation
-ttf-roboto
-ttf-roboto-mono
-ttf-roboto-slab
-ttf-ubuntu-font-family
-
-## Visual
-biglinux-wallpapers-gnome
-
-## Games
-ds4-disable-led
-retroarch-tweaks
-
-## Virtual Machines
-open-vm-tools
-qemu-guest-agent
-libdnet
-gdk-pixbuf-xlib
-uriparser
-libmspack
-xf86-input-vmmouse
-compsize
+# Input Devices
+xf86-input-elographics
+xf86-input-evdev
 xf86-input-synaptics
-mtools
-fatresize
-thermald
+xf86-input-vmmouse
 
-## Imported from live
-virtualbox-guest-utils
+# Multilib
+>multilib lib32-libva-intel-driver
+>multilib lib32-libva-mesa-driver
+>multilib lib32-libva-vdpau-driver
+>multilib lib32-mesa-utils
+lib32-fontconfig
+lib32-gettext
+lib32-glu
+lib32-lcms2
+lib32-libcups
+lib32-libice
+lib32-libjpeg6-turbo
+lib32-libjpeg6-turbo
+lib32-libltdl
+lib32-libpcap
+lib32-libpng12
+lib32-libpulse
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxrandr
+lib32-libxslt
+lib32-mpg123
+lib32-nss-mdns
+lib32-openal
+lib32-pipewire-jack
+lib32-sdl12-compat
+lib32-sdl2
+lib32-v4l-utils
 
-## Network
-network-manager-prefer-ipv4-dns
+# Network Tools
+modemmanager
 network-manager-disable-random-mac
-sysctl-network
-avahi
-networkmanager
+network-manager-prefer-ipv4-dns
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nss-mdns # NSS support for mDNS (optdepend for avahi)
 ntp
-mobile-broadband-provider-info
-modemmanager
+open-vm-tools
 openresolv
 openssh
+qemu-guest-agent
+sysctl-network
 usb_modeswitch
-# ufw
-# gufw
-manjaro-settings-samba
 
-## Connect
-android-tools
-android-udev
-gvfs
-gvfs-afc
-gvfs-goa
-gvfs-google
-gvfs-gphoto2
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-mtpfs
-udiskie
-udisks2
-bluez-utils
-## Optional dependencies for kdeconnect
-sshfs  # remote filesystem browser
+# Office
+libreoffice-fresh-pt-br
 
-## Package management
-big-store
-biglinux-keyring
-biglinux-updates-tweaks
-pamac-updates-menu
-force-upgrade
-debtap-mod
-rpmtoarch
-pamac-gtk
-pamac-cli
->extra fwupd
-qt6-wayland
-manjaro-application-utility
-
-## Printers
-bluez-cups
-cups
-manjaro-printer
-lib32-libcups
-ipp-usb
-splix
-sane-airscan
-## Optional dependencies for hplip
-system-config-printer-jobs
-system-config-printer
+# System Configuration
 >extra python-pillow
 >extra python-pip
 >extra python-pyqt5
-## Optional dependencies for print-manager
-python-pysmbc          # SMB browser support
-
-## Optional dependencies for ark
-p7zip  # 7Z format support
-unarchiver  # RAR format support
-
-## Applications
-dmidecode # for inxi -m output
-htop
-inxi
-powertop
-
-## Desktop Utils
 appimagelauncher
 appmenu-gtk-module
-auto-tweaks-browser
-bigbashview
+auto-tweaks-browser # Pacote Biglinux
 biglinux-mime
 biglinux-webapps
 bigocrpdf
-gnome-keyring
+dmidecode # for inxi -m output
+espeak-ng
+gdm
+htop
+inxi
 libappindicator-gtk3
+orca
+p7zip  # 7Z format support
 perl-file-mimeinfo
 pipewire-biglinux-config-git
+powertopf
+python-pysmbc # SMB browser support
+speech-dispatcher
 tts-biglinux
-xdg-desktop-portal-gnome
+unarchiver  # RAR format support
 xdg-desktop-portal-gtk
-xdg-user-dirs
-xdg-user-dirs-gtk
-xdg-utils
 zensu
 
-## Xorg Server and Graphics
->multilib lib32-libva-intel-driver
->multilib lib32-libva-mesa-driver
->multilib lib32-libva-vdpau-driver
-libva-intel-driver
-libva-mesa-driver
-libva-vdpau-driver
-mesa-utils
->multilib lib32-mesa-utils
-numlockx
-#xdg-user-dirs
-xorg-server
-xorg-twm
-xorg-xinit
-xorg-xkill
-xorg-mkfontscale
-wayland-protocols
-wayland-utils
+# System Utilities
+>extra fwupd
+android-tools
+big-store
+biglinux-keyring
+biglinux-updates-tweaks
+bluez-cups
+compsize
+debtap-mod
+hplip
+ipp-usb
+manjaro-application-utility
+manjaro-printer
+pamac-updates-menu
+qt6-wayland
+rpmtoarch
+sane-airscan
+splix
+system-config-printer
+system-config-printer-jobs
+thermald
+virtualbox-guest-utils
 
-## Xorg Input Drivers
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-libinput
+# Themes and Icons
+bibata-cursor-theme
+breeze-icons
+gnome-themes-extra
+gtk-engine-murrine
+qadwaitadecorations-qt6
+qt6-svg
 
-## Udev
+# Udev Rules
 adafruit-boards-udev
 allow-input-accelerometer-udev
 apple-superdrive-udev
@@ -292,56 +228,51 @@ usb-dirty-pages-udev
 usbasp-udev
 usbtinyisp-udev
 
-## Better wine support
-#faudio
-lib32-acl
-lib32-flac
-lib32-fontconfig
-lib32-gettext
-lib32-glu
-lib32-gmp
-lib32-gnutls
-lib32-libasyncns
-lib32-libice
-lib32-libjpeg-turbo
-lib32-libjpeg6-turbo
-lib32-libltdl
-lib32-libnl
-lib32-libogg
-lib32-libpcap
-lib32-libpng12
-lib32-libpulse
-lib32-libsndfile
-lib32-libtiff
-lib32-libvorbis
-lib32-libxcomposite
-lib32-libxcursor
-lib32-libxi
-lib32-libxinerama
-lib32-libxrandr
-lib32-libxrender
-lib32-libxslt
-lib32-libxtst
-lib32-lcms2
-lib32-libsndfile
-lib32-mpg123
-lib32-nettle
-lib32-nss-mdns
-lib32-openal
-lib32-opus
-lib32-pipewire
-lib32-pipewire-jack
-lib32-sdl12-compat
-lib32-sdl2
-lib32-v4l-utils
-lib32-libjpeg6-turbo
-sdl12-compat
+# Utilities
+big-gnome-config
+biglinux-settings-gnome
+biglinux-wallpapers-gnome
+ds4-disable-led
+retroarch-tweaks
 
-## AUR
-make
-automake
-autoconf
-libtool
+# Virtualization
+bluez-utils
+sshfs  # remote filesystem browser
 
-## Temp
-llvm16-libs # Descomentar para gerar com repositório testing ou unstble
+# Xorg
+numlockx
+xorg-mkfontscale
+xorg-server
+xorg-twm
+xorg-xinit
+xorg-xkill
+
+# Wayland
+wayland-protocols
+wayland-utils
+
+# Miscellaneous
+libdnet
+gdk-pixbuf-xlib
+uriparser
+libmspack
+
+# Additional Packages
+fatresize
+gamemode
+grilo-plugins
+gvfs
+gvfs-afc
+gvfs-goa
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+manjaro-settings-samba
+mtools
+mtpfs
+rustdesk-bin
+steam
+udiskie
+# llvm16-libs
