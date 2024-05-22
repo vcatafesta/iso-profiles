@@ -109,9 +109,9 @@ xz
 biglinux-bash-config
 
 ## Visual/theme
+bigicons-papient
 biglinux-base-icons
 biglinux-apps-rename
-biglinux-icons-material
 biglinux-metapackage
 
 ## BigLinux Specific Configurations
