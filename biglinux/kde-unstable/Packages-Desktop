@@ -101,7 +101,7 @@ kaccounts-providers
 #
 
 ## Applications
-manjaro-settings-manager-kcm
+manjaro-settings-manager
 manjaro-settings-manager-knotifier
 
 ## Flatpak support
