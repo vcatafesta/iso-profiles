@@ -186,6 +186,7 @@ ipp-usb
 manjaro-application-utility
 manjaro-printer
 pamac-updates-menu
+pamac-flatpak-plugin
 qt6-wayland
 rpmtoarch
 sane-airscan
