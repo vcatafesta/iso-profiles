@@ -1,0 +1,360 @@
+## Applications
+atril
+blueman
+catfish
+exo
+ffmpegthumbnailer
+fluent-icon-theme-git
+garcon
+galculator
+gnome-disk-utility
+guvcview
+guvcview-qt
+intltool
+materiav2-gtk-theme
+mousepad
+mugshot
+mystiq
+numlockx
+network-manager-applet
+nm-connection-editor
+ocs-url
+parole
+pavucontrol
+ristretto
+simplescreenrecorder
+sync-gnome-theme-to-qt
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+thunarx-python
+tumbler
+vlc
+xfburn
+xfce4-appfinder
+xfce4-artwork
+xfce4-battery-plugin
+xfce4-clipman-plugin
+xfce4-cpufreq-plugin
+xfce4-cpugraph-plugin
+xfce4-datetime-plugin
+xfce4-dict
+xfce4-diskperf-plugin
+xfce4-eyes-plugin
+xfce4-fsguard-plugin
+xfce4-genmon-plugin
+xfce4-mailwatch-plugin
+xfce4-mount-plugin
+xfce4-mpc-plugin
+xfce4-netload-plugin
+xfce4-notes-plugin
+xfce4-notifyd
+xfce4-panel
+xfce4-panel-profiles
+xfce4-power-manager
+xfce4-pulseaudio-plugin
+xfce4-screensaver
+xfce4-screenshooter
+xfce4-sensors-plugin
+xfce4-session
+xfce4-settings
+xfce4-smartbookmark-plugin
+xfce4-systemload-plugin
+xfce4-taskmanager
+xfce4-terminal
+xfce4-time-out-plugin
+xfce4-timer-plugin
+xfce4-verve-plugin
+xfce4-wavelan-plugin
+xfce4-weather-plugin
+xfce4-xkb-plugin
+xfce4-whiskermenu-plugin
+xfconf
+xfdesktop
+xfwm4
+xfwm4-themes
+xarchiver
+
+libreoffice-fresh
+libreoffice-fresh-pt-br
+brave-browser
+rustdesk-bin
+
+## Themes
+adw-gtk3
+adw-gtk-theme
+bibata-cursor-theme
+gtk-engines
+gtk-engine-murrine
+qt5ct
+qt6-svg
+qogir-gtk-theme
+qogir-icon-theme
+plank
+xfce4-docklike-plugin
+
+## BigLinux Specific Configurations XFCE
+biglinux-settings
+big-xfce-config
+biglinux-config
+
+## Display manager
+lightdm
+lightdm-webkit2-greeter
+lightdm-webkit2-theme-biglinux
+
+## Applications
+# manjaro-application-utility
+manjaro-settings-manager
+manjaro-settings-manager-notifier
+# systemd-kcm
+
+## Flatpak support
+pamac-flatpak-plugin
+
+## Printing
+>extra manjaro-printer
+>extra gtk3-print-backends
+
+## Fonts
+ttf-dejavu
+cantarell-fonts        # Installed as gnome-themes-standard dependency
+noto-fonts-lite # New default font
+noto-nerd-fonts-lite
+# noto-fonts-sans-nerd
+adobe-source-sans-pro-fonts
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+adobe-source-han-sans-cn-fonts
+>extra noto-fonts-emoji
+terminus-font
+>extra ttf-inconsolata
+>extra ttf-indic-otf
+>extra ttf-liberation
+>extra ttf-droid
+ttf-caladea
+ttf-carlito
+ttf-liberation
+ttf-roboto
+ttf-lato
+ttf-ubuntu-font-family
+
+# visual
+biglinux-wallpapers-xfce
+
+## Games
+retroarch-tweaks
+ds4-disable-led
+gamemode
+
+## Virtual Machines
+open-vm-tools
+qemu-guest-agent
+libdnet
+gdk-pixbuf-xlib
+uriparser
+libmspack
+xf86-input-vmmouse
+compsize
+xf86-input-synaptics
+mtools
+fatresize
+thermald
+
+## Imported from live
+virtualbox-guest-utils
+
+## Network
+network-manager-prefer-ipv4-dns
+network-manager-disable-random-mac
+sysctl-network
+avahi
+networkmanager
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+nss-mdns # NSS support for mDNS (optdepend for avahi)
+ntp
+mobile-broadband-provider-info
+modemmanager
+openresolv
+openssh
+usb_modeswitch
+# ufw
+# gufw
+manjaro-settings-samba
+
+## Connect
+android-tools
+android-udev
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+mtpfs
+udiskie
+udisks2
+bluez-plugins
+## Optional dependencies for kdeconnect
+sshfs  # remote filesystem browser
+
+## Package management
+big-store
+biglinux-keyring
+biglinux-updates-tweaks
+pamac-updates-menu
+pamac-gtk3
+force-upgrade
+debtap-mod
+rpmtoarch
+pamac-gtk
+pamac-cli
+>extra fwupd
+# qt6-wayland
+manjaro-application-utility
+
+# printers
+bluez-cups
+cups
+hplip
+manjaro-printer
+lib32-libcups
+ipp-usb
+splix
+sane-airscan
+## Optional dependencies for hplip
+system-config-printer
+system-config-printer-jobs
+>extra python-pillow
+>extra python-pip
+>extra python-pyqt5
+## Optional dependencies for print-manager
+python-pysmbc          # SMB browser support
+
+## Optional dependencies for ark
+p7zip  # 7Z format support
+unarchiver  # RAR format support
+
+## Applications
+dmidecode # for inxi -m output
+htop
+inxi
+powertop
+
+## Desktop Utils
+appimagelauncher
+appmenu-gtk-module
+auto-tweaks-browser
+bigbashview
+biglinux-mime
+biglinux-webapps
+bigocrpdf
+libappindicator-gtk3
+perl-file-mimeinfo
+pipewire-biglinux-config-git
+tts-biglinux
+xdg-user-dirs
+xdg-utils
+zensu
+
+## Xorg Server and Graphics
+>multilib lib32-libva-intel-driver
+>multilib lib32-libva-mesa-driver
+>multilib lib32-libva-vdpau-driver
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
+mesa-utils
+>multilib lib32-mesa-utils
+numlockx
+#xdg-user-dirs
+xorg-server
+xorg-twm
+xorg-xinit
+xorg-xkill
+xorg-mkfontscale
+
+## Xorg Input Drivers
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+
+## Udev
+adafruit-boards-udev
+allow-input-accelerometer-udev
+apple-superdrive-udev
+avrisp-udev
+bitbox-udev
+btchip-udev
+crazyflie-udev
+crazyradio-udev
+duckypad-udev
+game-devices-udev
+keepkey-udev
+mooltipass-udev
+nintendo-udev
+numworks-udev
+nx-udev
+onlykey-udev
+openrgb-udev-rules
+osc-udev-storage
+signal-hound-udev
+stadia-controller-udev
+trezor-udev
+usb-dirty-pages-udev
+usbasp-udev
+usbtinyisp-udev
+
+## Better wine support
+#faudio
+lib32-acl
+lib32-flac
+lib32-fontconfig
+lib32-gettext
+lib32-glu
+lib32-gmp
+lib32-gnutls
+lib32-libasyncns
+lib32-libice
+lib32-libjpeg-turbo
+lib32-libjpeg6-turbo
+lib32-libltdl
+lib32-libnl
+lib32-libogg
+lib32-libpcap
+lib32-libpng12
+lib32-libpulse
+lib32-libsndfile
+lib32-libtiff
+lib32-libvorbis
+lib32-libxcomposite
+lib32-libxcursor
+lib32-libxi
+lib32-libxinerama
+lib32-libxrandr
+lib32-libxrender
+lib32-libxslt
+lib32-libxtst
+lib32-lcms2
+lib32-libsndfile
+lib32-mpg123
+lib32-nettle
+lib32-nss-mdns
+lib32-openal
+lib32-opus
+lib32-pipewire
+lib32-pipewire-jack
+lib32-sdl12-compat
+lib32-sdl2
+lib32-v4l-utils
+lib32-libjpeg6-turbo
+sdl12-compat
+
+#AUR
+make
+automake
+autoconf
+libtool
