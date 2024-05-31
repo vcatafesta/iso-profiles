@@ -158,6 +158,7 @@ speech-dispatcher
 tts-biglinux
 unarchiver  # RAR format support
 xdg-desktop-portal-gtk
+xdg-user-dirs-gtk
 zensu
 
 ## Display manager
