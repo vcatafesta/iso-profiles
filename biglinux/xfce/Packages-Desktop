@@ -2,6 +2,7 @@
 adw-gtk3
 atril
 blueman
+brasero
 catfish
 exo
 ffmpegthumbnailer
@@ -32,7 +33,7 @@ thunar-volman
 thunarx-python
 tumbler
 vlc
-xfburn
+# xfburn
 xfce4-appfinder
 xfce4-artwork
 xfce4-battery-plugin
