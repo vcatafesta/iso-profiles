@@ -279,10 +279,15 @@ bluez-plugins
 dolphin-plugins
 gvfs
 gvfs-afc
+gvfs-dnssd
+gvfs-goa
+gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
+gvfs-onedrive
 gvfs-smb
+gvfs-wsdd
 lib32-fontconfig
 lib32-giflib
 lib32-gettext
