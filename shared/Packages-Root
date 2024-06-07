@@ -134,7 +134,7 @@ biglinux-name
 biglinux-l18n
 # faster-mkinitcpio
 biglinux-improve-compatibility
-big-mount-git
+big-mount
 # biglinux-systemd-swap
 dbus-broker-enable
 biglinux-neofetch
