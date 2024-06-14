@@ -1,272 +1,218 @@
-## BigLinux
-big-executable
-big-theme-colloided-adwaita
-big-preload
-big-skel
-brave-browser
-breeze-icons
-feh
-filelight
-qpwgraph
-kde-color-folder
-kde-servicemenus-officeconverter
-kde-service-menu-reimage
-kdegraphics-mobipocket
-kdialog
-keditbookmarks
-kfind
-kio-gdrive
-knewstuff
-libreoffice-fresh
-libreoffice-fresh-pt-br
-mintstick
-mystiq
-mx-idevice-mounter
-open-in-lutris-git
-packagekit-qt6
+# Accessibility
+libqaccessibilityclient-qt6
+
+# Android Tools
+android-tools
+
+# App Launchers
+appimagelauncher
+appmenu-gtk-module
+
+# Audio Tools
 pavucontrol-qt
-python-steam
-qbittorrent
-rootactions-servicemenu-biglinux
-rustdesk-bin
-sddm-theme-biglinux
-sddm-xorg-failsafe
-skanpage
-steam
-
-## Libraries for Sound/Audio/Video
-phonon-qt6
 phonon-qt6-vlc
+pipewire-biglinux-config-git
 
-## Connect Packages
-kamera
+# Browsers
+brave-browser
 
-## Package management
-pamac-tray-icon-plasma
-
-## Display manager
-sddm
-
-## Plasma
-bluedevil
-cryfs
-guvcview
-kalarm
-kde-gtk-config
-kde-snap-assist
-klassy
-kmenuedit
-kmines
-kpat
-kscreenlocker
-ksshaskpass
-ksystemlog
-kwallet-pam
-kwayland
-kwrited
-plasma-applet-window-buttons
-plasma6-applets-panel-colorizer
-plasma6-applets-netspeed
-plasma6-applets-resources-monitor
-plasma6-applets-window-title
-#
-simplescreenrecorder
-
-## KDE Applications
-ark
-dolphin
-dolphin-plugins
-gparted
+# Calculator
 gnome-calculator
-kate
-kdenetwork-filesharing
-konsole
-kvantum
-kwalletmanager
-spectacle
-vlc
 
-## Optional dependencies for dolphin
-#
-#
+# Compression Tools
+ark
 
-## Optional dependencies for gwenview
-kimageformats     # support for dds, xcf, exr, psd, and more image formats
+# Development Tools
+autoconf
+automake
+make
+kdsoap-ws-discovery-client
+ktexttemplate
+python-pygdbmi
+python-sentry_sdk
 
+# Document Viewers
+okular
 
-## Optional dependencies for kaccounts-integration
-kaccounts-providers
+# Emulators
+retroarch-tweaks
 
-## Optional dependencies for okular
-#
+# File Managers
+dolphin-plugins
 
-## Applications
-manjaro-settings-manager
-manjaro-settings-manager-knotifier
+# File Sharing Tools
+qbittorrent
 
-## Flatpak support
-pamac-flatpak-plugin
-
-## Printing
-
-## Fonts
-noto-fonts-lite
-noto-nerd-fonts-lite
-# noto-fonts-sans-nerd
-adobe-source-sans-pro-fonts
+# Fonts
+adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
-adobe-source-han-sans-cn-fonts
+adobe-source-sans-pro-fonts
+noto-fonts-lite
 terminus-font
 ttf-caladea
 ttf-carlito
+ttf-croscore
 ttf-dejavu
+ttf-droid
+ttf-font-awesome
 ttf-liberation
-# ttf-nerd-fonts-symbols
-# ttf-nerd-fonts-symbols-mono
 ttf-roboto
-ttf-lato
-ttf-ubuntu-font-family
 
-## Visual
-extra-biglinux-wallpapers
+# Games
+open-in-lutris-git
+steam
 
-## Games
-retroarch-tweaks
-ds4-disable-led
-
-## Virtual Machines
-open-vm-tools
-qemu-guest-agent
-libdnet
+# Graphics Tools
+feh
+filelight
 gdk-pixbuf-xlib
-uriparser
-libmspack
-xf86-input-vmmouse
-compsize
-xf86-input-synaptics
-mtools
-fatresize
-thermald
+gparted
+guvcview
+kdegraphics-thumbnailers
+kgamma
+kimageformats
+kscreen
+skanpage
+spectacle
 
-## Imported from live
-spice-vdagent-autostart-kde
-virtualbox-guest-utils
+# KDE Applications
+kamera
+kalarm
+kate
+kde-color-folder
+kde-gtk-config
+kde-snap-assist
+kde-servicemenus-officeconverter
+kde-service-menu-reimage
+kdeconnect
+kdenetwork-filesharing
+keditbookmarks
+kdnssd
+kfind
+kglobalacceld
+kinfocenter
+kio-gdrive
+kldap
+kmenuedit
+kmines
+kpat
+ksshaskpass
+ksystemlog
+kwallet-pam
+kwalletmanager
 
-## Network
-network-manager-prefer-ipv4-dns
+# LibreOffice
+libreoffice-fresh-pt-br
+
+# Manjaro Tools
+manjaro-printer
+manjaro-settings-manager
+manjaro-settings-manager-knotifier
+manjaro-settings-samba
+
+# Multimedia
+ffmpegthumbs
+phonon-qt6-vlc
+pipewire-biglinux-config-git
+qt6-multimedia-ffmpeg
+qpwgraph
+
+# Network Tools
+cryfs
 network-manager-disable-random-mac
-sysctl-network
-avahi
-networkmanager
+network-manager-prefer-ipv4-dns
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-nss-mdns
 ntp
-mobile-broadband-provider-info
-modemmanager
 openresolv
-openssh
-usb_modeswitch
-# ufw
-# gufw
-manjaro-settings-samba
+rustdesk-bin
+sshfs
+switcheroo-control
 
-## Connect
-android-tools
-android-udev
-gvfs
-gvfs-afc
-gvfs-gphoto2
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-mtpfs
-udiskie
-udisks2
-bluez-plugins
-## Optional dependencies for kdeconnect
-#
-
-## Package management
-big-store
-biglinux-keyring
-biglinux-updates-tweaks
+# Package Managers
+mintstick
+pamac-cli
+pamac-flatpak-plugin
+pamac-tray-icon-plasma
 pamac-updates-menu
 pacman-cleancache
-force-upgrade
-debtap-mod
+packagekit-qt6
 rpmtoarch
-pamac-gtk
-pamac-cli
-qt6-wayland
-manjaro-application-utility
+rpm-sequoia
 
-# printers
-bluez-cups
-cups
-manjaro-printer
-lib32-libcups
+# Printing Tools
 ipp-usb
 splix
 sane-airscan
-## Optional dependencies for hplip
-# BigLinux
 system-config-printer-jobs
 
-## Optional dependencies for print-manager
-#
-system-config-printer
-
-## Optional dependencies for ark
-#
-#
-
-## Applications
-dmidecode
-htop
-inxi
-powertop
-
-## Desktop Utils
-appimagelauncher
-appmenu-gtk-module
+# System Tools
+apparmor
+aria2
 auto-tweaks-browser
-bigbashview
+bigcontrolcenter
+big-executable
+big-preload
+big-skel
+big-store
 biglinux-mime
+biglinux-systemd-swap
+biglinux-themes-gui
+biglinux-updates-tweaks
 biglinux-webapps
 bigocrpdf
+compsize
+cryfs
+debtap-mod
+ds4-disable-led
+extra-biglinux-wallpapers
+faster-mkinitcpio
+fatresize
+flatpak-kcm
+gconf
+geticons
 gnome-keyring
+htop
+intel-media-driver
+kwayland-integration
+lib32-xcb-util-keysyms
 libappindicator-gtk3
+libdnet
+libdisplay-info
+libmspack
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
+#llvm16-libs
+mtools
+mystiq
+numlockx
+openucx
+open-in-lutris-git
+open-vm-tools
 perl-file-mimeinfo
-pipewire-biglinux-config-git
+powertop
+python-steam
+qt6-webview
+rootactions-servicemenu-biglinux
+sd
+spice-vdagent-autostart-kde
+sync-kde-and-gtk-places
+sysctl-network
+thermald
 tts-biglinux
-xdg-user-dirs
+udiskie
+unarchiver
+uriparser
+usb_modeswitch
+virtualbox-guest-utils
+wacomtablet
 xdg-user-dirs-gtk
-xdg-utils
 zensu
 
-## Development
-# syntax-highlighting # REMOVIDO
-# libkdcraw # REMOVIDO
-# kguiaddons # REMOVIDO
-
-## Xorg Server and Graphics
-mesa-utils
-numlockx
-xorg-server
-xorg-twm
-xorg-xinit
-xorg-xkill
-xorg-mkfontscale
-
-## Xorg Input Drivers
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-libinput
-
-#udev
+# Udev Rules
 adafruit-boards-udev
 allow-input-accelerometer-udev
 apple-superdrive-udev
@@ -292,292 +238,87 @@ usb-dirty-pages-udev
 usbasp-udev
 usbtinyisp-udev
 
-## Better wine support
-#faudio
-lib32-acl
-lib32-flac
-lib32-fontconfig
-lib32-gettext
-lib32-glu
-lib32-gmp
-lib32-gnutls
-lib32-libasyncns
-lib32-libice
-lib32-libjpeg-turbo
-lib32-libjpeg6-turbo
-lib32-libltdl
-lib32-libnl
-lib32-libogg
-lib32-libpcap
-lib32-libpng12
-lib32-libpulse
-lib32-libsndfile
-lib32-libtiff
-lib32-libvorbis
-lib32-libxcomposite
-lib32-libxcursor
-lib32-libxi
-lib32-libxinerama
-lib32-libxrandr
-lib32-libxrender
-lib32-libxslt
-lib32-libxtst
-lib32-lcms2
-lib32-libsndfile
-lib32-mpg123
-lib32-nettle
-lib32-nss-mdns
-lib32-openal
-lib32-opus
-lib32-pipewire
-lib32-pipewire-jack
-lib32-sdl12-compat
-lib32-sdl2
-lib32-v4l-utils
-lib32-libjpeg6-turbo
-sdl12-compat
+# Virtualization Tools
+qemu-guest-agent
+virtualbox-guest-utils
 
-#AUR
-make
-automake
-autoconf
-libtool
+# Xorg Input Drivers
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-synaptics
+xf86-input-vmmouse
 
-## NOVOS (Frameworks e Bibliotecas KDE)
-appstream-qt
-attica
-baloo
-bluez-qt
-frameworkintegration
-karchive
-kauth
-kbookmarks
-kcalendarcore
-kcmutils
-kcodecs
-kcolorpicker
-kcolorscheme
-kcompletion
-kconfig
-kconfigwidgets
-kcontacts
-kcoreaddons
-kcrash
-kdbusaddons
-kdeclarative
-kded
-kdesu
-kdnssd
-kdsoap-qt6
-kdsoap-ws-discovery-client
-kfilemetadata
-kglobalaccel
-kglobalacceld
-kguiaddons
-kholidays
-ki18n
-kiconthemes
-kidletime
-kimageannotator
-kio
-kirigami
-kirigami-addons
-kitemmodels
-kitemviews
-kjobwidgets
-knewstuff
-knotifications
-knotifyconfig
-kpackage
-kparts
-kpeople
-kpty
-kquickcharts
-kquickimageeditor
-krunner
-kservice
-kstatusnotifieritem
-ksvg
-ktexteditor
-ktexttemplate
-ktextwidgets
-kunitconversion
-kuserfeedback
-kwallet
-kwayland
-kwidgetsaddons
-kwindowsystem
-kxmlgui
-libblockdev-crypto
-libblockdev-fs
-libblockdev-loop
-libblockdev-mdraid
-libblockdev-nvme
-libblockdev-part
-libblockdev-swap
-libdisplay-info
-libkdcraw
-libplasma
-libqaccessibilityclient-qt6
-modemmanager-qt
-networkmanager-qt
-ocean-sound-theme
-openucx
-phonon-qt6
-phonon-qt6-vlc
-plasma5support
-plasma-activities
-plasma-activities-stats
-polkit-qt6
-poppler-qt6
-prison
-purpose
-python-unidecode
-qca-qt6
-qcoro-qt6
-qqc2-breeze-style
-qqc2-desktop-style
-qt6-5compat
-qt6-multimedia
-qt6-multimedia-ffmpeg
-qt6-sensors
-qt6-shadertools
-qt6-speech
-qt6-tools
-qt6-virtualkeyboard
-qt6-wayland
-qt6-websockets
-qtkeychain-qt6
-rpm-sequoia
-solid
-sonnet
-syndication
-syntax-highlighting
-threadweaver
-translate-shell
-xorg-xwayland
+# Xorg Tools
+xorg-mkfontscale
+xorg-twm
+xorg-xinit
+xorg-xkill
 
-# Add Bruno
-accountsservice
-aha
-bolt
-clinfo
-ddcutil
-discount
-i2c-tools
-kio-fuse
-kwayland5
-libqalculate
-libxaw
-python-certifi
-python-pygdbmi
-python-sentry_sdk
-qt6-webview
-source-highlight
-vulkan-tools
-wayland-utils
-xf86-input-wacom
-xorg-xdpyinfo
-xorg-xmessage
-xorg-xsetroot
-breeze-gtk
-flatpak-kcm
-kactivitymanagerd
-kde-cli-tools
-kdeplasma-addons
-kgamma
-kinfocenter
-kscreen
-ksystemstats
-kwayland-integration
-libksysguard
+# KDE Plasma Add-ons
+plasma6-applets-netspeed
+plasma6-applets-resources-monitor
 plasma-browser-integration
-plasma-desktop
 plasma-disks
 plasma-firewall
-plasma-integration
 plasma-nm
 plasma-pa
-plasma5-integration
 plasma-systemmonitor
 plasma-thunderbolt
 plasma-vault
-plasma-workspace
 plymouth-kcm
 polkit-kde-agent
 powerdevil
-print-manager
 sddm-kcm
-systemsettings
-wacomtablet
-xdg-desktop-portal-kde
-kimageformats
-biglinux-session-and-themes
+sddm-theme-biglinux
+sddm-xorg-failsafe
 
-# Tira bug estranho de sumir ícones
-llvm16-libs
-
-### Mais pacotes
-apparmor
-aria2
-bbv-framework
-bigcontrolcenter
-biglinux-config
-biglinux-plasmoids
-biglinux-systemd-swap
-biglinux-themes-gui
-cabextract
-faster-mkinitcpio
-ffmpegthumbs
-fluent-gtk-theme-git
-fluent-kde-theme-git
-gconf
-geticons
-gwenview
-intel-media-driver
-kdeconnect
-kdegraphics-thumbnailers
-kldap
-#lib32-faudio
+# Others
+bluedevil
+bluez-cups
+bluez-plugins
+dolphin-plugins
+gvfs
+gvfs-afc
+gvfs-dnssd
+gvfs-goa
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-onedrive
+gvfs-smb
+gvfs-wsdd
+lib32-fontconfig
 lib32-giflib
+lib32-gettext
+lib32-libcups
+lib32-libjpeg6-turbo
+lib32-libltdl
+lib32-libpcap
+lib32-libpng12
+lib32-libpulse
+lib32-lcms2
 lib32-libsm
 lib32-libunwind
-lib32-libva
 lib32-libva-intel-driver
-#lib32-libva-mesa-driver
-#lib32-libva-vdpau-driver
-#lib32-libvdpau
-#lib32-mesa
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxrandr
+lib32-libxslt
 lib32-mesa-utils
-#lib32-mesa-vdpau
-#lib32-vulkan-intel
-#lib32-vulkan-radeon
-lib32-xcb-util-keysyms
-libdbusmenu-gtk2
-#libva-mesa-driver
+lib32-mpg123
+lib32-nss-mdns
+lib32-openal
+lib32-pipewire-jack
+lib32-sdl12-compat
+lib32-v4l-utils
 lutris
-#noto-fonts
+mtpfs
 nvtop
-okular
-p7zip
-plasma-appsmenu-biglinux
+plasma-framework5
 plasma-wayland-protocols
-sd
-sshfs
-switcheroo-control
-sync-kde-and-gtk-places
-#systemd-kcm
+source-highlight
 tesseract-data-eng
 tesseract-data-por
-ttf-croscore
-ttf-droid
-ttf-font-awesome
-unarchiver
-unzip
-virtualbox-guest-utils
-#vulkan-intel
-#vulkan-radeon
-#vulkan-swrast
 wl-clipboard
 wl-mirror
-plasma-framework5

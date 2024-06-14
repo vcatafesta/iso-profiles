@@ -185,7 +185,7 @@ libmspack
 libva-intel-driver
 libva-mesa-driver
 libva-vdpau-driver
-llvm16-libs
+#llvm16-libs
 mtools
 mystiq
 numlockx
