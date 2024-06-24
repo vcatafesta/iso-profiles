@@ -21,7 +21,7 @@ numlockx
 network-manager-applet
 nm-connection-editor
 ocs-url
-parole
+#parole
 pavucontrol
 ristretto
 simplescreenrecorder
@@ -117,6 +117,7 @@ libreoffice-fresh-pt-br
 adw-gtk-theme
 bibata-cursor-theme
 breeze-icons
+conky-manager2-git
 gtk-engine-murrine
 gtk-engines
 qadwaitadecorations-qt6
@@ -182,7 +183,7 @@ manjaro-application-utility
 manjaro-printer
 pamac-updates-menu
 pamac-flatpak-plugin
-qt6-wayland
+#qt6-wayland
 rpmtoarch
 sane-airscan
 splix
@@ -192,8 +193,8 @@ thermald
 virtualbox-guest-utils
 
 # Wayland
-wayland-protocols
-wayland-utils
+#wayland-protocols
+#wayland-utils
 
 # Miscellaneous
 libdnet
