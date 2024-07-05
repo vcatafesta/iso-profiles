@@ -128,8 +128,8 @@ bigicons-papient
 # qogir-icon-theme
 # plank
 xfce4-docklike-plugin
-biglinux-xfwm-axiom-theme
-biglinux-xfwm-axiomd-theme
+# biglinux-xfwm-axiom-theme
+# biglinux-xfwm-axiomd-theme
 
 # Utilities
 biglinux-settings
