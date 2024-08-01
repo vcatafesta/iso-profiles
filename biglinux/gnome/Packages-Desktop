@@ -178,6 +178,7 @@ zensu
 android-tools
 big-store
 biglinux-keyring
+biglinux-systemd-swap
 biglinux-updates-tweaks
 bluez-cups
 compsize
