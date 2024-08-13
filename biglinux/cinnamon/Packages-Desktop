@@ -39,7 +39,7 @@ cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
 simple-scan
-sync-gnome-theme-to-qt # Pacote Biglinux
+#sync-gnome-theme-to-qt # Pacote Biglinux
 xdg-user-dirs-gtk
 
 
