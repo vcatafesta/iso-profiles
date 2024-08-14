@@ -31,7 +31,7 @@ ttf-roboto-mono
 ttf-roboto-slab
 
 # GNOME Applications
-adw-gtk3
+adw-gtk-theme
 amberol
 baobab
 dconf-editor

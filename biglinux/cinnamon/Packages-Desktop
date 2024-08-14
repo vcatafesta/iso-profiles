@@ -30,7 +30,7 @@ ttf-roboto-mono
 ttf-roboto-slab
 
 # CINNAMON Applications
-#adw-gtk3 # REMOVIDO DO UNSTABLE
+adw-gtk-theme
 cinnamon
 cinnamon-desktop
 cinnamon-control-center
@@ -38,7 +38,7 @@ cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
 simple-scan
-#sync-gnome-theme-to-qt # Pacote Biglinux
+sync-gnome-theme-to-qt # Pacote Biglinux
 xdg-user-dirs-gtk
 
 
