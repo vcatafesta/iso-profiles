@@ -16,7 +16,6 @@ adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-sans-pro-fonts
-cantarell-fonts # Installed as gnome-themes-standard dependency
 noto-fonts-lite # New default font
 noto-nerd-fonts-lite
 # terminus-font
@@ -159,7 +158,6 @@ virtualbox-guest-utils
 # Themes and Icons
 bibata-cursor-theme
 breeze-icons
-gnome-themes-extra
 gtk-engine-murrine
 qadwaitadecorations-qt6
 qt6-svg
@@ -193,9 +191,7 @@ usbasp-udev
 usbtinyisp-udev
 
 # Utilities
-big-gnome-config
-biglinux-settings-gnome
-biglinux-wallpapers-gnome
+big-cinnamon-config
 ds4-disable-led
 retroarch-tweaks
 
