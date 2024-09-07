@@ -137,7 +137,6 @@ biglinux-improve-compatibility
 big-mount
 # biglinux-systemd-swap
 dbus-broker-enable
-biglinux-neofetch
 power-profiles-daemon-biglinux
 auto-rules-io
 auto-unlock-pacman-git

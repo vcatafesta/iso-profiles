@@ -127,12 +127,12 @@ bigicons-papient
 # qogir-icon-theme
 # plank
 xfce4-docklike-plugin
-biglinux-xfwm-axiomd-theme
+biglinux-xfwm-axiomd-theme # ALTERAR COMMUNITY
 
 # Utilities
 biglinux-settings
-biglinux-wallpapers-xfce
-big-xfce-config
+comm-wallpapers-xfce
+comm-xfce-config
 ds4-disable-led
 retroarch-tweaks
 
@@ -176,6 +176,7 @@ big-store
 biglinux-keyring
 biglinux-systemd-swap
 biglinux-updates-tweaks
+community-keyring
 bluez-cups
 compsize
 debtap-mod
