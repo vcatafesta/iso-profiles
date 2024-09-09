@@ -95,6 +95,7 @@ texinfo
 usbutils
 util-linux
 vi
+virtualbox-guest-utils
 vkd3d
 wget
 which
@@ -165,3 +166,7 @@ pipewire-jack
 wireplumber
 chmlib
 tesseract-data-spa
+
+## Video and Driver Support Biglinux
+mhwd-biglinux
+biglinux-vaapi
