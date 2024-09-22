@@ -161,7 +161,8 @@ biglinux-mime
 biglinux-systemd-swap
 biglinux-themes-gui
 biglinux-updates-tweaks
-biglinux-webapps
+#biglinux-webapps
+comm-webapps
 bigocrpdf
 compsize
 cryfs
