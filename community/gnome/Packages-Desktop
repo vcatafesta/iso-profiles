@@ -177,7 +177,7 @@ zensu
 >extra fwupd
 android-tools
 big-store
-biglinux-keyring
+community-keyring
 biglinux-systemd-swap
 biglinux-updates-tweaks
 bluez-cups
@@ -235,9 +235,9 @@ usbasp-udev
 usbtinyisp-udev
 
 # Utilities
-big-gnome-config
-biglinux-settings-gnome
-biglinux-wallpapers-gnome
+comm-gnome-config
+comm-settings-gnome
+comm-wallpapers-gnome
 ds4-disable-led
 retroarch-tweaks
 
