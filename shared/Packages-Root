@@ -95,6 +95,7 @@ texinfo
 usbutils
 util-linux
 vi
+virtualbox-guest-utils
 vkd3d
 wget
 which
@@ -137,7 +138,6 @@ biglinux-improve-compatibility
 big-mount
 # biglinux-systemd-swap
 dbus-broker-enable
-biglinux-neofetch
 power-profiles-daemon-biglinux
 auto-rules-io
 auto-unlock-pacman-git
@@ -166,3 +166,15 @@ pipewire-jack
 wireplumber
 chmlib
 tesseract-data-spa
+
+## Video and Driver Support Biglinux
+mhwd-biglinux
+biglinux-vaapi
+
+# extras packages
+tree
+duf
+shfmt
+btop
+#shellcheck
+

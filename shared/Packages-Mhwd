@@ -11,7 +11,6 @@ KERNEL-broadcom-wl
 #zfs-utils # only used for architect which we don't ship
 #KERNEL-rt3562sta
 #KERNEL-virtualbox-guest-modules
-KERNEL-headers
 #zfs-dkms
 libva-intel-driver
 libva-mesa-driver
@@ -39,24 +38,24 @@ mesa-vdpau
 >nonfree_multilib lib32-nvidia-470xx-utils
 >nonfree_multilib lib32-nvidia-390xx-utils
 >nonfree_multilib lib32-nvidia-utils
-opencl-clover-mesa
-opencl-rusticl-mesa
 open-vm-tools
 primus
 qemu-guest-agent
 bumblebee
 nvidia-prime
-nvtop
 gtkmm3
 spice-vdagent
 virtualbox-guest-utils
 vulkan-mesa-layers
 vulkan-swrast
 vulkan-virtio
+vulkan-icd-loader
 vulkan-radeon
 >multilib lib32-vulkan-radeon
 vulkan-intel
 >multilib lib32-vulkan-intel
+vulkan-nouveau
+>multilib lib32-vulkan-nouveau
 xf86-input-vmmouse
 xf86-video-amdgpu
 xf86-video-ati
@@ -68,9 +67,3 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
-#optimus-manager
-switcheroo-control
-
-## Video and Driver Support Biglinux
-mhwd-biglinux
-biglinux-vaapi
