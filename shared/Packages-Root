@@ -170,6 +170,7 @@ tesseract-data-spa
 ## Video and Driver Support Biglinux
 mhwd-biglinux
 biglinux-vaapi
+<<<<<<< HEAD
 
 # extras packages
 tree
@@ -178,3 +179,5 @@ shfmt
 btop
 #shellcheck
 
+=======
+>>>>>>> upstream/main
